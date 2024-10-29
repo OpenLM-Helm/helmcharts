@@ -3,12 +3,12 @@ entries:
   servicenowalertintegration:
   - apiVersion: v2
     appVersion: 24.923.1146
-    created: "2024-10-28T12:04:15.409490623+02:00"
+    created: "2024-10-29T10:07:27.49245044+02:00"
     description: Generic Chart
-    digest: 2197c7fb9a3cc777e2dd4d28e4e1822f51d0995404dc3ab6a997c41f46f9a582
+    digest: 99342d7c69219b2621f76e66e033f685f08ccaab1a8ccb797c50ea23fccaf566
     name: servicenowalertintegration
     type: application
     urls:
     - https://openlm-helm.github.io/helmcharts/servicenowalertintegration.tgz
     version: 24.923.1146
-generated: "2024-10-28T12:04:15.408547206+02:00"
+generated: "2024-10-29T10:07:27.491823064+02:00"
