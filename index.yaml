@@ -3,7 +3,7 @@ entries:
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 24.111.1159
-    created: "2024-11-11T13:45:24.336744021+02:00"
+    created: "2024-11-11T19:50:16.715710463+02:00"
     description: Generic Chart
     digest: abab35fa61d7b71c8a75d46b90a50c03e0ccd9f3e79935857ff55214a8609244
     name: openlm-config-generic
@@ -13,13 +13,13 @@ entries:
     version: 24.111.1159
   servicenowalertintegration:
   - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2024-11-11T13:45:24.337086314+02:00"
+    appVersion: 24.923.1146
+    created: "2024-11-11T19:50:16.716098805+02:00"
     description: Generic Chart
-    digest: 50d793e733ecb2263c5b6b9356044a333d7b877740bc768058583fef7210bafc
+    digest: 4a60e32780608827b0ccd40515b3b1a620d55e8d39211241d2f26c8ebb5870e5
     name: servicenowalertintegration
     type: application
     urls:
     - https://openlm-helm.github.io/helmcharts/servicenowalertintegration.tgz
-    version: 1.0.0
-generated: "2024-11-11T13:45:24.335762322+02:00"
+    version: 24.923.1146
+generated: "2024-11-11T19:50:16.714858315+02:00"
