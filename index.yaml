@@ -3,7 +3,7 @@ entries:
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 24.111.1159
-    created: "2024-11-11T13:04:17.162459428+02:00"
+    created: "2024-11-11T13:12:40.488734792+02:00"
     description: Generic Chart
     digest: abab35fa61d7b71c8a75d46b90a50c03e0ccd9f3e79935857ff55214a8609244
     name: openlm-config-generic
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/openlm_config_generic.tgz
     version: 24.111.1159
-generated: "2024-11-11T13:04:17.160344403+02:00"
+generated: "2024-11-11T13:12:40.487812761+02:00"
