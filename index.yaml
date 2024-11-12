@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  agentactivitymanager:
+  - apiVersion: v2
+    appVersion: 24.1112.1339
+    created: "2024-11-12T14:06:55.103545644Z"
+    description: Generic Chart
+    digest: 791d30ebf90f749f9a699a043e50cfbaa477d41ad65e73ea567ed45824bed429
+    name: agentactivitymanager
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/agentactivitymanager.tgz
+    version: 24.1112.1339
   licenseaccesscontrol:
   - apiVersion: v2
     appVersion: 24.1112.957
-    created: "2024-11-12T11:19:20.198506633Z"
+    created: "2024-11-12T14:06:55.103892599Z"
     description: Generic Chart
     digest: 2935850359403bad22921715f30bd584b4d50b40f19beb377eb13f8b241458f1
     name: licenseaccesscontrol
@@ -14,7 +25,7 @@ entries:
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 24.111.1159
-    created: "2024-11-12T11:19:20.199259051Z"
+    created: "2024-11-12T14:06:55.104497138Z"
     description: Generic Chart
     digest: abab35fa61d7b71c8a75d46b90a50c03e0ccd9f3e79935857ff55214a8609244
     name: openlm-config-generic
@@ -25,7 +36,7 @@ entries:
   servicenowalertintegration:
   - apiVersion: v2
     appVersion: 24.923.1146
-    created: "2024-11-12T11:19:20.199694125Z"
+    created: "2024-11-12T14:06:55.10481484Z"
     description: Generic Chart
     digest: d3c50e2d055cb90c23984d16253673e5f7e95b8b1c31e40ef82f65ee1655c3a4
     name: servicenowalertintegration
@@ -33,4 +44,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/servicenowalertintegration.tgz
     version: 24.923.1146
-generated: "2024-11-12T11:19:20.197766976Z"
+generated: "2024-11-12T14:06:55.103015115Z"
