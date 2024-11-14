@@ -3,7 +3,7 @@ entries:
   agentactivitymanager:
   - apiVersion: v2
     appVersion: 1.241113.0745
-    created: "2024-11-14T09:25:49.107187846Z"
+    created: "2024-11-14T10:25:08.864347247Z"
     description: Generic Chart
     digest: 33c2ba0995de412e19d77b424ef99c1d80f30595459320f9e1852bb4221c6fe5
     name: agentactivitymanager
@@ -14,7 +14,7 @@ entries:
   alertsservice:
   - apiVersion: v2
     appVersion: 1.241113.0719
-    created: "2024-11-14T09:25:49.10753719Z"
+    created: "2024-11-14T10:25:08.864677402Z"
     description: Generic Chart
     digest: 52cb6b15644723d01382c2cf5fd4e42e4f76967e82c352e23bb126de548792e6
     name: alertsservice
@@ -25,7 +25,7 @@ entries:
   alertsserviceui:
   - apiVersion: v2
     appVersion: 24.1114.713
-    created: "2024-11-14T09:25:49.107930597Z"
+    created: "2024-11-14T10:25:08.865080387Z"
     description: Generic Chart
     digest: 7735eb08b567e919a61a2fe7a802d0216b7a1c34f1831029d6ff235fdbd69640
     name: alertsserviceui
@@ -36,7 +36,7 @@ entries:
   allocationservice:
   - apiVersion: v2
     appVersion: 1.241114.0714
-    created: "2024-11-14T09:25:49.108231678Z"
+    created: "2024-11-14T10:25:08.865394452Z"
     description: Generic Chart
     digest: b1611cfe6b96054c1517b315b82f6a9d8868531a0123b4ce40a11de1271cc2df
     name: allocationservice
@@ -44,10 +44,21 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/allocationservice.tgz
     version: 1.241114.0714
+  brokerhub:
+  - apiVersion: v2
+    appVersion: 1.241114.1001
+    created: "2024-11-14T10:25:08.865697842Z"
+    description: Generic Chart
+    digest: 8f455c64c96ac669fc58fadde079bfc167b511cbd39385effaf92c4b8fe71f03
+    name: brokerhub
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/brokerhub.tgz
+    version: 1.241114.1001
   denialservice:
   - apiVersion: v2
     appVersion: 1.241114.0857
-    created: "2024-11-14T09:25:49.108522044Z"
+    created: "2024-11-14T10:25:08.86599452Z"
     description: Generic Chart
     digest: 138e7e2b2c8a8736e929a96fd1bc88a13fafa002ed91e43383686680012e3b6b
     name: denialservice
@@ -58,7 +69,7 @@ entries:
   licenseaccesscontrol:
   - apiVersion: v2
     appVersion: 24.1112.957
-    created: "2024-11-14T09:25:49.108838784Z"
+    created: "2024-11-14T10:25:08.866292881Z"
     description: Generic Chart
     digest: 2935850359403bad22921715f30bd584b4d50b40f19beb377eb13f8b241458f1
     name: licenseaccesscontrol
@@ -69,7 +80,7 @@ entries:
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 24.111.1159
-    created: "2024-11-14T09:25:49.109468126Z"
+    created: "2024-11-14T10:25:08.867056991Z"
     description: Generic Chart
     digest: abab35fa61d7b71c8a75d46b90a50c03e0ccd9f3e79935857ff55214a8609244
     name: openlm-config-generic
@@ -80,7 +91,7 @@ entries:
   servicenowalertintegration:
   - apiVersion: v2
     appVersion: 24.923.1146
-    created: "2024-11-14T09:25:49.109772411Z"
+    created: "2024-11-14T10:25:08.867362216Z"
     description: Generic Chart
     digest: d3c50e2d055cb90c23984d16253673e5f7e95b8b1c31e40ef82f65ee1655c3a4
     name: servicenowalertintegration
@@ -88,4 +99,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/servicenowalertintegration.tgz
     version: 24.923.1146
-generated: "2024-11-14T09:25:49.106689483Z"
+generated: "2024-11-14T10:25:08.863795741Z"
