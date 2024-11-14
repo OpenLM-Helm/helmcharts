@@ -3,7 +3,7 @@ entries:
   agentactivitymanager:
   - apiVersion: v2
     appVersion: 1.241113.0745
-    created: "2024-11-14T11:09:04.217551788Z"
+    created: "2024-11-14T13:59:43.027411569Z"
     description: Generic Chart
     digest: 33c2ba0995de412e19d77b424ef99c1d80f30595459320f9e1852bb4221c6fe5
     name: agentactivitymanager
@@ -14,7 +14,7 @@ entries:
   alertsservice:
   - apiVersion: v2
     appVersion: 1.241113.0719
-    created: "2024-11-14T11:09:04.217920519Z"
+    created: "2024-11-14T13:59:43.027719533Z"
     description: Generic Chart
     digest: 52cb6b15644723d01382c2cf5fd4e42e4f76967e82c352e23bb126de548792e6
     name: alertsservice
@@ -25,7 +25,7 @@ entries:
   alertsserviceui:
   - apiVersion: v2
     appVersion: 24.1114.713
-    created: "2024-11-14T11:09:04.21835032Z"
+    created: "2024-11-14T13:59:43.028078136Z"
     description: Generic Chart
     digest: 7735eb08b567e919a61a2fe7a802d0216b7a1c34f1831029d6ff235fdbd69640
     name: alertsserviceui
@@ -36,7 +36,7 @@ entries:
   allocationservice:
   - apiVersion: v2
     appVersion: 1.241114.0714
-    created: "2024-11-14T11:09:04.218759193Z"
+    created: "2024-11-14T13:59:43.028421725Z"
     description: Generic Chart
     digest: b1611cfe6b96054c1517b315b82f6a9d8868531a0123b4ce40a11de1271cc2df
     name: allocationservice
@@ -47,7 +47,7 @@ entries:
   brokerhub:
   - apiVersion: v2
     appVersion: 1.241114.1001
-    created: "2024-11-14T11:09:04.219091779Z"
+    created: "2024-11-14T13:59:43.028708Z"
     description: Generic Chart
     digest: 8f455c64c96ac669fc58fadde079bfc167b511cbd39385effaf92c4b8fe71f03
     name: brokerhub
@@ -57,19 +57,19 @@ entries:
     version: 1.241114.1001
   brokerhubui:
   - apiVersion: v2
-    appVersion: 24.1114.1050
-    created: "2024-11-14T11:09:04.219492757Z"
+    appVersion: 1.241114.1251
+    created: "2024-11-14T13:59:43.029052277Z"
     description: Generic Chart
-    digest: 207f512b32f2db7d776125f248f8ebddb46f2d368991c85a8938702469b2116c
+    digest: 07323539e4fd98172949b6a2244715f4a49d17b42e79272a0816d38aa81eeb97
     name: brokerhubui
     type: application
     urls:
     - https://openlm-helm.github.io/helmcharts/brokerhubui.tgz
-    version: 24.1114.1050
+    version: 1.241114.1251
   denialservice:
   - apiVersion: v2
     appVersion: 1.241114.0857
-    created: "2024-11-14T11:09:04.220274361Z"
+    created: "2024-11-14T13:59:43.029337112Z"
     description: Generic Chart
     digest: 138e7e2b2c8a8736e929a96fd1bc88a13fafa002ed91e43383686680012e3b6b
     name: denialservice
@@ -80,7 +80,7 @@ entries:
   licenseaccesscontrol:
   - apiVersion: v2
     appVersion: 24.1112.957
-    created: "2024-11-14T11:09:04.221418702Z"
+    created: "2024-11-14T13:59:43.029638662Z"
     description: Generic Chart
     digest: 2935850359403bad22921715f30bd584b4d50b40f19beb377eb13f8b241458f1
     name: licenseaccesscontrol
@@ -91,7 +91,7 @@ entries:
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 24.111.1159
-    created: "2024-11-14T11:09:04.222501791Z"
+    created: "2024-11-14T13:59:43.030202288Z"
     description: Generic Chart
     digest: abab35fa61d7b71c8a75d46b90a50c03e0ccd9f3e79935857ff55214a8609244
     name: openlm-config-generic
@@ -102,7 +102,7 @@ entries:
   servicenowalertintegration:
   - apiVersion: v2
     appVersion: 24.923.1146
-    created: "2024-11-14T11:09:04.223048452Z"
+    created: "2024-11-14T13:59:43.030487562Z"
     description: Generic Chart
     digest: d3c50e2d055cb90c23984d16253673e5f7e95b8b1c31e40ef82f65ee1655c3a4
     name: servicenowalertintegration
@@ -113,7 +113,7 @@ entries:
   usageservice:
   - apiVersion: v2
     appVersion: 1.241114.0932
-    created: "2024-11-14T11:09:04.223502459Z"
+    created: "2024-11-14T13:59:43.030793774Z"
     description: Generic Chart
     digest: ef8d7e69fda8b48517d931bf400ab191c6d6d678c5897e9b95a47328e2adb928
     name: usageservice
@@ -121,4 +121,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/usageservice.tgz
     version: 1.241114.0932
-generated: "2024-11-14T11:09:04.216841137Z"
+generated: "2024-11-14T13:59:43.026919765Z"
