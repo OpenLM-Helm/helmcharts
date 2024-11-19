@@ -3,7 +3,7 @@ entries:
   agentactivitymanager:
   - apiVersion: v2
     appVersion: 1.241113.0745
-    created: "2024-11-19T12:10:13.952195196Z"
+    created: "2024-11-19T12:41:19.437698736Z"
     description: Generic Chart
     digest: 33c2ba0995de412e19d77b424ef99c1d80f30595459320f9e1852bb4221c6fe5
     name: agentactivitymanager
@@ -14,7 +14,7 @@ entries:
   agentshub:
   - apiVersion: v2
     appVersion: 1.241119.0822
-    created: "2024-11-19T12:10:13.952579643Z"
+    created: "2024-11-19T12:41:19.438027216Z"
     description: Generic Chart
     digest: e96aa5ce07570a535f2a7fb315f75f5e46f38f574a015584c5fac7b65733eb21
     name: agentshub
@@ -25,7 +25,7 @@ entries:
   agentshubui:
   - apiVersion: v2
     appVersion: 1.241119.1009
-    created: "2024-11-19T12:10:13.953031409Z"
+    created: "2024-11-19T12:41:19.438384011Z"
     description: Generic Chart
     digest: 12b0871f2e8ff9b36466b6f3a62916bc349cee38ffa1cc96384c0c543e568002
     name: agentshubui
@@ -36,7 +36,7 @@ entries:
   alertsservice:
   - apiVersion: v2
     appVersion: 1.241113.0719
-    created: "2024-11-19T12:10:13.953444773Z"
+    created: "2024-11-19T12:41:19.438717459Z"
     description: Generic Chart
     digest: 52cb6b15644723d01382c2cf5fd4e42e4f76967e82c352e23bb126de548792e6
     name: alertsservice
@@ -47,7 +47,7 @@ entries:
   alertsserviceui:
   - apiVersion: v2
     appVersion: 24.1114.713
-    created: "2024-11-19T12:10:13.953838592Z"
+    created: "2024-11-19T12:41:19.439046549Z"
     description: Generic Chart
     digest: 7735eb08b567e919a61a2fe7a802d0216b7a1c34f1831029d6ff235fdbd69640
     name: alertsserviceui
@@ -58,7 +58,7 @@ entries:
   allocationservice:
   - apiVersion: v2
     appVersion: 1.241114.0714
-    created: "2024-11-19T12:10:13.954151177Z"
+    created: "2024-11-19T12:41:19.439610952Z"
     description: Generic Chart
     digest: b1611cfe6b96054c1517b315b82f6a9d8868531a0123b4ce40a11de1271cc2df
     name: allocationservice
@@ -69,7 +69,7 @@ entries:
   brokerhub:
   - apiVersion: v2
     appVersion: 1.241114.1001
-    created: "2024-11-19T12:10:13.954513603Z"
+    created: "2024-11-19T12:41:19.439915145Z"
     description: Generic Chart
     digest: 8f455c64c96ac669fc58fadde079bfc167b511cbd39385effaf92c4b8fe71f03
     name: brokerhub
@@ -80,7 +80,7 @@ entries:
   brokerhubconnector:
   - apiVersion: v2
     appVersion: 1.241114.1332
-    created: "2024-11-19T12:10:13.954807017Z"
+    created: "2024-11-19T12:41:19.440199528Z"
     description: Generic Chart
     digest: aa73f815fd66bbf2ab823777afaba5e4bd14f77c100aa1ed5bd5086e07db56e8
     name: brokerhubconnector
@@ -91,7 +91,7 @@ entries:
   brokerhubui:
   - apiVersion: v2
     appVersion: 1.241114.1251
-    created: "2024-11-19T12:10:13.955155943Z"
+    created: "2024-11-19T12:41:19.440519395Z"
     description: Generic Chart
     digest: 07323539e4fd98172949b6a2244715f4a49d17b42e79272a0816d38aa81eeb97
     name: brokerhubui
@@ -102,7 +102,7 @@ entries:
   denialservice:
   - apiVersion: v2
     appVersion: 1.241114.0857
-    created: "2024-11-19T12:10:13.955474525Z"
+    created: "2024-11-19T12:41:19.440934977Z"
     description: Generic Chart
     digest: 138e7e2b2c8a8736e929a96fd1bc88a13fafa002ed91e43383686680012e3b6b
     name: denialservice
@@ -113,7 +113,7 @@ entries:
   denialsui:
   - apiVersion: v2
     appVersion: 1.241115.0709
-    created: "2024-11-19T12:10:13.955827698Z"
+    created: "2024-11-19T12:41:19.441330841Z"
     description: Generic Chart
     digest: 1df2c74341f7479396ec37986bff55ebf8c1c62b413b7c325f7e7758356b390a
     name: denialsui
@@ -124,7 +124,7 @@ entries:
   enduserservices:
   - apiVersion: v2
     appVersion: 1.241119.1115
-    created: "2024-11-19T12:10:13.956108389Z"
+    created: "2024-11-19T12:41:19.44167178Z"
     description: Generic Chart
     digest: 1899b120da3fee9ec958c62787af366681b8e26ca033e7a00125d7dea1e487c8
     name: enduserservices
@@ -135,7 +135,7 @@ entries:
   featureservice:
   - apiVersion: v2
     appVersion: 1.241115.0911
-    created: "2024-11-19T12:10:13.956369469Z"
+    created: "2024-11-19T12:41:19.443458019Z"
     description: Generic Chart
     digest: 82807da8cc4ed39cfb5ce30c6c980fb140cabde2ea23215da1d0638e6811aa68
     name: featureservice
@@ -146,7 +146,7 @@ entries:
   identity:
   - apiVersion: v2
     appVersion: 1.241119.0748
-    created: "2024-11-19T12:10:13.956735392Z"
+    created: "2024-11-19T12:41:19.444230376Z"
     description: Generic Chart
     digest: bfcf81c303f809eef07aa4b05b7c4a80eb377d0ccf3f1deec392ef9c1f569197
     name: identity
@@ -157,7 +157,7 @@ entries:
   identityapi:
   - apiVersion: v2
     appVersion: 1.241119.0758
-    created: "2024-11-19T12:10:13.956999684Z"
+    created: "2024-11-19T12:41:19.444714775Z"
     description: Generic Chart
     digest: 04a85ebb79295fc1daf9a6ee2c2077adf4ad2261abe6613dfd991b9b3ae7b55c
     name: identityapi
@@ -168,7 +168,7 @@ entries:
   licenseaccesscontrol:
   - apiVersion: v2
     appVersion: 24.1112.957
-    created: "2024-11-19T12:10:13.957265151Z"
+    created: "2024-11-19T12:41:19.445131632Z"
     description: Generic Chart
     digest: 2935850359403bad22921715f30bd584b4d50b40f19beb377eb13f8b241458f1
     name: licenseaccesscontrol
@@ -179,7 +179,7 @@ entries:
   licenseallocationsui:
   - apiVersion: v2
     appVersion: 1.241118.0633
-    created: "2024-11-19T12:10:13.957623416Z"
+    created: "2024-11-19T12:41:19.445682429Z"
     description: Generic Chart
     digest: 11093d7ad263b542e7d7715521f9e6ca3f72d52c51b66c0468b65f8fb18905fa
     name: licenseallocationsui
@@ -190,7 +190,7 @@ entries:
   licenseserversui:
   - apiVersion: v2
     appVersion: 1.241118.0744
-    created: "2024-11-19T12:10:13.958042591Z"
+    created: "2024-11-19T12:41:19.446272695Z"
     description: Generic Chart
     digest: d7ced06f252f3379919f3b66c28ba3ff5ebc1390093a3c468d6c2dca16e0d81e
     name: licenseserversui
@@ -201,7 +201,7 @@ entries:
   licensesui:
   - apiVersion: v2
     appVersion: 1.241118.0830
-    created: "2024-11-19T12:10:13.958440723Z"
+    created: "2024-11-19T12:41:19.446831177Z"
     description: Generic Chart
     digest: 1a27670f8c823a8461bdaf554bb558986a4d997b98b2c3ef2d6d90fbb996e144
     name: licensesui
@@ -212,7 +212,7 @@ entries:
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 24.1118.1233
-    created: "2024-11-19T12:10:13.959056915Z"
+    created: "2024-11-19T12:41:19.447773275Z"
     description: Generic Chart
     digest: 6cd7c3d8132f3ab88c90197fb9eff94fbfe91f67ba40079a16b476407762f1e2
     name: openlm-config-generic
@@ -223,7 +223,7 @@ entries:
   operationalapi:
   - apiVersion: v2
     appVersion: 1.241118.1128
-    created: "2024-11-19T12:10:13.959347205Z"
+    created: "2024-11-19T12:41:19.448131536Z"
     description: Generic Chart
     digest: a1866444e353e57f99ee612eec8ab4085b2902e4cd708ef273473e96cf65cc40
     name: operationalapi
@@ -234,7 +234,7 @@ entries:
   personaldashboard:
   - apiVersion: v2
     appVersion: 1.241119.1149
-    created: "2024-11-19T12:10:13.960101979Z"
+    created: "2024-11-19T12:41:19.448567567Z"
     description: Generic Chart
     digest: 4016a7f7f0e40ffbab5fc02196c2408c2849d7d9c71bc1e4f56eb5506a51cba6
     name: personaldashboard
@@ -242,10 +242,21 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/personaldashboard.tgz
     version: 1.241119.1149
+  productsserviceui:
+  - apiVersion: v2
+    appVersion: 1.241119.1152
+    created: "2024-11-19T12:41:19.449420919Z"
+    description: Generic Chart
+    digest: e32e9a03de12cc00b2783fd62040c7fd0aa5cdf6f724dc2b2c623dd870a620d4
+    name: productsserviceui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/productsserviceui.tgz
+    version: 1.241119.1152
   server:
   - apiVersion: v2
     appVersion: 1.241118.1234
-    created: "2024-11-19T12:10:13.961086287Z"
+    created: "2024-11-19T12:41:19.449715715Z"
     description: Generic Chart
     digest: 4e7aaddf73de3fef7c195dd8c96d7bc8541b81e5f767cf4cea3937f865bc6079
     name: server
@@ -256,7 +267,7 @@ entries:
   servicenowalertintegration:
   - apiVersion: v2
     appVersion: 24.923.1146
-    created: "2024-11-19T12:10:13.96136795Z"
+    created: "2024-11-19T12:41:19.449997599Z"
     description: Generic Chart
     digest: d3c50e2d055cb90c23984d16253673e5f7e95b8b1c31e40ef82f65ee1655c3a4
     name: servicenowalertintegration
@@ -267,7 +278,7 @@ entries:
   uiconfigurationservice:
   - apiVersion: v2
     appVersion: 1.241114.1138
-    created: "2024-11-19T12:10:13.961679058Z"
+    created: "2024-11-19T12:41:19.450258068Z"
     description: Generic Chart
     digest: bb6f1923c68b78c8751edf7264f29ebf4e35f2f10151146461b751d9c3242da8
     name: uiconfigurationservice
@@ -278,7 +289,7 @@ entries:
   usageservice:
   - apiVersion: v2
     appVersion: 1.241114.0932
-    created: "2024-11-19T12:10:13.96195128Z"
+    created: "2024-11-19T12:41:19.450554806Z"
     description: Generic Chart
     digest: ef8d7e69fda8b48517d931bf400ab191c6d6d678c5897e9b95a47328e2adb928
     name: usageservice
@@ -286,4 +297,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/usageservice.tgz
     version: 1.241114.0932
-generated: "2024-11-19T12:10:13.950523055Z"
+generated: "2024-11-19T12:41:19.437041893Z"
