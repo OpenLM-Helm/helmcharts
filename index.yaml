@@ -871,6 +871,489 @@ entries:
     version: 25.115.747
   openlm_mono:
   - apiVersion: v2
+    appVersion: 1.260327.0916
+    created: "2026-03-27T09:20:02.585071388Z"
+    dependencies:
+    - condition: touchpointeventsui.enabled
+      name: touchpointeventsui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250926.0717
+    - condition: anonymizationui.enabled
+      name: anonymizationui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260213.0750
+    - condition: licenseaccesscontrolui.enabled
+      name: licenseaccesscontrolui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.0727
+    - condition: processmanager.enabled
+      name: processmanager
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0721
+    - condition: servicenowalertintegration.enabled
+      name: servicenowalertintegration
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.1309
+    - condition: reportingdatarecovery.enabled
+      name: reportingdatarecovery
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1659
+    - condition: flexlmcompare.enabled
+      name: flexlmcompare
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250522.1334
+    - condition: softwareassetmanagementui.enabled
+      name: softwareassetmanagementui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0840
+    - condition: denialservice.enabled
+      name: denialservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1547
+    - condition: costapi.enabled
+      name: costapi
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250603.1222
+    - condition: dssui.enabled
+      name: dssui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.0853
+    - condition: alertsservice.enabled
+      name: alertsservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260304.0855
+    - condition: personaldashboard.enabled
+      name: personaldashboard
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.1021
+    - condition: licensemanagerui.enabled
+      name: licensemanagerui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260206.1337
+    - condition: ticketingnotification.enabled
+      name: ticketingnotification
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0925
+    - condition: agentshubui.enabled
+      name: agentshubui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260225.1224
+    - condition: licenseconcurency.enabled
+      name: licenseconcurency
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251002.1212
+    - condition: operationalapi.enabled
+      name: operationalapi
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260308.0941
+    - condition: dsconnector.enabled
+      name: dsconnector
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250720.0738
+    - condition: openlm-gateway.enabled
+      name: openlm-gateway
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260211.1037
+    - condition: licensefilesui.enabled
+      name: licensefilesui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260302.1335
+    - condition: donglemonitoringui.enabled
+      name: donglemonitoringui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260129.1537
+    - condition: projectsserviceui.enabled
+      name: projectsserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.0853
+    - condition: brokerhubconnector.enabled
+      name: brokerhubconnector
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260310.2156
+    - condition: openlm.enabled
+      name: openlm
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260114.0851
+    - condition: atlassianintegrationui.enabled
+      name: atlassianintegrationui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250905.0007
+    - condition: projectsservicemigration.enabled
+      name: projectsservicemigration
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260226.0802
+    - condition: redis.enabled
+      name: redis
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 25.617.422
+    - condition: sparkmongo.enabled
+      name: sparkmongo
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260219.1438
+    - condition: brokerhub.enabled
+      name: brokerhub
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260310.0604
+    - condition: licenseserversui.enabled
+      name: licenseserversui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.1443
+    - condition: auditservice.enabled
+      name: auditservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260116.1439
+    - condition: agentactivitymanager.enabled
+      name: agentactivitymanager
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.0837
+    - condition: cloudbroker.enabled
+      name: cloudbroker
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.0836
+    - condition: vlm.enabled
+      name: vlm
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260112.1349
+    - condition: customerauditparser.enabled
+      name: customerauditparser
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250415.1548
+    - condition: mlprediction.enabled
+      name: mlprediction
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260203.1745
+    - condition: navigationui.enabled
+      name: navigationui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260310.1137
+    - condition: dbconfigurationtoolui.enabled
+      name: dbconfigurationtoolui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250225.0735
+    - condition: identitydiscovery.enabled
+      name: identitydiscovery
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250901.1542
+    - condition: licenseaccesscontrol.enabled
+      name: licenseaccesscontrol
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260302.1050
+    - condition: sparkanonymization.enabled
+      name: sparkanonymization
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260213.0747
+    - condition: identityfuse.enabled
+      name: identityfuse
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250225.0707
+    - condition: softwareassetmanagement.enabled
+      name: softwareassetmanagement
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251110.0624
+    - condition: alldbupgradeapi.enabled
+      name: alldbupgradeapi
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1228
+    - condition: licensesui.enabled
+      name: licensesui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260302.0918
+    - condition: cloudbrokerui.enabled
+      name: cloudbrokerui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.0647
+    - condition: pushnotification.enabled
+      name: pushnotification
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250930.0806
+    - condition: officetimecalculation.enabled
+      name: officetimecalculation
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251209.0538
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 7.5.2
+    - condition: sessioncreator.enabled
+      name: sessioncreator
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260129.1535
+    - condition: productsserviceui.enabled
+      name: productsserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0733
+    - condition: alertsserviceui.enabled
+      name: alertsserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260217.1545
+    - condition: dss.enabled
+      name: dss
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260318.0904
+    - condition: useravailibility.enabled
+      name: useravailibility
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250915.1406
+    - condition: assistance.enabled
+      name: assistance
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251204.0807
+    - condition: usersandgroupsserviceui.enabled
+      name: usersandgroupsserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250822.0920
+    - condition: servicenowalertintegrationui.enabled
+      name: servicenowalertintegrationui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260116.0743
+    - condition: homepageui.enabled
+      name: homepageui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0727
+    - condition: donglemonitoring.enabled
+      name: donglemonitoring
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250818.1034
+    - condition: licenseallocationsui.enabled
+      name: licenseallocationsui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260302.1319
+    - condition: enduserservices.enabled
+      name: enduserservices
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0732
+    - condition: projectsserviceapi.enabled
+      name: projectsserviceapi
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260305.0857
+    - condition: notificationui.enabled
+      name: notificationui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260127.1035
+    - condition: featureservice.enabled
+      name: featureservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250806.1045
+    - condition: kafkainitpod.enabled
+      name: kafkainitpod
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260304.1105
+    - condition: mldatacollection.enabled
+      name: mldatacollection
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260203.1744
+    - condition: atlassianintegration.enabled
+      name: atlassianintegration
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250722.0643
+    - condition: denialsanalysispredictionservice.enabled
+      name: denialsanalysispredictionservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0925
+    - condition: sparkpgdb.enabled
+      name: sparkpgdb
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260306.1004
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 6.0.4
+    - condition: licensemanager.enabled
+      name: licensemanager
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1307
+    - condition: kafka-rest-proxy.enabled
+      name: kafka-rest-proxy
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 0.0.0
+    - condition: servicenowcreds.enabled
+      name: servicenowcreds
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0948
+    - condition: anonymization.enabled
+      name: anonymization
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260213.0812
+    - condition: identityapi.enabled
+      name: identityapi
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0719
+    - condition: identityui.enabled
+      name: identityui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0709
+    - condition: usageservice.enabled
+      name: usageservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1543
+    - condition: licenseharvester.enabled
+      name: licenseharvester
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260129.1535
+    - condition: processsessionsui.enabled
+      name: processsessionsui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251105.1550
+    - condition: productservice.enabled
+      name: productservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0800
+    - condition: server.enabled
+      name: server
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0909
+    - condition: subscriptionoptimizer.enabled
+      name: subscriptionoptimizer
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0925
+    - condition: identityalignmentui.enabled
+      name: identityalignmentui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260213.1340
+    - condition: disposabletokens.enabled
+      name: disposabletokens
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1547
+    - condition: vlmui.enabled
+      name: vlmui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250908.0817
+    - condition: uiconfigurationserviceui.enabled
+      name: uiconfigurationserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250521.0008
+    - condition: auditserviceui.enabled
+      name: auditserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251110.1133
+    - condition: brokerhubui.enabled
+      name: brokerhubui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1120
+    - condition: agentshub.enabled
+      name: agentshub
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260311.1008
+    - condition: processmanagerui.enabled
+      name: processmanagerui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0721
+    - condition: licensefilecomparatormiddleware.enabled
+      name: licensefilecomparatormiddleware
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251105.0618
+    - condition: notificationgateway.enabled
+      name: notificationgateway
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250930.0806
+    - condition: usersandgroupsservice.enabled
+      name: usersandgroupsservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.1018
+    - condition: kafka-ui.enabled
+      name: kafka-ui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 0.7.1
+    - condition: usageui.enabled
+      name: usageui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1605
+    - condition: reportingdataapi.enabled
+      name: reportingdataapi
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260310.0953
+    - condition: uiconfigurationservice.enabled
+      name: uiconfigurationservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250915.1403
+    - condition: denialsui.enabled
+      name: denialsui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250529.1339
+    - condition: agentactivitymanagerui.enabled
+      name: agentactivitymanagerui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260225.0728
+    - condition: navigationservice.enabled
+      name: navigationservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260304.1251
+    - condition: homepage.enabled
+      name: homepage
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260213.1337
+    - condition: denialsaggregation.enabled
+      name: denialsaggregation
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260317.0642
+    - condition: sparkmonitoring.enabled
+      name: sparkmonitoring
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260226.0843
+    - condition: apigateway.enabled
+      name: apigateway
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250316.1039
+    - condition: identity.enabled
+      name: identity
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260212.1306
+    - condition: zohocrmlistener.enabled
+      name: zohocrmlistener
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260126.0851
+    - condition: mondayintegration.enabled
+      name: mondayintegration
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250306.0812
+    - condition: allocationservice.enabled
+      name: allocationservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260309.1543
+    - condition: complianceserviceui.enabled
+      name: complianceserviceui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250930.0628
+    - condition: licensefilesmanagement.enabled
+      name: licensefilesmanagement
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260312.0649
+    - condition: bidbmigrationtool.enabled
+      name: bidbmigrationtool
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.251202.0758
+    - condition: costapiui.enabled
+      name: costapiui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250603.1404
+    - condition: redisui.enabled
+      name: redisui
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.14.0
+    - condition: complianceservice.enabled
+      name: complianceservice
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250930.0628
+    - condition: identityalignment.enabled
+      name: identityalignment
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260304.1627
+    - condition: emailnotification.enabled
+      name: emailnotification
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.250930.0805
+    - condition: sparkmssql.enabled
+      name: sparkmssql
+      repository: https://openlm-helm.github.io/helmcharts
+      version: 1.260316.0605
+    description: Generic Chart
+    digest: 4e623daec8c10aa3b8e675863a9ae55f055924e013610e483e86b9f1ada65980
+    name: openlm_mono
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/openlm_mono.tgz
+    version: 1.260327.0916
+  - apiVersion: v2
     appVersion: 1.260327.0847
     created: "2026-03-27T08:50:12.628814052Z"
     dependencies:
@@ -1793,4 +2276,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-03-27T08:50:12.424253978Z"
+generated: "2026-03-27T09:20:02.441524469Z"
