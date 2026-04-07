@@ -46,6 +46,16 @@ entries:
     version: 1.260225.1224
   alertsservice:
   - apiVersion: v2
+    appVersion: 1.260407.1218
+    created: "2026-04-07T12:46:46.463418253Z"
+    description: Generic Chart
+    digest: f1b2a84dd60fcbb8d75ea65adfa0249878d1051e52100ce9a774503e350ac2d2
+    name: alertsservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/alertsservice.tgz
+    version: 1.260407.1218
+  - apiVersion: v2
     appVersion: 1.260304.0855
     created: "2026-03-27T08:50:12.428308403Z"
     description: Generic Chart
@@ -6170,4 +6180,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-04-06T13:34:31.167687625Z"
+generated: "2026-04-07T12:46:46.462420067Z"
