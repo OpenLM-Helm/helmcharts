@@ -7084,6 +7084,16 @@ entries:
     version: 1.260309.1605
   useravailibility:
   - apiVersion: v2
+    appVersion: 1.260411.0628
+    created: "2026-04-11T06:36:36.707021374Z"
+    description: Generic Chart
+    digest: 8dd045ecf141faf39a84d0685c868082c22efceccfdd5005f922482d031bcfe5
+    name: useravailibility
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/useravailibility.tgz
+    version: 1.260411.0628
+  - apiVersion: v2
     appVersion: 1.250915.1406
     created: "2026-03-27T08:50:12.645407724Z"
     description: Generic Chart
@@ -7148,4 +7158,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-04-09T09:09:16.799408248Z"
+generated: "2026-04-11T06:36:36.706433292Z"
