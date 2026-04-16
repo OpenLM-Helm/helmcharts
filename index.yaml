@@ -6894,6 +6894,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/samcatalog.tgz
     version: 1.260325.1141
+  samcatalogenrichment:
+  - apiVersion: v2
+    appVersion: 1.260331.0710
+    created: "2026-04-16T13:11:34.53859064Z"
+    description: Generic Chart
+    digest: 507eafd4e13cb7c136f11e431f667ae0c5b258b6cec5499b00d09305990f7e76
+    name: samcatalogenrichment
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
+    version: 1.260331.0710
   server:
   - apiVersion: v2
     appVersion: 1.260312.0909
@@ -7229,4 +7240,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-04-16T13:09:19.246943325Z"
+generated: "2026-04-16T13:11:34.53782714Z"
