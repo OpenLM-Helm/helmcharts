@@ -6805,6 +6805,16 @@ entries:
     version: 1.251105.1550
   productservice:
   - apiVersion: v2
+    appVersion: 1.260423.0721
+    created: "2026-04-23T07:45:37.106355828Z"
+    description: Generic Chart
+    digest: 63055103f76cc130da29414618949650c4bdd0904d3a343554da65cc53a41aff
+    name: productservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/productservice.tgz
+    version: 1.260423.0721
+  - apiVersion: v2
     appVersion: 1.260312.0800
     created: "2026-03-27T08:50:12.631724311Z"
     description: Generic Chart
@@ -7301,4 +7311,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-04-23T07:27:53.785555837Z"
+generated: "2026-04-23T07:45:37.105672892Z"
