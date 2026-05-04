@@ -166,6 +166,16 @@ entries:
     version: 1.250905.0007
   auditservice:
   - apiVersion: v2
+    appVersion: 1.260504.1330
+    created: "2026-05-04T13:42:39.469039723Z"
+    description: Generic Chart
+    digest: 7b3de6cff9b009de9942b06b03aae7143a2d61aa70e039b12eadd2688470f3c6
+    name: auditservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/auditservice.tgz
+    version: 1.260504.1330
+  - apiVersion: v2
     appVersion: 1.260504.1141
     created: "2026-05-04T12:41:02.476548842Z"
     description: Generic Chart
@@ -7371,4 +7381,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-04T12:41:38.0467657Z"
+generated: "2026-05-04T13:42:39.468266863Z"
