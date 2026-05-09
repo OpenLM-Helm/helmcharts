@@ -7500,6 +7500,16 @@ entries:
     version: 1.14.0
   reportingdataapi:
   - apiVersion: v2
+    appVersion: 1.260509.1534
+    created: "2026-05-09T18:55:00.000447605Z"
+    description: Generic Chart
+    digest: 23cc275d73e703d60c29db67259a3f3ac483a6384d39eaa5a3b1b27c4f997954
+    name: reportingdataapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/reportingdataapi.tgz
+    version: 1.260509.1534
+  - apiVersion: v2
     appVersion: 1.260504.1500
     created: "2026-05-04T15:12:36.657819365Z"
     description: Generic Chart
@@ -7988,4 +7998,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-08T20:09:02.612746241Z"
+generated: "2026-05-09T18:54:59.999831494Z"
