@@ -98,6 +98,16 @@ entries:
     version: 1.260217.1545
   alldbupgradeapi:
   - apiVersion: v2
+    appVersion: 1.260331.1035
+    created: "2026-05-11T09:26:29.083854762Z"
+    description: Generic Chart
+    digest: 1bf9687e1a427f61521661ce8e9d108ed7a1c6a3ad2879cdac1706d721949b12
+    name: alldbupgradeapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/alldbupgradeapi.tgz
+    version: 1.260331.1035
+  - apiVersion: v2
     appVersion: 1.260309.1228
     created: "2026-03-27T08:50:12.429411442Z"
     description: Generic Chart
@@ -8535,4 +8545,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-11T07:05:59.176193342Z"
+generated: "2026-05-11T09:26:29.083249016Z"
