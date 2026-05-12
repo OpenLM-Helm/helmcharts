@@ -287,6 +287,16 @@ entries:
     version: 1.260116.1439
   auditserviceui:
   - apiVersion: v2
+    appVersion: 1.260512.1049
+    created: "2026-05-12T11:45:25.540895329Z"
+    description: Generic Chart
+    digest: 1ba8f1532e77f1ede4d09daa6360f369b18a8ed35c837b838a213950304b84a2
+    name: auditserviceui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/auditserviceui.tgz
+    version: 1.260512.1049
+  - apiVersion: v2
     appVersion: 1.260504.1330
     created: "2026-05-04T14:12:25.42566425Z"
     description: Generic Chart
@@ -8605,4 +8615,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-12T11:43:55.913025982Z"
+generated: "2026-05-12T11:45:25.539936313Z"
