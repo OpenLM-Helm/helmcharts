@@ -349,6 +349,16 @@ entries:
     version: 1.251202.0758
   brokerhub:
   - apiVersion: v2
+    appVersion: 1.260512.0902
+    created: "2026-05-13T08:48:11.845843164Z"
+    description: Generic Chart
+    digest: ebcbd204ebb499e6d95f1d90a01e112d2f83a5142f6b90cae6694b83b3341605
+    name: brokerhub
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/brokerhub.tgz
+    version: 1.260512.0902
+  - apiVersion: v2
     appVersion: 1.260310.0604
     created: "2026-03-27T08:50:12.435936552Z"
     description: Generic Chart
@@ -8615,4 +8625,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-12T11:45:25.539936313Z"
+generated: "2026-05-13T08:48:11.845215094Z"
