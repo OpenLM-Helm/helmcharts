@@ -8077,9 +8077,9 @@ entries:
   redisui:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-03-27T08:50:12.634593573Z"
+    created: "2026-05-14T08:41:03.34528876Z"
     description: Generic Chart
-    digest: 17a076af2cf2e613f84532c41993eccb7683a9bca2c11c2b38b64ee061fba2e7
+    digest: 7ebb35a1ca7502544fdbff276e9b99cec22fcb03beec07f8275617049d955eb9
     name: redisui
     type: application
     urls:
@@ -8655,4 +8655,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-14T08:34:04.092651448Z"
+generated: "2026-05-14T08:41:03.344167485Z"
