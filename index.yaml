@@ -744,9 +744,9 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 7.5.2
-    created: "2026-03-27T08:50:12.45595984Z"
+    created: "2026-05-14T08:34:04.094232511Z"
     description: Generic Chart
-    digest: d5e7572202b7a4cb9a19680928106312cbd5dfc63b4976046a7c114fc847da3c
+    digest: 744cd6cf6258aabb4b097135e9dfb1dc8c5685add10ee702b279c87b75a55b7c
     name: kafka
     type: application
     urls:
@@ -8655,4 +8655,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-14T07:51:45.144527345Z"
+generated: "2026-05-14T08:34:04.092651448Z"
