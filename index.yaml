@@ -968,6 +968,16 @@ entries:
     version: 1.260302.0918
   mldatacollection:
   - apiVersion: v2
+    appVersion: 1.260514.1049
+    created: "2026-05-14T11:48:38.98160033Z"
+    description: Generic Chart
+    digest: 936f7a12a2efce63113f5f6caadb568427aa4c59c208f5e810971e508b9c3874
+    name: mldatacollection
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
+    version: 1.260514.1049
+  - apiVersion: v2
     appVersion: 1.260514.0840
     created: "2026-05-14T09:04:16.704939465Z"
     description: Generic Chart
@@ -8675,4 +8685,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-14T10:50:41.168832419Z"
+generated: "2026-05-14T11:48:38.977795886Z"
