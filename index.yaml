@@ -794,6 +794,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/kafkainitpod.tgz
     version: 1.260304.1105
+  kafkatosqsintegration:
+  - apiVersion: v2
+    appVersion: 1.260514.1225
+    created: "2026-05-15T11:55:21.591734569Z"
+    description: Generic Chart
+    digest: 8e9cb48bdafce3bed06d5547decdf663fd196b2510dc34ccde4aafdb541ee282
+    name: kafkatosqsintegration
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/kafkatosqsintegration.tgz
+    version: 1.260514.1225
   licenseaccesscontrol:
   - apiVersion: v2
     appVersion: 1.260316.0925
@@ -8736,4 +8747,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-15T11:52:10.86056569Z"
+generated: "2026-05-15T11:55:21.591055441Z"
