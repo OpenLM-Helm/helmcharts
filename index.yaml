@@ -8135,6 +8135,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/redisui.tgz
     version: 1.14.0
+  reportconnector:
+  - apiVersion: v2
+    appVersion: 1.260128.0916
+    created: "2026-05-15T11:52:10.861480473Z"
+    description: Generic Chart
+    digest: bf2f1cb5037ad2eb7751ba6634670ddba9738a12916610ebbc566687259e0fce
+    name: reportconnector
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/reportconnector.tgz
+    version: 1.260128.0916
   reportingdataapi:
   - apiVersion: v2
     appVersion: 1.260510.0710
@@ -8725,4 +8736,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-15T11:49:05.31426134Z"
+generated: "2026-05-15T11:52:10.86056569Z"
