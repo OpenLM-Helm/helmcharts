@@ -850,6 +850,16 @@ entries:
     version: 1.251002.1212
   licensefilecomparatormiddleware:
   - apiVersion: v2
+    appVersion: 1.260318.1133
+    created: "2026-05-15T11:49:05.314956434Z"
+    description: Generic Chart
+    digest: 26be5c8042158ed47e19da351eb43f5cad64280305fda713273d101dbb03cf24
+    name: licensefilecomparatormiddleware
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licensefilecomparatormiddleware.tgz
+    version: 1.260318.1133
+  - apiVersion: v2
     appVersion: 1.251105.0618
     created: "2026-03-27T08:50:12.459579278Z"
     description: Generic Chart
@@ -8715,4 +8725,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-14T12:55:48.405639335Z"
+generated: "2026-05-15T11:49:05.31426134Z"
