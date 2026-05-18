@@ -8303,6 +8303,16 @@ entries:
     version: 1.260331.0710
   samcatalogui:
   - apiVersion: v2
+    appVersion: 1.260514.0951
+    created: "2026-05-18T07:12:01.020854032Z"
+    description: Generic Chart
+    digest: 6314e43c41418082926b6156717576ea37479f9b31ce1b648f9a2f47d44db430
+    name: samcatalogui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/samcatalogui.tgz
+    version: 1.260514.0951
+  - apiVersion: v2
     appVersion: 1.260507.0834
     created: "2026-05-11T12:41:22.784538491Z"
     description: Generic Chart
@@ -8768,4 +8778,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-18T07:09:43.390580168Z"
+generated: "2026-05-18T07:12:01.020107123Z"
