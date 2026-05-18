@@ -34,6 +34,16 @@ entries:
     version: 1.260225.0728
   agentshub:
   - apiVersion: v2
+    appVersion: 1.260515.1612
+    created: "2026-05-18T09:39:33.37935747Z"
+    description: Generic Chart
+    digest: c554cf7c12990795e24607b93c1f5bc9eba3da102e7599e8e47e904b0f2127e8
+    name: agentshub
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/agentshub.tgz
+    version: 1.260515.1612
+  - apiVersion: v2
     appVersion: 1.260311.1008
     created: "2026-03-27T08:50:12.426800461Z"
     description: Generic Chart
@@ -8798,4 +8808,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-18T09:39:16.078354264Z"
+generated: "2026-05-18T09:39:33.378487694Z"
