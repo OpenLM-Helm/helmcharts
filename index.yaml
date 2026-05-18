@@ -213,6 +213,16 @@ entries:
     version: 1.250316.1039
   assistance:
   - apiVersion: v2
+    appVersion: 1.260515.0610
+    created: "2026-05-18T11:56:33.293330559Z"
+    description: Generic Chart
+    digest: 6eda676a89b0cf748345665aa25d2a62b12beda5f12fda93af23dbc399d23819
+    name: assistance
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/assistance.tgz
+    version: 1.260515.0610
+  - apiVersion: v2
     appVersion: 1.251204.0807
     created: "2026-03-27T08:50:12.432144927Z"
     description: Generic Chart
@@ -8828,4 +8838,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-18T09:44:27.358628145Z"
+generated: "2026-05-18T11:56:33.29232184Z"
