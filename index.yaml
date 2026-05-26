@@ -1387,6 +1387,16 @@ entries:
     version: 1.260127.1035
   officetimecalculation:
   - apiVersion: v2
+    appVersion: 1.260526.1259
+    created: "2026-05-26T14:48:33.125628264Z"
+    description: Generic Chart
+    digest: fa000a2f5cbca875d99f242f269c96b86aac84a2c694c4434177e547983e156f
+    name: officetimecalculation
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/officetimecalculation.tgz
+    version: 1.260526.1259
+  - apiVersion: v2
     appVersion: 1.251209.0538
     created: "2026-03-27T08:50:12.467435695Z"
     description: Generic Chart
@@ -9108,4 +9118,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-26T13:12:04.943146765Z"
+generated: "2026-05-26T14:48:33.124819546Z"
