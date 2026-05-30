@@ -1324,6 +1324,16 @@ entries:
     version: 1.260302.1335
   licenseharvester:
   - apiVersion: v2
+    appVersion: 1.260519.0845
+    created: "2026-05-30T06:10:24.253573049Z"
+    description: Generic Chart
+    digest: 8fb55bdeff9c094ab7676ec4c285039607142ae18d00136c4385c0473c88c124
+    name: licenseharvester
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licenseharvester.tgz
+    version: 1.260519.0845
+  - apiVersion: v2
     appVersion: 1.260129.1535
     created: "2026-03-27T08:50:12.460969269Z"
     description: Generic Chart
@@ -9358,4 +9368,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-30T06:07:41.488873729Z"
+generated: "2026-05-30T06:10:24.252834953Z"
