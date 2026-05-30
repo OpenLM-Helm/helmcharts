@@ -943,6 +943,16 @@ entries:
     version: 1.250806.1045
   flexlmcompare:
   - apiVersion: v2
+    appVersion: 1.250729.0847
+    created: "2026-05-30T05:03:55.389415758Z"
+    description: Generic Chart
+    digest: c279f8f3189532c348647aaabeb9b74ba9f9cb47624d022ef8d989267bca679a
+    name: flexlmcompare
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/flexlmcompare.tgz
+    version: 1.250729.0847
+  - apiVersion: v2
     appVersion: 1.250522.1334
     created: "2026-03-27T08:50:12.448444107Z"
     description: Generic Chart
@@ -9238,4 +9248,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-30T05:02:32.84531737Z"
+generated: "2026-05-30T05:03:55.38871732Z"
