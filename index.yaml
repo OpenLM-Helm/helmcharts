@@ -1081,6 +1081,16 @@ entries:
     version: 1.250901.1542
   identityfuse:
   - apiVersion: v2
+    appVersion: 1.260515.0606
+    created: "2026-05-30T05:13:32.639658895Z"
+    description: Generic Chart
+    digest: d3ea37030866504b70a326fdc1a68839e1cc14bd55ecac97e3d067cdd0cd9993
+    name: identityfuse
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/identityfuse.tgz
+    version: 1.260515.0606
+  - apiVersion: v2
     appVersion: 1.250225.0707
     created: "2026-03-27T08:50:12.4525663Z"
     description: Generic Chart
@@ -9308,4 +9318,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-30T05:12:58.009359874Z"
+generated: "2026-05-30T05:13:32.638941001Z"
