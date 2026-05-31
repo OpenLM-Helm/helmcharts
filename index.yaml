@@ -8599,6 +8599,16 @@ entries:
     version: 1.260312.0721
   processsessionsui:
   - apiVersion: v2
+    appVersion: 1.260511.1036
+    created: "2026-05-31T06:06:43.932198779Z"
+    description: Generic Chart
+    digest: d6838c8675624f6e1e7b7e9c2a84bdd943e9a63be8b687a9cb1f669c046cbd1e
+    name: processsessionsui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/processsessionsui.tgz
+    version: 1.260511.1036
+  - apiVersion: v2
     appVersion: 1.251105.1550
     created: "2026-03-27T08:50:12.631181331Z"
     description: Generic Chart
@@ -9438,4 +9448,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:05:33.193798691Z"
+generated: "2026-05-31T06:06:43.931490784Z"
