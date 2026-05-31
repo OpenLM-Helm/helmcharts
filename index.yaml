@@ -1573,6 +1573,16 @@ entries:
     version: 6.0.4
   navigationservice:
   - apiVersion: v2
+    appVersion: 1.260527.0659
+    created: "2026-05-31T05:55:21.717475585Z"
+    description: Generic Chart
+    digest: 998c19ac312f5ba40c73a01fe2f3ca6d95e4adbaa8459d54c22ef15ad0aca753
+    name: navigationservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/navigationservice.tgz
+    version: 1.260527.0659
+  - apiVersion: v2
     appVersion: 1.260422.1413
     created: "2026-04-23T07:27:53.786084959Z"
     description: Generic Chart
@@ -9388,4 +9398,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T05:54:05.01604806Z"
+generated: "2026-05-31T05:55:21.716715792Z"
