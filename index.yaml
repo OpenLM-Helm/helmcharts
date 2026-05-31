@@ -9317,6 +9317,16 @@ entries:
     version: 1.260312.0925
   ticketingnotification:
   - apiVersion: v2
+    appVersion: 1.260521.1358
+    created: "2026-05-31T06:43:28.13128234Z"
+    description: Generic Chart
+    digest: 89050d59e247198c44f5b4ffa209c97e306639b67681136c2da3b774bffbe4b3
+    name: ticketingnotification
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/ticketingnotification.tgz
+    version: 1.260521.1358
+  - apiVersion: v2
     appVersion: 1.260312.0925
     created: "2026-03-27T08:50:12.641590666Z"
     description: Generic Chart
@@ -9648,4 +9658,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:42:32.503883385Z"
+generated: "2026-05-31T06:43:28.130619987Z"
