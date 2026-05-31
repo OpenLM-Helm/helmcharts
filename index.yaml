@@ -9202,6 +9202,16 @@ entries:
     version: 1.260213.0747
   sparkmongo:
   - apiVersion: v2
+    appVersion: 1.260525.1650
+    created: "2026-05-31T06:30:10.221112925Z"
+    description: Generic Chart
+    digest: 181c047f01ee22f32046e52a73f831c28b8a134bd3c76941405a56989861dc9a
+    name: sparkmongo
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/sparkmongo.tgz
+    version: 1.260525.1650
+  - apiVersion: v2
     appVersion: 1.260219.1438
     created: "2026-03-27T08:50:12.638913274Z"
     description: Generic Chart
@@ -9568,4 +9578,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:27:08.586375585Z"
+generated: "2026-05-31T06:30:10.220356775Z"
