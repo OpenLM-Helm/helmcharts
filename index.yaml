@@ -8733,6 +8733,16 @@ entries:
     version: 1.260305.0857
   projectsservicemigration:
   - apiVersion: v2
+    appVersion: 1.260528.0942
+    created: "2026-05-31T06:14:02.950754478Z"
+    description: Generic Chart
+    digest: 0fcee19157f1932571598c43fb3714bf82ad100425b64cf7b5d78306576e219e
+    name: projectsservicemigration
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/projectsservicemigration.tgz
+    version: 1.260528.0942
+  - apiVersion: v2
     appVersion: 1.260226.0802
     created: "2026-03-27T08:50:12.632929847Z"
     description: Generic Chart
@@ -9478,4 +9488,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:12:58.740243582Z"
+generated: "2026-05-31T06:14:02.950078129Z"
