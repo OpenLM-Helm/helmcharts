@@ -1645,6 +1645,16 @@ entries:
     version: 1.260310.1137
   notificationgateway:
   - apiVersion: v2
+    appVersion: 1.260521.1357
+    created: "2026-05-31T05:57:52.073151657Z"
+    description: Generic Chart
+    digest: 7123f1a93da7ce10adf98c5bb0470dface2df527127a45e8c3c6101445546d17
+    name: notificationgateway
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/notificationgateway.tgz
+    version: 1.260521.1357
+  - apiVersion: v2
     appVersion: 1.260420.2034
     created: "2026-04-21T09:17:42.106546912Z"
     description: Generic Chart
@@ -9408,4 +9418,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T05:56:27.476769644Z"
+generated: "2026-05-31T05:57:52.072527054Z"
