@@ -1541,6 +1541,16 @@ entries:
     version: 1.260203.1745
   mondayintegration:
   - apiVersion: v2
+    appVersion: 1.260514.0004
+    created: "2026-05-31T05:54:05.016911476Z"
+    description: Generic Chart
+    digest: bc5a64ffcae11a490fa678161c5c4b1121fa7e24f21933446956d5e4fd95b1fd
+    name: mondayintegration
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/mondayintegration.tgz
+    version: 1.260514.0004
+  - apiVersion: v2
     appVersion: 1.250306.0812
     created: "2026-03-27T08:50:12.465161836Z"
     description: Generic Chart
@@ -9378,4 +9388,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-30T06:16:25.852788732Z"
+generated: "2026-05-31T05:54:05.01604806Z"
