@@ -9338,6 +9338,16 @@ entries:
     version: 1.260312.0925
   touchpointeventsui:
   - apiVersion: v2
+    appVersion: 1.260514.0619
+    created: "2026-05-31T06:44:48.691664164Z"
+    description: Generic Chart
+    digest: 8f8c95ed0d7aaea3e68ce14c057d86b685dd2bcc4d38b3c0131ee20077a4c8c1
+    name: touchpointeventsui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/touchpointeventsui.tgz
+    version: 1.260514.0619
+  - apiVersion: v2
     appVersion: 1.250926.0717
     created: "2026-03-27T08:50:12.64208617Z"
     description: Generic Chart
@@ -9658,4 +9668,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:43:28.130619987Z"
+generated: "2026-05-31T06:44:48.690771269Z"
