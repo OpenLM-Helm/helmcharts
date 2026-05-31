@@ -8712,6 +8712,16 @@ entries:
     version: 1.260312.0733
   projectsserviceapi:
   - apiVersion: v2
+    appVersion: 1.260514.1214
+    created: "2026-05-31T06:12:58.740888155Z"
+    description: Generic Chart
+    digest: f82c790c91bdccd15f4033c365f7a87a621f26fb792b46a2d50d90e0d524bed0
+    name: projectsserviceapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/projectsserviceapi.tgz
+    version: 1.260514.1214
+  - apiVersion: v2
     appVersion: 1.260305.0857
     created: "2026-03-27T08:50:12.632599501Z"
     description: Generic Chart
@@ -9468,4 +9478,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:09:18.798606827Z"
+generated: "2026-05-31T06:12:58.740243582Z"
