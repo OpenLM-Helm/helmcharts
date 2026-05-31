@@ -9254,6 +9254,16 @@ entries:
     version: 1.260226.0843
   sparkmssql:
   - apiVersion: v2
+    appVersion: 1.260525.1656
+    created: "2026-05-31T06:42:32.504707788Z"
+    description: Generic Chart
+    digest: 59445793214931a07c9b0f67ec8604f6eecdcffa15e21485b7cc154e3459cfae
+    name: sparkmssql
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/sparkmssql.tgz
+    version: 1.260525.1656
+  - apiVersion: v2
     appVersion: 1.260316.0605
     created: "2026-03-27T08:50:12.639989609Z"
     description: Generic Chart
@@ -9638,4 +9648,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-05-31T06:40:46.517623502Z"
+generated: "2026-05-31T06:42:32.503883385Z"
