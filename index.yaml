@@ -9404,6 +9404,16 @@ entries:
     version: 1.260310.0953
   reportingdatarecovery:
   - apiVersion: v2
+    appVersion: 1.260605.0743
+    created: "2026-06-05T09:41:01.957045335Z"
+    description: Generic Chart
+    digest: 41a9366fd6618becdb7fa41103210ed0d19cc72bd9fe1265fbd7e67600fa4ada
+    name: reportingdatarecovery
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/reportingdatarecovery.tgz
+    version: 1.260605.0743
+  - apiVersion: v2
     appVersion: 1.260526.0755
     created: "2026-05-31T06:22:37.912541546Z"
     description: Generic Chart
@@ -10232,4 +10242,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-05T09:06:04.779783087Z"
+generated: "2026-06-05T09:41:01.956376163Z"
