@@ -10161,6 +10161,16 @@ entries:
     version: 1.250822.0920
   vlm:
   - apiVersion: v2
+    appVersion: 1.260609.0736
+    created: "2026-06-09T07:49:48.810111931Z"
+    description: Generic Chart
+    digest: 7910806ca9bbcd54ae9c01fd00015c6772d33bc976ae8af73b413409ce8179c2
+    name: vlm
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/vlm.tgz
+    version: 1.260609.0736
+  - apiVersion: v2
     appVersion: 1.260525.1315
     created: "2026-05-25T14:01:07.016775754Z"
     description: Generic Chart
@@ -10282,4 +10292,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-09T07:13:19.814100134Z"
+generated: "2026-06-09T07:49:48.80936132Z"
