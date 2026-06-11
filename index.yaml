@@ -1859,6 +1859,16 @@ entries:
     version: 1.251209.0538
   openlm-config-generic:
   - apiVersion: v2
+    appVersion: 26.611.1305
+    created: "2026-06-11T13:06:18.265338318Z"
+    description: Generic Chart
+    digest: a9b83e37afc5de5e868072e087a41573b4c48333f36abd91672556d0302c0aa0
+    name: openlm-config-generic
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/openlm_config_generic.tgz
+    version: 26.611.1305
+  - apiVersion: v2
     appVersion: 26.318.1110
     created: "2026-03-27T08:50:12.493639462Z"
     description: Generic Chart
@@ -11418,4 +11428,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-11T12:23:31.274936246Z"
+generated: "2026-06-11T13:06:18.264432735Z"
