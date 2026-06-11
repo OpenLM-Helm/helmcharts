@@ -1457,6 +1457,16 @@ entries:
     version: 1.260309.1307
   licensemanagerui:
   - apiVersion: v2
+    appVersion: 1.260611.0916
+    created: "2026-06-11T10:10:31.127340452Z"
+    description: Generic Chart
+    digest: ee62133a9ffee71b8ddb968ab572f60b9fb72afd4f2504f8b78b68f746518da6
+    name: licensemanagerui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licensemanagerui.tgz
+    version: 1.260611.0916
+  - apiVersion: v2
     appVersion: 1.260511.1035
     created: "2026-05-12T09:42:19.530976915Z"
     description: Generic Chart
@@ -11368,4 +11378,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-11T10:08:12.502834947Z"
+generated: "2026-06-11T10:10:31.126285629Z"
