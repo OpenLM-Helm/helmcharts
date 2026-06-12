@@ -685,9 +685,9 @@ entries:
   complianceservice:
   - apiVersion: v2
     appVersion: 1.260520.1110
-    created: "2026-05-27T09:36:29.80577849Z"
+    created: "2026-06-12T11:02:46.468867066Z"
     description: Generic Chart
-    digest: d4b6ea738987a523960d2ce32e89a34ea1f32645bfd7ddcd99c9be35f1dd5ac8
+    digest: 9d39262f119e338a651625d97c169a4223081f44c7730d5980a4e6b397d72e36
     name: complianceservice
     type: application
     urls:
@@ -12494,4 +12494,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-12T09:16:07.632203643Z"
+generated: "2026-06-12T11:02:46.468138815Z"
