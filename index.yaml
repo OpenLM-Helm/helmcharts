@@ -759,6 +759,16 @@ entries:
     version: 1.250415.1548
   dbconfigurationtoolui:
   - apiVersion: v2
+    appVersion: 1.260527.0001
+    created: "2026-06-12T09:08:32.735285303Z"
+    description: Generic Chart
+    digest: 1d0668e223eb3d4361cad2e10109fa68cd76e15db6bf292cb1cb1fbd356b545c
+    name: dbconfigurationtoolui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/dbconfigurationtoolui.tgz
+    version: 1.260527.0001
+  - apiVersion: v2
     appVersion: 1.250225.0735
     created: "2026-03-27T08:50:12.439796895Z"
     description: Generic Chart
@@ -12474,4 +12484,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-12T09:03:43.358298846Z"
+generated: "2026-06-12T09:08:32.73464792Z"
