@@ -12121,6 +12121,16 @@ entries:
     version: 1.260316.0605
   sparkpgdb:
   - apiVersion: v2
+    appVersion: 1.260615.1007
+    created: "2026-06-15T10:28:12.885639843Z"
+    description: Generic Chart
+    digest: ad0251d590963ca62cc643343351f067302b68488eab25f0c422cb7660d41554
+    name: sparkpgdb
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/sparkpgdb.tgz
+    version: 1.260615.1007
+  - apiVersion: v2
     appVersion: 1.260525.1704
     created: "2026-06-15T09:43:24.461698389Z"
     description: Generic Chart
@@ -12604,4 +12614,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-15T09:52:55.962269177Z"
+generated: "2026-06-15T10:28:12.884782535Z"
