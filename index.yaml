@@ -1443,6 +1443,16 @@ entries:
     version: 1.251105.0618
   licensefilesmanagement:
   - apiVersion: v2
+    appVersion: 1.260611.0827
+    created: "2026-06-15T07:18:12.317220772Z"
+    description: Generic Chart
+    digest: 531324db2ab78c7b439398286c846b80d6e471eaef8dd606dd4fc3707bcd5f1a
+    name: licensefilesmanagement
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licensefilesmanagement.tgz
+    version: 1.260611.0827
+  - apiVersion: v2
     appVersion: 1.260312.0649
     created: "2026-03-27T08:50:12.460086832Z"
     description: Generic Chart
@@ -12504,4 +12514,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-15T07:14:09.931767511Z"
+generated: "2026-06-15T07:18:12.316496339Z"
