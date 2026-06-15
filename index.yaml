@@ -768,6 +768,16 @@ entries:
     version: 1.250603.1404
   customerauditparser:
   - apiVersion: v2
+    appVersion: 1.260514.1334
+    created: "2026-06-15T09:52:55.962955246Z"
+    description: Generic Chart
+    digest: 157fa29f4d6ea20067db737bafad5981d0b7d9b88837cfe0b27be30e419f9a45
+    name: customerauditparser
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/customerauditparser.tgz
+    version: 1.260514.1334
+  - apiVersion: v2
     appVersion: 1.250415.1548
     created: "2026-03-27T08:50:12.439417084Z"
     description: Generic Chart
@@ -12594,4 +12604,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-15T09:43:24.460721067Z"
+generated: "2026-06-15T09:52:55.962269177Z"
