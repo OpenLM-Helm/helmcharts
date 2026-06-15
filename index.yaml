@@ -11574,6 +11574,16 @@ entries:
     version: 1.14.0
   reportconnector:
   - apiVersion: v2
+    appVersion: 1.260526.0903
+    created: "2026-06-15T09:22:03.056247598Z"
+    description: Generic Chart
+    digest: 3a9abc088fc5e8082de9a7b105ff72f2239ad21c2383952871ec8b4f117f94e2
+    name: reportconnector
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/reportconnector.tgz
+    version: 1.260526.0903
+  - apiVersion: v2
     appVersion: 1.260128.0916
     created: "2026-05-15T11:52:10.861480473Z"
     description: Generic Chart
@@ -12564,4 +12574,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-15T08:08:32.514149851Z"
+generated: "2026-06-15T09:22:03.055399798Z"
