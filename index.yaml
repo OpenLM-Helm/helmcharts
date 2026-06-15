@@ -864,6 +864,16 @@ entries:
     version: 1.250529.1339
   disposabletokens:
   - apiVersion: v2
+    appVersion: 1.260615.0701
+    created: "2026-06-15T07:39:59.530490296Z"
+    description: Generic Chart
+    digest: f31031fc64fc7bfff6c8a0bee7a2820c2637f44cb051bb4772810fc778010068
+    name: disposabletokens
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/disposabletokens.tgz
+    version: 1.260615.0701
+  - apiVersion: v2
     appVersion: 1.260309.1547
     created: "2026-03-27T08:50:12.442925717Z"
     description: Generic Chart
@@ -12534,4 +12544,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-15T07:37:45.686451189Z"
+generated: "2026-06-15T07:39:59.529775571Z"
