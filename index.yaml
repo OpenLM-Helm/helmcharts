@@ -1317,9 +1317,9 @@ entries:
   kafkainitpod:
   - apiVersion: v2
     appVersion: 1.260529.0727
-    created: "2026-06-12T05:58:21.345809286Z"
+    created: "2026-06-18T07:08:51.063947463Z"
     description: Generic Chart
-    digest: 06b6de3bcaceb93510f70c86769e5f0dc6e29b45d4656858c6b23450027863f4
+    digest: bcb316c65ca715689f236e8ccfcc7d0f44db9cc6309daec9dae99473bcd94585
     name: kafkainitpod
     type: application
     urls:
@@ -13137,4 +13137,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-18T06:04:56.317143893Z"
+generated: "2026-06-18T07:08:51.063264073Z"
