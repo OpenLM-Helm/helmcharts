@@ -12593,9 +12593,9 @@ entries:
   sparkmonitoring:
   - apiVersion: v2
     appVersion: 1.260226.0843
-    created: "2026-03-27T08:50:12.639334611Z"
+    created: "2026-06-22T10:17:20.510709095Z"
     description: Generic Chart
-    digest: 6e7c911340e6f00e8ecebc2b7da4306c2d7346d3793ee2c3a8b324a1061583bf
+    digest: be0427eefc7da41965cbb446694d3b1b3c0b2456ee0a35091dc538dbb4b639c4
     name: sparkmonitoring
     type: application
     urls:
@@ -13167,4 +13167,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-06-22T10:15:37.375115674Z"
+generated: "2026-06-22T10:17:20.510017027Z"
