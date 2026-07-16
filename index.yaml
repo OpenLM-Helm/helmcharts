@@ -874,9 +874,9 @@ entries:
   denialsui:
   - apiVersion: v2
     appVersion: 1.260514.1310
-    created: "2026-05-27T13:09:59.761490948Z"
+    created: "2026-07-16T16:12:40.260991645Z"
     description: Generic Chart
-    digest: ab82e768b4c2e8c0792c04d8dd75830cee28e0f108af1da50030624024a58795
+    digest: 52b43dd394ea6e96a2c1bfe30cbcfcd8369dc66d5317b98d960fa4fe3fedaf83
     name: denialsui
     type: application
     urls:
@@ -18217,4 +18217,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-16T16:10:36.548958767Z"
+generated: "2026-07-16T16:12:40.260142161Z"
