@@ -1515,9 +1515,9 @@ entries:
   licensefilesui:
   - apiVersion: v2
     appVersion: 1.260520.1054
-    created: "2026-05-30T06:07:41.489443675Z"
+    created: "2026-07-16T17:03:07.8987756Z"
     description: Generic Chart
-    digest: 72c38a6cff7ae8c73b534ad30ede3fa101f2a6240bd83eb56947755cdc3c661e
+    digest: fb7df57e1e639528e366262f8fe4fe8b3e15e8db632add865624065054410a44
     name: licensefilesui
     type: application
     urls:
@@ -18217,4 +18217,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-16T16:58:09.868415579Z"
+generated: "2026-07-16T17:03:07.898005388Z"
