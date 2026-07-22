@@ -18947,6 +18947,16 @@ entries:
     version: 1.260312.0909
   servicenowalertintegration:
   - apiVersion: v2
+    appVersion: 1.260630.1136
+    created: "2026-07-22T06:00:13.671298561Z"
+    description: Generic Chart
+    digest: 7825b4b2864dc7f9348a9bd988c04da86771731f205953140e0110e720c30feb
+    name: servicenowalertintegration
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/servicenowalertintegration.tgz
+    version: 1.260630.1136
+  - apiVersion: v2
     appVersion: 1.260511.0653
     created: "2026-05-31T06:22:05.727578353Z"
     description: Generic Chart
@@ -19761,4 +19771,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-22T05:59:16.137452061Z"
+generated: "2026-07-22T06:00:13.67040799Z"
