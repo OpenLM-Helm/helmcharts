@@ -758,9 +758,9 @@ entries:
   costapiui:
   - apiVersion: v2
     appVersion: 1.250603.1404
-    created: "2026-07-16T16:10:36.5498572Z"
+    created: "2026-07-22T15:10:06.123822077Z"
     description: Generic Chart
-    digest: 45e75887c410bff843c22947b54f7ffa392a636d8760c1b6024969d86ad13650
+    digest: c76d296cca1499dc744ff41fd595dc8963ee8453fd7890a4d82f3262c001b3af
     name: costapiui
     type: application
     urls:
@@ -20814,4 +20814,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-22T15:08:47.920623615Z"
+generated: "2026-07-22T15:10:06.12315522Z"
