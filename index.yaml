@@ -1887,9 +1887,9 @@ entries:
   navigationui:
   - apiVersion: v2
     appVersion: 1.260521.1348
-    created: "2026-07-16T16:28:46.440375764Z"
+    created: "2026-07-22T12:43:34.698421466Z"
     description: Generic Chart
-    digest: 2e42eaa71f89a4a9f368cedf75384d1b37f61f5937bef55ce83968699dacd57d
+    digest: edacb918e601ea559e0cd0e15b7d160fa680c362271e8739ed03803b11ab114a
     name: navigationui
     type: application
     urls:
@@ -20303,4 +20303,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-22T12:43:10.064829375Z"
+generated: "2026-07-22T12:43:34.697522547Z"
