@@ -1010,9 +1010,9 @@ entries:
   dssui:
   - apiVersion: v2
     appVersion: 1.260514.1247
-    created: "2026-07-16T16:25:19.607975523Z"
+    created: "2026-07-22T12:05:50.779680232Z"
     description: Generic Chart
-    digest: b068f57095de547c5b7b4968f0b84f6e569bd28daaa108aadacceb1cbe2fd082
+    digest: 63230832d8fa751f5f18520b08a46d1a1853880d1959e2a3520bc736fdff03a5
     name: dssui
     type: application
     urls:
@@ -20303,4 +20303,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-22T12:04:02.473903516Z"
+generated: "2026-07-22T12:05:50.778917212Z"
