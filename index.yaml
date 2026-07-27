@@ -335,9 +335,9 @@ entries:
   atlassianintegration:
   - apiVersion: v2
     appVersion: 1.260515.0550
-    created: "2026-05-19T07:51:01.214018464Z"
+    created: "2026-07-27T08:26:53.935855207Z"
     description: Generic Chart
-    digest: f2ac81f3d7ba581723a335795b504943a4b51c90f1ce1e64532b61343b36de67
+    digest: 2a8adc97f8e364b6496f6b3b01a02d32d18e7854ba30ac73529d21bd3f31907a
     name: atlassianintegration
     type: application
     urls:
@@ -22387,4 +22387,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-23T12:43:13.392833286Z"
+generated: "2026-07-27T08:26:53.93509756Z"
