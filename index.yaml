@@ -21864,6 +21864,16 @@ entries:
     version: 1.260311.0853
   pushnotification:
   - apiVersion: v2
+    appVersion: 1.260630.0930
+    created: "2026-07-29T07:32:01.088301437Z"
+    description: Generic Chart
+    digest: 1558d6a3372bde93202babbaf9dda2900e633ac4cf1ec02cece79316dc278aa4
+    name: pushnotification
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/pushnotification.tgz
+    version: 1.260630.0930
+  - apiVersion: v2
     appVersion: 1.260521.1357
     created: "2026-05-31T06:16:30.286002522Z"
     description: Generic Chart
@@ -23068,4 +23078,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T07:31:33.973577386Z"
+generated: "2026-07-29T07:32:01.087691359Z"
