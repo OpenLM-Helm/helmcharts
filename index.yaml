@@ -1425,6 +1425,16 @@ entries:
     version: 1.260213.1337
   homepageui:
   - apiVersion: v2
+    appVersion: 1.260724.0539
+    created: "2026-07-29T08:37:34.997028602Z"
+    description: Generic Chart
+    digest: 9c8fb9596e9fa827c7b775930d8c6642a5ac3faf5b4d613969ab7422c6ecc3d4
+    name: homepageui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/homepageui.tgz
+    version: 1.260724.0539
+  - apiVersion: v2
     appVersion: 1.260529.0730
     created: "2026-07-21T11:51:36.703818201Z"
     description: Generic Chart
@@ -23418,4 +23428,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T08:36:56.42029531Z"
+generated: "2026-07-29T08:37:34.996320459Z"
