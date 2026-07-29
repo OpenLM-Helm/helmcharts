@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   agentactivitymanager:
   - apiVersion: v2
+    appVersion: 1.260629.1218
+    created: "2026-07-29T07:47:31.62870216Z"
+    description: Generic Chart
+    digest: 7c05784ee2c7b94b3fc1e886ab0224354c7720be91bf9d1048051eb3abe68052
+    name: agentactivitymanager
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/agentactivitymanager.tgz
+    version: 1.260629.1218
+  - apiVersion: v2
     appVersion: 1.260515.1613
     created: "2026-05-25T07:40:04.232062179Z"
     description: Generic Chart
@@ -23138,4 +23148,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T07:46:13.020492496Z"
+generated: "2026-07-29T07:47:31.627819884Z"
