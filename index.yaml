@@ -2051,6 +2051,16 @@ entries:
     version: 26.318.1110
   openlm-gateway:
   - apiVersion: v2
+    appVersion: 1.260727.0851
+    created: "2026-07-29T06:43:21.842288738Z"
+    description: Generic Chart
+    digest: fb035289862968de861bf464fc86510d6110a0cdc02410b93ff31cbca82dd423
+    name: openlm-gateway
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/openlm-gateway.tgz
+    version: 1.260727.0851
+  - apiVersion: v2
     appVersion: 1.260520.1133
     created: "2026-05-20T15:24:41.466086695Z"
     description: Generic Chart
@@ -22387,4 +22397,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T06:38:11.169706075Z"
+generated: "2026-07-29T06:43:21.841609787Z"
