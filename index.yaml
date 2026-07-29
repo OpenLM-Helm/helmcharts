@@ -270,6 +270,16 @@ entries:
     version: 1.260309.1543
   anonymization:
   - apiVersion: v2
+    appVersion: 1.260526.1157
+    created: "2026-07-29T07:26:43.011794482Z"
+    description: Generic Chart
+    digest: b632a8205d3066014c6fcd569e0ceb3a0ed28a73061909303bd51fb22368712f
+    name: anonymization
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/anonymization.tgz
+    version: 1.260526.1157
+  - apiVersion: v2
     appVersion: 1.260513.1728
     created: "2026-05-25T08:01:24.07197016Z"
     description: Generic Chart
@@ -23028,4 +23038,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T07:25:58.519449099Z"
+generated: "2026-07-29T07:26:43.01108344Z"
