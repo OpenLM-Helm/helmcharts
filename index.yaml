@@ -1008,6 +1008,16 @@ entries:
     version: 1.250720.0738
   dss:
   - apiVersion: v2
+    appVersion: 1.260701.0618
+    created: "2026-07-29T07:18:06.370432075Z"
+    description: Generic Chart
+    digest: f360287a8b1c45e2ffaf41ee13294b282c2af02fc62228202cc8112e45a6ce5f
+    name: dss
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/dss.tgz
+    version: 1.260701.0618
+  - apiVersion: v2
     appVersion: 1.260514.1246
     created: "2026-05-27T13:15:01.432843797Z"
     description: Generic Chart
@@ -22467,4 +22477,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T07:14:00.543142824Z"
+generated: "2026-07-29T07:18:06.369559446Z"
