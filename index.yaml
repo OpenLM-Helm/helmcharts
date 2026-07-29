@@ -1342,6 +1342,16 @@ entries:
     version: 1.260312.0732
   featureservice:
   - apiVersion: v2
+    appVersion: 1.260618.0731
+    created: "2026-07-29T08:35:24.407429132Z"
+    description: Generic Chart
+    digest: 8c59cf2d5e75806fb175973dc962519a9d38c090183b190e2b9caf5ee93b6465
+    name: featureservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/featureservice.tgz
+    version: 1.260618.0731
+  - apiVersion: v2
     appVersion: 1.260519.1413
     created: "2026-05-30T05:02:32.846000541Z"
     description: Generic Chart
@@ -23408,4 +23418,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T08:34:53.555624781Z"
+generated: "2026-07-29T08:35:24.406621064Z"
