@@ -2224,9 +2224,9 @@ entries:
   mondayintegration:
   - apiVersion: v2
     appVersion: 1.260514.0004
-    created: "2026-05-31T05:54:05.016911476Z"
+    created: "2026-07-29T08:45:52.727527297Z"
     description: Generic Chart
-    digest: bc5a64ffcae11a490fa678161c5c4b1121fa7e24f21933446956d5e4fd95b1fd
+    digest: bfad764afa357684909205693528331fe84e5f0c86416ab45432a44d07e0a184
     name: mondayintegration
     type: application
     urls:
@@ -23448,4 +23448,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T08:44:03.669241862Z"
+generated: "2026-07-29T08:45:52.726749279Z"
