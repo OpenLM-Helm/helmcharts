@@ -22881,6 +22881,16 @@ entries:
     version: 1.260312.0840
   sparkanonymization:
   - apiVersion: v2
+    appVersion: 1.260717.0645
+    created: "2026-07-29T09:15:29.348239674Z"
+    description: Generic Chart
+    digest: 4189e20eb8bc24665137e31708bf1c8626b26b690e6cfe251555db45d65040d5
+    name: sparkanonymization
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/sparkanonymization.tgz
+    version: 1.260717.0645
+  - apiVersion: v2
     appVersion: 1.260213.0747
     created: "2026-03-27T08:50:12.638425038Z"
     description: Generic Chart
@@ -23568,4 +23578,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T09:12:00.712722537Z"
+generated: "2026-07-29T09:15:29.347312845Z"
