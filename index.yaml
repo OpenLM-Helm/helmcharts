@@ -23394,6 +23394,16 @@ entries:
     version: 1.250915.1406
   usersandgroupsmigrationservice:
   - apiVersion: v2
+    appVersion: 1.260528.0944
+    created: "2026-07-29T09:21:17.063648826Z"
+    description: Generic Chart
+    digest: 844df8aac1e974c66592f443bd33d76116131d988de1604ad39fc760c87b7392
+    name: usersandgroupsmigrationservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/usersandgroupsmigrationservice.tgz
+    version: 1.260528.0944
+  - apiVersion: v2
     appVersion: 1.260514.0949
     created: "2026-05-15T11:57:53.945489229Z"
     description: Generic Chart
@@ -23618,4 +23628,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T09:20:32.168428454Z"
+generated: "2026-07-29T09:21:17.062981105Z"
