@@ -1718,9 +1718,9 @@ entries:
   kafkatosqsintegration:
   - apiVersion: v2
     appVersion: 1.260514.1225
-    created: "2026-05-15T11:55:21.591734569Z"
+    created: "2026-07-29T08:36:56.421087311Z"
     description: Generic Chart
-    digest: 8e9cb48bdafce3bed06d5547decdf663fd196b2510dc34ccde4aafdb541ee282
+    digest: 22303569467a53ba604a5986f03ef0bba1da0001726152f1fa4cc3dbe6816760
     name: kafkatosqsintegration
     type: application
     urls:
@@ -23418,4 +23418,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T08:35:24.406621064Z"
+generated: "2026-07-29T08:36:56.42029531Z"
