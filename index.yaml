@@ -1592,6 +1592,16 @@ entries:
     version: 1.250225.0707
   identityui:
   - apiVersion: v2
+    appVersion: 1.260724.1257
+    created: "2026-07-29T08:32:34.740071417Z"
+    description: Generic Chart
+    digest: 4b4f4dba2582a94004c9af0e17c0f128f3807cd3b68ebdf977fc1f7ed6c5aa78
+    name: identityui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/identityui.tgz
+    version: 1.260724.1257
+  - apiVersion: v2
     appVersion: 1.260528.0723
     created: "2026-07-22T12:07:41.989659231Z"
     description: Generic Chart
@@ -23388,4 +23398,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T08:32:22.520378774Z"
+generated: "2026-07-29T08:32:34.738780622Z"
