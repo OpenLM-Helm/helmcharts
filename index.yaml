@@ -22727,6 +22727,16 @@ entries:
     version: 1.260717.0908
   servicenowcreds:
   - apiVersion: v2
+    appVersion: 1.260729.0639
+    created: "2026-07-29T09:23:45.175956328Z"
+    description: Generic Chart
+    digest: ef8d8cdb149423403325cabcb640925cbae92fb575e0592a85e8e9c31b90d387
+    name: servicenowcreds
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/servicenowcreds.tgz
+    version: 1.260729.0639
+  - apiVersion: v2
     appVersion: 1.260721.1025
     created: "2026-07-22T05:59:16.138143817Z"
     description: Generic Chart
@@ -23628,4 +23638,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T09:21:17.062981105Z"
+generated: "2026-07-29T09:23:45.175206987Z"
