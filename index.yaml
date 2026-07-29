@@ -1090,6 +1090,16 @@ entries:
     version: 1.260311.0853
   emailnotification:
   - apiVersion: v2
+    appVersion: 1.260630.0930
+    created: "2026-07-29T07:46:13.021181301Z"
+    description: Generic Chart
+    digest: b7425b00f370c9fed37596d787fa6127dcb11cf3f4f311fc626ba4df9fe54a51
+    name: emailnotification
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/emailnotification.tgz
+    version: 1.260630.0930
+  - apiVersion: v2
     appVersion: 1.260611.1046
     created: "2026-06-11T10:54:13.175788999Z"
     description: Generic Chart
@@ -23128,4 +23138,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T07:45:17.013307341Z"
+generated: "2026-07-29T07:46:13.020492496Z"
