@@ -1820,6 +1820,16 @@ entries:
     version: 1.260311.0727
   licenseallocationsui:
   - apiVersion: v2
+    appVersion: 1.260615.1542
+    created: "2026-07-29T08:51:23.91970027Z"
+    description: Generic Chart
+    digest: 94a8d1d5116dfbafc56aa85640c0d4a98696ad20753df496089aa6489989ab43
+    name: licenseallocationsui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licenseallocationsui.tgz
+    version: 1.260615.1542
+  - apiVersion: v2
     appVersion: 1.260518.0727
     created: "2026-07-22T12:37:26.755320254Z"
     description: Generic Chart
@@ -23468,4 +23478,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T08:50:27.097689996Z"
+generated: "2026-07-29T08:51:23.918986654Z"
