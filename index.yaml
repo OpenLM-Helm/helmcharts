@@ -22040,6 +22040,16 @@ entries:
     version: 1.250521.0008
   usageservice:
   - apiVersion: v2
+    appVersion: 1.260630.0001
+    created: "2026-07-29T06:47:35.439501622Z"
+    description: Generic Chart
+    digest: 9b5541e056743b855dfa0d108668c2c997233cb923f831cd5bb04a32cce0ddb9
+    name: usageservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/usageservice.tgz
+    version: 1.260630.0001
+  - apiVersion: v2
     appVersion: 1.260527.1230
     created: "2026-07-28T13:13:36.543446753Z"
     description: Generic Chart
@@ -22397,4 +22407,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-07-29T06:43:21.841609787Z"
+generated: "2026-07-29T06:47:35.438836075Z"
