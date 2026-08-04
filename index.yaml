@@ -1871,6 +1871,16 @@ entries:
     version: 1.260302.1319
   licenseautomationtool:
   - apiVersion: v2
+    appVersion: 1.260727.1337
+    created: "2026-08-04T09:25:34.042032279Z"
+    description: Generic Chart
+    digest: 8801fb6f757016d08f7d0afab58660babaf6c7078178a9bb35c1b037b888062b
+    name: licenseautomationtool
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licenseautomationtool.tgz
+    version: 1.260727.1337
+  - apiVersion: v2
     appVersion: 1.260708.0606
     created: "2026-07-22T08:06:47.144834151Z"
     description: Generic Chart
@@ -24801,4 +24811,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-03T17:42:19.010950097Z"
+generated: "2026-08-04T09:25:34.041136186Z"
