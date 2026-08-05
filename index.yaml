@@ -1011,9 +1011,9 @@ entries:
   denialsaggregation:
   - apiVersion: v2
     appVersion: 1.260612.0746
-    created: "2026-07-29T09:56:40.123919101Z"
+    created: "2026-08-05T12:53:57.952905495Z"
     description: Generic Chart
-    digest: cd3924076329ddba0ef276a6d55207be218c6c5dcf3b1692688012dc49eb2c28
+    digest: 055bec91bdbecd284cfe6bdd714ea7cfaed2099371abf7f69fdfaf57ab391aa5
     name: denialsaggregation
     type: application
     urls:
@@ -25366,4 +25366,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-05T12:40:06.756356166Z"
+generated: "2026-08-05T12:53:57.951748983Z"
