@@ -25701,6 +25701,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/personaldashboard.tgz
     version: 1.260311.1021
+  platformhealth:
+  - apiVersion: v2
+    appVersion: 1.260805.1122
+    created: "2026-08-19T12:38:39.302312898Z"
+    description: Generic Chart
+    digest: 5cdcda95d5127e7d27d0b84ce9ece83562924da1d59fef8c05b31ef12d7ef16c
+    name: platformhealth
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/platformhealth.tgz
+    version: 1.260805.1122
   processmanager:
   - apiVersion: v2
     appVersion: 1.260708.0605
@@ -27516,4 +27527,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-19T11:50:20.097431392Z"
+generated: "2026-08-19T12:38:39.301598205Z"
