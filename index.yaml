@@ -850,6 +850,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/brokerhubui.tgz
     version: 1.260309.1120
+  catalogenrichment:
+  - apiVersion: v2
+    appVersion: 1.260817.1158
+    created: "2026-08-21T11:14:07.681965358Z"
+    description: Generic Chart
+    digest: 3aae42275f5d43c77932ccd08b186964171fb571e4ed2a84dc4a35d95213caa5
+    name: catalogenrichment
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/catalogenrichment.tgz
+    version: 1.260817.1158
   cloudbroker:
   - apiVersion: v2
     appVersion: 1.260630.1235
@@ -27567,4 +27578,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-21T08:55:40.382323888Z"
+generated: "2026-08-21T11:14:07.681125201Z"
