@@ -25744,6 +25744,16 @@ entries:
     version: 1.260311.1021
   platformhealth:
   - apiVersion: v2
+    appVersion: 1.260820.1429
+    created: "2026-08-25T08:21:19.24321774Z"
+    description: Generic Chart
+    digest: 9e74bc9a963c428113500af93567ff1e9b6800fee2b987a42a983a3ce7d94680
+    name: platformhealth
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/platformhealth.tgz
+    version: 1.260820.1429
+  - apiVersion: v2
     appVersion: 1.260805.1122
     created: "2026-08-19T12:38:39.302312898Z"
     description: Generic Chart
@@ -27578,4 +27588,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-21T11:14:07.681125201Z"
+generated: "2026-08-25T08:21:19.241100073Z"
