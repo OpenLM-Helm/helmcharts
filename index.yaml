@@ -1039,6 +1039,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/dashboardapi.tgz
     version: 1.260824.1556
+  dashboardui:
+  - apiVersion: v2
+    appVersion: 1.260827.1118
+    created: "2026-08-31T13:23:45.728464863Z"
+    description: Generic Chart
+    digest: 909a977a5267e519ee712b46a64d6e4cb6fdfd888a1d8c569d8582a55aef0e7d
+    name: dashboardui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/dashboardui.tgz
+    version: 1.260827.1118
   dbconfigurationtoolui:
   - apiVersion: v2
     appVersion: 1.260527.0001
@@ -28143,4 +28154,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-31T12:46:23.60016425Z"
+generated: "2026-08-31T13:23:45.727616205Z"
