@@ -26793,6 +26793,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/routerapi.tgz
     version: 1.260824.1557
+  routeringestgateway:
+  - apiVersion: v2
+    appVersion: 1.260803.0810
+    created: "2026-08-31T13:28:00.892885937Z"
+    description: Generic Chart
+    digest: 99ba2a2a0a932d562bee09426bf2edb4131d295610c113ffe839d9d97fbbac14
+    name: routeringestgateway
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/routeringestgateway.tgz
+    version: 1.260803.0810
   routerui:
   - apiVersion: v2
     appVersion: 1.260824.1557
@@ -28154,4 +28165,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-08-31T13:23:45.727616205Z"
+generated: "2026-08-31T13:28:00.892121011Z"
