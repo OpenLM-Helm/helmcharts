@@ -29199,6 +29199,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/routerapi.tgz
     version: 1.260824.1557
+  routerconsolidatorwriter:
+  - apiVersion: v2
+    appVersion: 1.260731.0545
+    created: "2026-09-03T13:01:20.073210143Z"
+    description: Generic Chart
+    digest: c10a786fc790204c939bffc11efe258e3f410dae7e997e8e13379951eacd6e2f
+    name: routerconsolidatorwriter
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/routerconsolidatorwriter.tgz
+    version: 1.260731.0545
   routeringestgateway:
   - apiVersion: v2
     appVersion: 1.260803.0810
@@ -30641,4 +30652,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-03T08:53:51.60128096Z"
+generated: "2026-09-03T13:01:20.072462158Z"
