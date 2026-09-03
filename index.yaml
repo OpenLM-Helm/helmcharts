@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  admissionwebhook:
+  - apiVersion: v2
+    appVersion: 1.260819.1521
+    created: "2026-09-03T13:04:37.249848741Z"
+    description: Generic Chart
+    digest: f719e9a9e4d876515299a1f0ea6d07191b37eb38556f9e496b9527f99bf13b0c
+    name: admissionwebhook
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/admissionwebhook.tgz
+    version: 1.260819.1521
   agentactivitymanager:
   - apiVersion: v2
     appVersion: 1.260629.1218
@@ -30652,4 +30663,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-03T13:01:20.072462158Z"
+generated: "2026-09-03T13:04:37.248890016Z"
