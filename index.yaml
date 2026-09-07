@@ -28872,9 +28872,9 @@ entries:
   productsserviceui:
   - apiVersion: v2
     appVersion: 1.260827.0957
-    created: "2026-09-01T12:37:04.826322182Z"
+    created: "2026-09-07T07:00:24.273272804Z"
     description: Generic Chart
-    digest: 52456b419608492d3d81f65858f814c65e3937d8943105792a33946986bb87c2
+    digest: 098bfafdbb9d46ee7e16007a9d90da9377215c1436eae6ebfdcb6a7ebd662764
     name: productsserviceui
     type: application
     urls:
@@ -30673,4 +30673,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-07T06:41:58.874080266Z"
+generated: "2026-09-07T07:00:24.27253853Z"
