@@ -1974,6 +1974,16 @@ entries:
     version: 1.260312.0719
   identitydiscovery:
   - apiVersion: v2
+    appVersion: 1.260802.1417
+    created: "2026-09-09T12:44:49.199350996Z"
+    description: Generic Chart
+    digest: 594a971b2eb5a5fb1658ec8681a5b6b926c4902a3284f2832dcd97564ae5cff9
+    name: identitydiscovery
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/identitydiscovery.tgz
+    version: 1.260802.1417
+  - apiVersion: v2
     appVersion: 1.260525.1231
     created: "2026-07-29T06:49:34.377257393Z"
     description: Generic Chart
@@ -31610,4 +31620,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-09T12:40:42.661388169Z"
+generated: "2026-09-09T12:44:49.198609829Z"
