@@ -944,6 +944,16 @@ entries:
     version: 1.260817.1158
   cloudbroker:
   - apiVersion: v2
+    appVersion: 1.260824.0725
+    created: "2026-09-09T11:10:33.69660211Z"
+    description: Generic Chart
+    digest: 2b51030ac0ab0fb3247f5ff42bdc695e22dbcded44cad72487859450d5580a45
+    name: cloudbroker
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/cloudbroker.tgz
+    version: 1.260824.0725
+  - apiVersion: v2
     appVersion: 1.260630.1235
     created: "2026-07-29T07:21:51.838875431Z"
     description: Generic Chart
@@ -31380,4 +31390,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-09T11:10:22.50002417Z"
+generated: "2026-09-09T11:10:33.695940148Z"
