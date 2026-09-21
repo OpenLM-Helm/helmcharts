@@ -3010,9 +3010,9 @@ entries:
   navigationservice:
   - apiVersion: v2
     appVersion: 1.260817.1500
-    created: "2026-09-08T18:11:01.55532093Z"
+    created: "2026-09-21T08:51:08.751696701Z"
     description: Generic Chart
-    digest: ae64012258edfeb4ced11416f4d899233d9b8e46ce188447cdc68c4c3ec41b6a
+    digest: e17e402908c47c885fe8a13189dd565f5ef3c970b430d1ef77e73f0dcd21cd82
     name: navigationservice
     type: application
     urls:
@@ -39559,4 +39559,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-21T08:49:27.300120332Z"
+generated: "2026-09-21T08:51:08.750931641Z"
