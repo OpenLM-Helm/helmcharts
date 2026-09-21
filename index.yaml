@@ -1367,9 +1367,9 @@ entries:
   denialservice:
   - apiVersion: v2
     appVersion: 1.260731.0001
-    created: "2026-09-09T11:43:22.969296332Z"
+    created: "2026-09-21T07:05:21.724965896Z"
     description: Generic Chart
-    digest: 5e2e1f697eaf8d89bf7e91f481828151005bc1024038fe5631be11ee53efbe29
+    digest: 72168805808ab9fc3b8209fb00c5757a0bb98900acf0535c691654cef5967468
     name: denialservice
     type: application
     urls:
@@ -39559,4 +39559,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-21T07:01:01.531113141Z"
+generated: "2026-09-21T07:05:21.724054469Z"
