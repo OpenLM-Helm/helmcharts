@@ -1272,9 +1272,9 @@ entries:
   dashboardapi:
   - apiVersion: v2
     appVersion: 1.260824.1556
-    created: "2026-08-31T11:56:37.936400599Z"
+    created: "2026-09-22T06:54:56.088451332Z"
     description: Generic Chart
-    digest: e40f87ffa9a7166a8fc001755d8713cd9a4a4cc662084d59518f88e2d0bf00fa
+    digest: 6d90a94ab7c7b984dc53b7054e221f3fb98ca2e5e821194bf39af71ed55e626e
     name: dashboardapi
     type: application
     urls:
@@ -39589,4 +39589,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-22T06:36:48.094131788Z"
+generated: "2026-09-22T06:54:56.08741387Z"
