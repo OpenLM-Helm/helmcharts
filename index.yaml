@@ -38467,6 +38467,16 @@ entries:
     version: 1.260309.1659
   routerapi:
   - apiVersion: v2
+    appVersion: 1.260923.0738
+    created: "2026-09-23T10:39:22.742136195Z"
+    description: Generic Chart
+    digest: 6b13915445d246ef993dc8a870feac27e4f31606cf180e9409fc02660d24b2b6
+    name: routerapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/routerapi.tgz
+    version: 1.260923.0738
+  - apiVersion: v2
     appVersion: 1.260914.0514
     created: "2026-09-22T04:49:47.940376607Z"
     description: Generic Chart
@@ -40150,4 +40160,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-09-23T10:37:35.014988365Z"
+generated: "2026-09-23T10:39:22.740911986Z"
