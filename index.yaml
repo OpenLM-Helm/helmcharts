@@ -39027,6 +39027,16 @@ entries:
     version: 1.260116.0743
   servicenowconnectoretl:
   - apiVersion: v2
+    appVersion: 1.261005.0904
+    created: "2026-10-05T12:12:38.661866785Z"
+    description: Generic Chart
+    digest: 192758acbd6c9beb994258b01f01625fc0463aaa9ed4ddf89b112ee04317844f
+    name: servicenowconnectoretl
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/servicenowconnectoretl.tgz
+    version: 1.261005.0904
+  - apiVersion: v2
     appVersion: 1.260721.1219
     created: "2026-07-29T09:25:35.647045598Z"
     description: Generic Chart
@@ -40260,4 +40270,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-05T12:12:24.211286226Z"
+generated: "2026-10-05T12:12:38.660987119Z"
