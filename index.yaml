@@ -2392,6 +2392,16 @@ entries:
     version: 1.260514.1225
   licenseaccesscontrol:
   - apiVersion: v2
+    appVersion: 1.260928.0802
+    created: "2026-10-07T10:26:54.14023678Z"
+    description: Generic Chart
+    digest: 851be4cf007e2ddd043817427bdc4d6f6413d9fad78e3182c4bcbdfaf2d4225a
+    name: licenseaccesscontrol
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licenseaccesscontrol.tgz
+    version: 1.260928.0802
+  - apiVersion: v2
     appVersion: 1.260701.1440
     created: "2026-09-21T11:33:35.464562213Z"
     description: Generic Chart
@@ -40851,4 +40861,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-07T06:25:10.485492496Z"
+generated: "2026-10-07T10:26:54.139465707Z"
