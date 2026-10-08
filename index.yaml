@@ -41554,6 +41554,16 @@ entries:
     version: 1.260904.0909
   sessioncreator:
   - apiVersion: v2
+    appVersion: 1.260917.0916
+    created: "2026-10-08T12:27:02.591548845Z"
+    description: Generic Chart
+    digest: 66ec08319d34566904266fc259ddcc304f93699c254fc4b6922383ac401b8e37
+    name: sessioncreator
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/sessioncreator.tgz
+    version: 1.260917.0916
+  - apiVersion: v2
     appVersion: 1.260708.0606
     created: "2026-07-29T09:33:47.989358276Z"
     description: Generic Chart
@@ -42684,4 +42694,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T12:26:43.90238942Z"
+generated: "2026-10-08T12:27:02.590748114Z"
