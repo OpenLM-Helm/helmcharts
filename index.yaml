@@ -420,6 +420,16 @@ entries:
     version: 1.260309.1228
   allocationservice:
   - apiVersion: v2
+    appVersion: 1.260914.1052
+    created: "2026-10-08T12:20:38.803161141Z"
+    description: Generic Chart
+    digest: ec5a82bd0d0c8c3e2329ae789a15bbcf7be0aa4804cea7dcb220de3596404e26
+    name: allocationservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/allocationservice.tgz
+    version: 1.260914.1052
+  - apiVersion: v2
     appVersion: 1.260731.0002
     created: "2026-09-21T04:07:02.628098305Z"
     description: Generic Chart
@@ -42644,4 +42654,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T12:20:21.382658207Z"
+generated: "2026-10-08T12:20:38.802272916Z"
