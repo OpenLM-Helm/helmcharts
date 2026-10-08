@@ -40345,6 +40345,16 @@ entries:
     version: 1.260308.0941
   personaldashboard:
   - apiVersion: v2
+    appVersion: 1.260917.0917
+    created: "2026-10-08T12:51:32.61520788Z"
+    description: Generic Chart
+    digest: 7db613f01746b845126e1781172bd5c48d6785ebf7708f9f63b45f59635c3827
+    name: personaldashboard
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/personaldashboard.tgz
+    version: 1.260917.0917
+  - apiVersion: v2
     appVersion: 1.260827.1118
     created: "2026-09-22T04:32:02.546796302Z"
     description: Generic Chart
@@ -42764,4 +42774,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T12:49:17.845703159Z"
+generated: "2026-10-08T12:51:32.614404586Z"
