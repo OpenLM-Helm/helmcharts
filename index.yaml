@@ -41705,6 +41705,16 @@ entries:
     version: 1.260129.1535
   softwareassetmanagement:
   - apiVersion: v2
+    appVersion: 1.261006.1319
+    created: "2026-10-08T13:00:48.83932971Z"
+    description: Generic Chart
+    digest: f19bdaf4dcf9d437819b6feebda408a4192f7fc069726f78b43bdc21110870b5
+    name: softwareassetmanagement
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/softwareassetmanagement.tgz
+    version: 1.261006.1319
+  - apiVersion: v2
     appVersion: 1.260908.1255
     created: "2026-09-22T05:15:10.696208314Z"
     description: Generic Chart
@@ -42804,4 +42814,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T12:57:47.531088224Z"
+generated: "2026-10-08T13:00:48.838551499Z"
