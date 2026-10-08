@@ -1925,6 +1925,16 @@ entries:
     version: 1.250930.0805
   enduserservices:
   - apiVersion: v2
+    appVersion: 1.260917.0917
+    created: "2026-10-08T12:45:40.673331624Z"
+    description: Generic Chart
+    digest: dad86d4d9e2f4b19c7b5f6c8542069ca11142a8ae84105b3f8592c2e49ded042
+    name: enduserservices
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/enduserservices.tgz
+    version: 1.260917.0917
+  - apiVersion: v2
     appVersion: 1.260630.1338
     created: "2026-09-21T09:17:50.683592068Z"
     description: Generic Chart
@@ -42744,4 +42754,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T12:42:41.674596955Z"
+generated: "2026-10-08T12:45:40.672044143Z"
