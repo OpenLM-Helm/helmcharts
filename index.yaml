@@ -42072,6 +42072,16 @@ entries:
     version: 1.260306.1004
   subscriptionoptimizer:
   - apiVersion: v2
+    appVersion: 1.260917.0915
+    created: "2026-10-08T13:03:47.900538391Z"
+    description: Generic Chart
+    digest: 116a49f6e5971238d32d04bb823649e5eaae1573428b2c687fe2c890a2800f56
+    name: subscriptionoptimizer
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/subscriptionoptimizer.tgz
+    version: 1.260917.0915
+  - apiVersion: v2
     appVersion: 1.260629.1223
     created: "2026-07-29T09:16:30.729234719Z"
     description: Generic Chart
@@ -42814,4 +42824,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T13:00:48.838551499Z"
+generated: "2026-10-08T13:03:47.899536956Z"
