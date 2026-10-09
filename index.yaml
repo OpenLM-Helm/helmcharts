@@ -43113,9 +43113,9 @@ entries:
   usersandgroupsservice:
   - apiVersion: v2
     appVersion: 1.260812.1259
-    created: "2026-09-22T06:27:43.651987198Z"
+    created: "2026-10-09T10:32:36.977102136Z"
     description: Generic Chart
-    digest: b1269e012332f24d83302087a77ee07208bea25e849b5d191ed3d0b0e608aad2
+    digest: 0142e788aff95293152e31c0b3a7cca6e2a73a4ce5ff76004cf1c49edfc73af2
     name: usersandgroupsservice
     type: application
     urls:
@@ -43435,4 +43435,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-08T13:26:23.231658745Z"
+generated: "2026-10-09T10:32:36.976124246Z"
