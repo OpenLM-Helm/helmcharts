@@ -1154,9 +1154,9 @@ entries:
   catalogenrichment:
   - apiVersion: v2
     appVersion: 1.260923.1205
-    created: "2026-10-05T08:50:43.759211382Z"
+    created: "2026-10-12T12:19:02.147718387Z"
     description: Generic Chart
-    digest: e71ad398dfa5cacb6d37efd6b95b6700e66fa2474c53f503c9828a001a3e4677
+    digest: f537c68f09dccc7444ca951f8c3f73ab07c91a51d847710721dc3043ecf99b19
     name: catalogenrichment
     type: application
     urls:
@@ -43455,4 +43455,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-12T12:17:58.404142819Z"
+generated: "2026-10-12T12:19:02.146881552Z"
