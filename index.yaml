@@ -1083,9 +1083,9 @@ entries:
   brokerhubui:
   - apiVersion: v2
     appVersion: 1.260930.1229
-    created: "2026-10-08T12:29:20.642276932Z"
+    created: "2026-10-12T12:17:58.404992061Z"
     description: Generic Chart
-    digest: 865fb777279e45ab54f7428862ef591606e9ff114053248ba27b5cddd0c3bd24
+    digest: b0766055ab7eef9eb31a28ee746716f40f2cbc561894927a5399f77854fd02c7
     name: brokerhubui
     type: application
     urls:
@@ -43455,4 +43455,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-12T12:16:45.367029553Z"
+generated: "2026-10-12T12:17:58.404142819Z"
