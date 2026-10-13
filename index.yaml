@@ -1762,9 +1762,9 @@ entries:
   dsconnector:
   - apiVersion: v2
     appVersion: 1.260819.0952
-    created: "2026-09-09T11:52:56.159261876Z"
+    created: "2026-10-13T07:22:14.293513598Z"
     description: Generic Chart
-    digest: abafe75c2e8f6c368233d5e5fdfc3faf3445fa406c9d4e97caeaf2f03f44e058
+    digest: 61fc5be2cc178d4522d20b5d8d4f79eb155e455f2203872dcdd915f582fd40a0
     name: dsconnector
     type: application
     urls:
@@ -44006,4 +44006,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-13T07:21:09.428694001Z"
+generated: "2026-10-13T07:22:14.292681028Z"
