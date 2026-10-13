@@ -42307,9 +42307,9 @@ entries:
   routerui:
   - apiVersion: v2
     appVersion: 1.261008.0932
-    created: "2026-10-08T13:23:54.701176019Z"
+    created: "2026-10-13T12:45:28.604221673Z"
     description: Generic Chart
-    digest: cd654103f2532f05c1b30544a02c81bfc51717bc3ddbc8eb5fff48af82cedb17
+    digest: f097abd41d12f546e445f8152c9102c23070f49016d43fbf5a264d3d5e2d7810
     name: routerui
     type: application
     urls:
@@ -44046,4 +44046,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-13T12:43:34.858525043Z"
+generated: "2026-10-13T12:45:28.603305272Z"
