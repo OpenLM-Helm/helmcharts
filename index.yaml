@@ -43551,9 +43551,9 @@ entries:
   usageui:
   - apiVersion: v2
     appVersion: 1.261007.1213
-    created: "2026-10-07T13:05:47.898359178Z"
+    created: "2026-10-13T14:06:12.57694381Z"
     description: Generic Chart
-    digest: e95d0693734c31466112756864c881edd473e29cb51f5ac721c4bfed84038796
+    digest: db69106b7422b691752b104faace5e58691afb36d1feff944b8838a7ab4a6dbe
     name: usageui
     type: application
     urls:
@@ -44056,4 +44056,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-13T14:04:23.320792799Z"
+generated: "2026-10-13T14:06:12.575828066Z"
