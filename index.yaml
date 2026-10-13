@@ -41610,9 +41610,9 @@ entries:
   processmanager:
   - apiVersion: v2
     appVersion: 1.260917.0908
-    created: "2026-10-08T12:54:27.009298448Z"
+    created: "2026-10-13T11:37:12.220885026Z"
     description: Generic Chart
-    digest: 495a202e9a7fc4b29684b8a570c6e3a44f4e3630feebd733b48712a54fd50c3c
+    digest: ff1d2eb48745df403ba158facab49ce796683448f29a34c0ec9984c7f0022a0a
     name: processmanager
     type: application
     urls:
@@ -44046,4 +44046,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-13T11:35:36.000293381Z"
+generated: "2026-10-13T11:37:12.220026067Z"
