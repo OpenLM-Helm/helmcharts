@@ -41905,9 +41905,9 @@ entries:
   projectsserviceapi:
   - apiVersion: v2
     appVersion: 1.260707.1154
-    created: "2026-09-22T04:44:07.784795622Z"
+    created: "2026-10-13T11:56:17.265372209Z"
     description: Generic Chart
-    digest: f6fe493061a3643be7068833d06726bd6b77579bb4078235143c84c7232e9874
+    digest: c653e91d2d728edd63246cedeb9310f2766c731de19ff8cb8a7d77daf475aad5
     name: projectsserviceapi
     type: application
     urls:
@@ -44046,4 +44046,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-13T11:54:18.326920804Z"
+generated: "2026-10-13T11:56:17.264621172Z"
