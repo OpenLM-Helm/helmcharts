@@ -177,9 +177,9 @@ entries:
   agentshubui:
   - apiVersion: v2
     appVersion: 1.260917.0911
-    created: "2026-10-12T08:59:08.390241347Z"
+    created: "2026-10-23T11:51:01.103017974Z"
     description: Generic Chart
-    digest: 94fa4f4b9169df0ceac1eb12c9825e3d8c20109cc2c6f5fe9784792f48d47aa8
+    digest: ebcfd64493edb0f73a660db69207f53c936895d20dc4529fcfa22d281230ea53
     name: agentshubui
     type: application
     urls:
@@ -45188,4 +45188,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-22T12:25:00.85793932Z"
+generated: "2026-10-23T11:51:01.10214506Z"
