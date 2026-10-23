@@ -44946,6 +44946,16 @@ entries:
     version: 1.260312.1018
   usersandgroupsserviceui:
   - apiVersion: v2
+    appVersion: 1.261019.0914
+    created: "2026-10-23T13:52:02.732332834Z"
+    description: Generic Chart
+    digest: 18bade318f263833651d60593101ee3597bad8906003dfdc29bf7bbf4425d7d3
+    name: usersandgroupsserviceui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/usersandgroupsserviceui.tgz
+    version: 1.261019.0914
+  - apiVersion: v2
     appVersion: 1.260907.0906
     created: "2026-09-08T18:14:22.645797261Z"
     description: Generic Chart
@@ -45228,4 +45238,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-23T13:50:12.714365439Z"
+generated: "2026-10-23T13:52:02.731503784Z"
