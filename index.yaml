@@ -1731,9 +1731,9 @@ entries:
   donglemonitoringui:
   - apiVersion: v2
     appVersion: 1.260917.0915
-    created: "2026-10-13T07:21:09.429408696Z"
+    created: "2026-10-23T12:41:36.76214446Z"
     description: Generic Chart
-    digest: c7757d5cf0f66c7a0071940022271131b8c0b3cc664babb0da90c01577684e25
+    digest: dc4a917d1053e1227f163f6c82fa91eba027ee169f07e8cc31b87262ed1dec5a
     name: donglemonitoringui
     type: application
     urls:
@@ -45198,4 +45198,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-23T12:20:42.972503719Z"
+generated: "2026-10-23T12:41:36.761349259Z"
