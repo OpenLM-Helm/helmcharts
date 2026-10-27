@@ -2846,6 +2846,16 @@ entries:
     version: 1.260708.0606
   licenseconcurency:
   - apiVersion: v2
+    appVersion: 1.261027.0752
+    created: "2026-10-27T08:25:17.45686878Z"
+    description: Generic Chart
+    digest: ddcded9e090c676cc3d7bb4c2867cb735e62c00a0738d48724635242804188f8
+    name: licenseconcurency
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/licenseconcurency.tgz
+    version: 1.261027.0752
+  - apiVersion: v2
     appVersion: 1.261023.1145
     created: "2026-10-27T07:40:23.509106842Z"
     description: Generic Chart
@@ -45819,4 +45829,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-27T08:15:56.581842758Z"
+generated: "2026-10-27T08:25:17.455918145Z"
