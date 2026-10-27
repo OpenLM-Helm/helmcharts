@@ -3406,6 +3406,16 @@ entries:
     version: 1.260203.1744
   mlprediction:
   - apiVersion: v2
+    appVersion: 1.261025.1009
+    created: "2026-10-27T10:21:23.082726111Z"
+    description: Generic Chart
+    digest: 5a7183867779618318a78e593533192f98ab6911a6d45e51fa23377cd0c8c92b
+    name: mlprediction
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/mlprediction.tgz
+    version: 1.261025.1009
+  - apiVersion: v2
     appVersion: 1.260914.1343
     created: "2026-10-13T10:41:47.822010204Z"
     description: Generic Chart
@@ -46380,4 +46390,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-27T08:39:39.723180851Z"
+generated: "2026-10-27T10:21:23.081775913Z"
