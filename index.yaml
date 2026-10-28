@@ -44745,6 +44745,16 @@ entries:
     version: 1.260312.0721
   processmanagerui:
   - apiVersion: v2
+    appVersion: 1.261016.1116
+    created: "2026-10-28T14:08:55.359470325Z"
+    description: Generic Chart
+    digest: fddb93a0544b47802aeb9eaf3a8146db9d09c3f403d1334c1c0ce6e60365e996
+    name: processmanagerui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/processmanagerui.tgz
+    version: 1.261016.1116
+  - apiVersion: v2
     appVersion: 1.261005.0905
     created: "2026-10-23T13:25:56.063748826Z"
     description: Generic Chart
@@ -47201,4 +47211,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-28T14:02:22.138772106Z"
+generated: "2026-10-28T14:08:55.358510874Z"
