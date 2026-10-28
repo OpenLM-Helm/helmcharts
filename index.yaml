@@ -45775,6 +45775,16 @@ entries:
     version: 1.260416.1453
   server:
   - apiVersion: v2
+    appVersion: 1.261018.1359
+    created: "2026-10-28T14:19:06.996702091Z"
+    description: Generic Chart
+    digest: a81623dc37da5f33fbb139bcb593c18e1b301d3fd984e671ced2fd45e9b8e59a
+    name: server
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/server.tgz
+    version: 1.261018.1359
+  - apiVersion: v2
     appVersion: 1.260910.1950
     created: "2026-10-13T12:34:04.009706406Z"
     description: Generic Chart
@@ -47251,4 +47261,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-28T14:17:57.93760474Z"
+generated: "2026-10-28T14:19:06.995577218Z"
