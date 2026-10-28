@@ -44561,6 +44561,16 @@ entries:
     version: 1.260327.0847
   operationalapi:
   - apiVersion: v2
+    appVersion: 1.261011.0708
+    created: "2026-10-28T14:00:40.624324898Z"
+    description: Generic Chart
+    digest: c62f5645561d411001175f587200ea33337c9c837654e9c217cf13af5c23cc3e
+    name: operationalapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/operationalapi.tgz
+    version: 1.261011.0708
+  - apiVersion: v2
     appVersion: 1.260827.1239
     created: "2026-10-13T11:35:02.913693794Z"
     description: Generic Chart
@@ -47181,4 +47191,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-28T13:59:29.484724658Z"
+generated: "2026-10-28T14:00:40.623497699Z"
