@@ -49486,6 +49486,16 @@ entries:
     version: 1.260112.1349
   vlmui:
   - apiVersion: v2
+    appVersion: 1.261007.1442
+    created: "2026-10-29T12:29:18.044272703Z"
+    description: Generic Chart
+    digest: 70fd822e1414ee3fbc958a8f9cf4d9de9ae93b5b79207eff84a841a09af41b79
+    name: vlmui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/vlmui-1.261007.1442.tgz
+    version: 1.261007.1442
+  - apiVersion: v2
     appVersion: 1.261005.1452
     created: "2026-10-23T13:54:07.827784531Z"
     description: Generic Chart
@@ -49586,4 +49596,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
     version: 1.260126.0851
-generated: "2026-10-29T12:05:31.392510877Z"
+generated: "2026-10-29T12:29:18.043331019Z"
