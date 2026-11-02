@@ -672,59 +672,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/apigateway.tgz
     version: 1.250316.1039
-  assistance:
-  - apiVersion: v2
-    appVersion: 1.260515.0610
-    created: "2026-05-18T11:56:33.293330559Z"
-    description: Generic Chart
-    digest: 6eda676a89b0cf748345665aa25d2a62b12beda5f12fda93af23dbc399d23819
-    name: assistance
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/assistance.tgz
-    version: 1.260515.0610
-  - apiVersion: v2
-    appVersion: 1.251204.0807
-    created: "2026-03-27T08:50:12.432144927Z"
-    description: Generic Chart
-    digest: 38237691d592cfa45c1ce3beb1d5aeb842f3b687107bb9ed082c8174b9cc2415
-    name: assistance
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/assistance.tgz
-    version: 1.251204.0807
-  atlassianintegration:
-  - apiVersion: v2
-    appVersion: 1.260515.0550
-    created: "2026-07-28T14:18:39.35836482Z"
-    description: Generic Chart
-    digest: a5511448d45a800f4808e9eedef2abb787e764e3c62bf9101dd0eba8f26c95ad
-    name: atlassianintegration
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/atlassianintegration.tgz
-    version: 1.260515.0550
-  - apiVersion: v2
-    appVersion: 1.250722.0643
-    created: "2026-03-27T08:50:12.432573833Z"
-    description: Generic Chart
-    digest: 5503ca6c97ad88f5c7e564ae494f87d8faed494d25cd81ea1be0c7b0baa383c1
-    name: atlassianintegration
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/atlassianintegration.tgz
-    version: 1.250722.0643
-  atlassianintegrationui:
-  - apiVersion: v2
-    appVersion: 1.250905.0007
-    created: "2026-07-29T08:07:16.262672458Z"
-    description: Generic Chart
-    digest: 9e64c2c0d89eff434d468e4c970d9b5fe5334a0d92c48b6d955e09c830e0772f
-    name: atlassianintegrationui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/atlassianintegrationui.tgz
-    version: 1.250905.0007
   auditservice:
   - apiVersion: v2
     appVersion: 1.261007.1239
@@ -1037,17 +984,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/auditserviceui.tgz
     version: 1.251110.1133
-  bidbmigrationtool:
-  - apiVersion: v2
-    appVersion: 1.251202.0758
-    created: "2026-05-14T12:55:48.406612206Z"
-    description: Generic Chart
-    digest: 9f74b8afa8bd45fdfeebd8ea74104a6853e20b32db6850c392b0aa22231a94cb
-    name: bidbmigrationtool
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/bidbmigrationtool.tgz
-    version: 1.251202.0758
   brokerhub:
   - apiVersion: v2
     appVersion: 1.261028.0710
@@ -1536,49 +1472,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/complianceserviceui.tgz
     version: 1.250930.0628
-  costapi:
-  - apiVersion: v2
-    appVersion: 1.250603.1222
-    created: "2026-03-27T08:50:12.438691457Z"
-    description: Generic Chart
-    digest: ba4c38902d06335fa2b5d112989af178debf6d7a50267ed0e1f3758f6b40d3a4
-    name: costapi
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/costapi.tgz
-    version: 1.250603.1222
-  costapiui:
-  - apiVersion: v2
-    appVersion: 1.250603.1404
-    created: "2026-07-22T15:10:06.123822077Z"
-    description: Generic Chart
-    digest: c76d296cca1499dc744ff41fd595dc8963ee8453fd7890a4d82f3262c001b3af
-    name: costapiui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/costapiui.tgz
-    version: 1.250603.1404
-  customerauditparser:
-  - apiVersion: v2
-    appVersion: 1.260514.1334
-    created: "2026-07-29T08:29:36.042540831Z"
-    description: Generic Chart
-    digest: 2469ba97103a79f6a8f8f0cca880875863cc8f4949b05a251869f07d01e4f991
-    name: customerauditparser
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/customerauditparser.tgz
-    version: 1.260514.1334
-  - apiVersion: v2
-    appVersion: 1.250415.1548
-    created: "2026-03-27T08:50:12.439417084Z"
-    description: Generic Chart
-    digest: b42874fdee6daa74a7d03bdd7761860b1b54d8bec8a73877b7fbacc3b80cf917
-    name: customerauditparser
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/customerauditparser.tgz
-    version: 1.250415.1548
   dashboardapi:
   - apiVersion: v2
     appVersion: 1.260824.1556
@@ -1663,17 +1556,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/denialsaggregation.tgz
     version: 1.260317.0642
-  denialsanalysispredictionservice:
-  - apiVersion: v2
-    appVersion: 1.260312.0925
-    created: "2026-03-27T08:50:12.440858309Z"
-    description: Generic Chart
-    digest: f580cc7475cb5f848de69117171de1c6db7a91763434addd19a69fc35a6f6266
-    name: denialsanalysispredictionservice
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/denialsanalysispredictionservice.tgz
-    version: 1.260312.0925
   denialservice:
   - apiVersion: v2
     appVersion: 1.260926.0002
@@ -2479,28 +2361,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/identity.tgz
     version: 1.260212.1306
-  identityalignment:
-  - apiVersion: v2
-    appVersion: 1.260304.1627
-    created: "2026-03-27T08:50:12.450437971Z"
-    description: Generic Chart
-    digest: de8a993877954022a7e95247e37b709772c6acc457d968472c45b2fb9f539f56
-    name: identityalignment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/identityalignment.tgz
-    version: 1.260304.1627
-  identityalignmentui:
-  - apiVersion: v2
-    appVersion: 1.260213.1340
-    created: "2026-07-22T15:07:04.971102085Z"
-    description: Generic Chart
-    digest: 9b4646b1b703f1fed217af5dbb73eb2b0e7c9df46a2fa7950a2e57b01cf2289d
-    name: identityalignmentui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/identityalignmentui.tgz
-    version: 1.260213.1340
   identityapi:
   - apiVersion: v2
     appVersion: 1.260922.0819
@@ -2593,27 +2453,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/identitydiscovery.tgz
     version: 1.250901.1542
-  identityfuse:
-  - apiVersion: v2
-    appVersion: 1.260515.0606
-    created: "2026-05-30T05:13:32.639658895Z"
-    description: Generic Chart
-    digest: d3ea37030866504b70a326fdc1a68839e1cc14bd55ecac97e3d067cdd0cd9993
-    name: identityfuse
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/identityfuse.tgz
-    version: 1.260515.0606
-  - apiVersion: v2
-    appVersion: 1.250225.0707
-    created: "2026-03-27T08:50:12.4525663Z"
-    description: Generic Chart
-    digest: 4ed9203caaca0d054960c20d16897f6a36880934e6e24ba41b2a79b1136ed6b7
-    name: identityfuse
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/identityfuse.tgz
-    version: 1.250225.0707
   identityui:
   - apiVersion: v2
     appVersion: 1.260928.1240
@@ -3573,77 +3412,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/licensesui.tgz
     version: 1.260302.0918
-  mldatacollection:
-  - apiVersion: v2
-    appVersion: 1.260525.0824
-    created: "2026-07-29T08:58:58.303369581Z"
-    description: Generic Chart
-    digest: 2bdc126f50d14c09e481fe393aeead945fd701cc193fa8a9f6905352a655a63f
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260525.0824
-  - apiVersion: v2
-    appVersion: 1.260519.0508
-    created: "2026-05-19T06:57:38.641835633Z"
-    description: Generic Chart
-    digest: 22da38779e99e4fa9efe608ce48f24e34135a21421ccb202fd90801b4be0e724
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260519.0508
-  - apiVersion: v2
-    appVersion: 1.260514.1049
-    created: "2026-05-14T11:48:38.98160033Z"
-    description: Generic Chart
-    digest: 936f7a12a2efce63113f5f6caadb568427aa4c59c208f5e810971e508b9c3874
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260514.1049
-  - apiVersion: v2
-    appVersion: 1.260514.0840
-    created: "2026-05-14T09:04:16.704939465Z"
-    description: Generic Chart
-    digest: 100587b4cae837d994c9ccc0e2150476a5a637d7e751160fdd88cec11ba15cc0
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260514.0840
-  - apiVersion: v2
-    appVersion: 1.260506.0959
-    created: "2026-05-06T10:18:00.06085444Z"
-    description: Generic Chart
-    digest: ebbeca1f36b43e752e444dc2d90e7be426da776abeb2917a04917c19efc62a65
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260506.0959
-  - apiVersion: v2
-    appVersion: 1.260411.1340
-    created: "2026-04-11T13:52:51.09664375Z"
-    description: Generic Chart
-    digest: 0fb1dcd283ccfbc6e2d8d1c77ab5aa548b340f01043dd0e4c60d6b34d31ba10f
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260411.1340
-  - apiVersion: v2
-    appVersion: 1.260203.1744
-    created: "2026-03-27T08:50:12.463419978Z"
-    description: Generic Chart
-    digest: 6d30457fc1ad39871e2d825824e46689e8c9d64ce1dc1b0251da3a2d98084e56
-    name: mldatacollection
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mldatacollection.tgz
-    version: 1.260203.1744
   mlprediction:
   - apiVersion: v2
     appVersion: 1.261025.1009
@@ -3705,27 +3473,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/mlprediction.tgz
     version: 1.260203.1745
-  mondayintegration:
-  - apiVersion: v2
-    appVersion: 1.260514.0004
-    created: "2026-07-29T08:45:52.727527297Z"
-    description: Generic Chart
-    digest: bfad764afa357684909205693528331fe84e5f0c86416ab45432a44d07e0a184
-    name: mondayintegration
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mondayintegration.tgz
-    version: 1.260514.0004
-  - apiVersion: v2
-    appVersion: 1.250306.0812
-    created: "2026-03-27T08:50:12.465161836Z"
-    description: Generic Chart
-    digest: b5408f2d694321e1c23c6a1b024de45f87c6e331fac743da3b0428483b1f03a3
-    name: mondayintegration
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/mondayintegration.tgz
-    version: 1.250306.0812
   mongodb:
   - apiVersion: v2
     appVersion: 6.0.4
@@ -47630,37 +47377,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/processmanagerui.tgz
     version: 1.260312.0721
-  processsessionsui:
-  - apiVersion: v2
-    appVersion: 1.260629.1457
-    created: "2026-07-29T09:05:22.995391906Z"
-    description: Generic Chart
-    digest: 97a94cd5a2e884fa22fe4e3ab31c615d763c3ef73f0126cdc102e33a9bd16b69
-    name: processsessionsui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/processsessionsui.tgz
-    version: 1.260629.1457
-  - apiVersion: v2
-    appVersion: 1.260511.1036
-    created: "2026-07-22T12:58:30.150442365Z"
-    description: Generic Chart
-    digest: 0d115641f289dbca489e3fe3db7912bbe69490c09d1ce61dc5eaf683f3973e2b
-    name: processsessionsui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/processsessionsui.tgz
-    version: 1.260511.1036
-  - apiVersion: v2
-    appVersion: 1.251105.1550
-    created: "2026-03-27T08:50:12.631181331Z"
-    description: Generic Chart
-    digest: 7809d710a554578cad522853e3e1294df52db17ba1cd56886542022c1a053e86
-    name: processsessionsui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/processsessionsui.tgz
-    version: 1.251105.1550
   productservice:
   - apiVersion: v2
     appVersion: 1.261001.0010
@@ -48407,77 +48123,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/samcatalog.tgz
     version: 1.260325.1141
-  samcatalogenrichment:
-  - apiVersion: v2
-    appVersion: 1.260710.0950
-    created: "2026-07-29T08:58:26.666339916Z"
-    description: Generic Chart
-    digest: c2cc54c48542185fdd837e1b35308ecff1425773b05ecc7d1c45ae8f0510ed80
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260710.0950
-  - apiVersion: v2
-    appVersion: 1.260526.1103
-    created: "2026-06-15T08:08:32.514829311Z"
-    description: Generic Chart
-    digest: 7b41b2871a1c28228b5a47effbbaad64d6bc8b95cbe05927a0a663fe229c9837
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260526.1103
-  - apiVersion: v2
-    appVersion: 1.260506.0936
-    created: "2026-05-06T12:52:27.689318284Z"
-    description: Generic Chart
-    digest: ce9b88c1b330b1ff5cff27d8ebf4c3fe4dc7eb94a9544ce60f1a219151af1536
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260506.0936
-  - apiVersion: v2
-    appVersion: 1.260424.0534
-    created: "2026-04-27T13:20:34.955932071Z"
-    description: Generic Chart
-    digest: d2fa29fc157ff6ca688d3004ffd09cea10715390517f8525a199268b0f82dd73
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260424.0534
-  - apiVersion: v2
-    appVersion: 1.260422.0843
-    created: "2026-04-22T12:06:41.18171405Z"
-    description: Generic Chart
-    digest: ad73766d6cf97cf75f5a25d184d5ea765182e5ae5639fe7c7389a7422b55a46e
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260422.0843
-  - apiVersion: v2
-    appVersion: 1.260408.0740
-    created: "2026-04-21T11:33:08.046672438Z"
-    description: Generic Chart
-    digest: d86ddc074e4bf90786f803f772c2dd91b773e833285fd857406faf8a79576899
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260408.0740
-  - apiVersion: v2
-    appVersion: 1.260331.0710
-    created: "2026-04-16T13:11:34.53859064Z"
-    description: Generic Chart
-    digest: 507eafd4e13cb7c136f11e431f667ae0c5b258b6cec5499b00d09305990f7e76
-    name: samcatalogenrichment
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/samcatalogenrichment.tgz
-    version: 1.260331.0710
   samcatalogui:
   - apiVersion: v2
     appVersion: 1.261016.1318
@@ -49415,37 +49060,6 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/ticketingnotification.tgz
     version: 1.260312.0925
-  touchpointeventsui:
-  - apiVersion: v2
-    appVersion: 1.260629.1504
-    created: "2026-07-29T09:18:08.291126567Z"
-    description: Generic Chart
-    digest: 0c8cd668d58414b05fa09a2d98dbf0aa56782242deb11d2101e774a1940bd41d
-    name: touchpointeventsui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/touchpointeventsui.tgz
-    version: 1.260629.1504
-  - apiVersion: v2
-    appVersion: 1.260514.0619
-    created: "2026-07-22T13:26:36.591332155Z"
-    description: Generic Chart
-    digest: a4488867aae814f2b340b34aaefe633446c4aac5587697d6b3a5fcbff8f7ab08
-    name: touchpointeventsui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/touchpointeventsui.tgz
-    version: 1.260514.0619
-  - apiVersion: v2
-    appVersion: 1.250926.0717
-    created: "2026-03-27T08:50:12.64208617Z"
-    description: Generic Chart
-    digest: 7422297783e8b58bfe816a20639f2756f7ce072dfcb261b3299562232b2760ad
-    name: touchpointeventsui
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/touchpointeventsui.tgz
-    version: 1.250926.0717
   uiconfigurationservice:
   - apiVersion: v2
     appVersion: 1.260803.0810
@@ -50146,15 +49760,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-  zohocrmlistener:
-  - apiVersion: v2
-    appVersion: 1.260126.0851
-    created: "2026-03-27T08:50:12.647430976Z"
-    description: Generic Chart
-    digest: 7e9006dafc07426e783a11d1bb82743e60471f02e5a1b06d990992e7e11944f4
-    name: zohocrmlistener
-    type: application
-    urls:
-    - https://openlm-helm.github.io/helmcharts/zohocrmlistener.tgz
-    version: 1.260126.0851
 generated: "2026-10-29T13:00:37.364993421Z"
