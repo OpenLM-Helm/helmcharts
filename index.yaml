@@ -3261,6 +3261,16 @@ entries:
     version: 1.260309.1307
   licensemanagerui:
   - apiVersion: v2
+    appVersion: 1.261103.0642
+    created: "2026-11-03T11:49:56.103654195Z"
+    description: Generic Chart
+    digest: b97a0f89788d567692b7686f98e778d30bed5a3294961c420672d29b0104aace
+    name: licensemanagerui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/licensemanagerui-1.261103.0642.tgz
+    version: 1.261103.0642
+  - apiVersion: v2
     appVersion: 1.260907.0713
     created: "2026-10-23T13:15:18.16289152Z"
     description: Generic Chart
@@ -49830,4 +49840,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-03T11:43:31.647305942Z"
+generated: "2026-11-03T11:49:56.10267934Z"
