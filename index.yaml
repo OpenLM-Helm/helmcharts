@@ -1251,9 +1251,9 @@ entries:
   cloudbroker:
   - apiVersion: v2
     appVersion: 1.261103.0719
-    created: "2026-11-03T10:09:02.101828931Z"
+    created: "2026-11-05T10:02:01.985703086Z"
     description: Generic Chart
-    digest: 39e307c694af5e2b081f341bf50ae6279537c2189551c0b43a4ed98ec85d931c
+    digest: 5ef9e8dff499be8add68798b1ed7ca508aa98989d636dd897102a7e6b589e921
     name: cloudbroker
     type: application
     urls:
@@ -49880,4 +49880,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-05T08:57:34.199359143Z"
+generated: "2026-11-05T10:02:01.984868134Z"
