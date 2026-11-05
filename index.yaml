@@ -3835,6 +3835,22 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/officetimecalculation.tgz
     version: 1.251209.0538
+  openlm-apigateway:
+  - apiVersion: v2
+    appVersion: 4.1.0
+    created: "2026-11-05T20:38:09.9806665+05:30"
+    dependencies:
+    - name: tyk-oss
+      repository: https://helm.tyk.io/public/helm/charts/
+      version: 4.1.0
+    description: OpenLM API Gateway (Tyk OSS) with the gateway bootstrapper that loads
+      the OpenLM API definitions
+    digest: 6110cd7e7c4cfb32eb2fa18a71d72280da2df16fb8de04398086e1fc5151951f
+    name: openlm-apigateway
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/openlm-apigateway-1.0.0-rc.1.tgz
+    version: 1.0.0-rc.1
   openlm-config-generic:
   - apiVersion: v2
     appVersion: 26.611.1305
@@ -49717,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-05T14:46:49.939549395Z"
+generated: "2026-11-05T20:38:09.9700462+05:30"
