@@ -3576,6 +3576,16 @@ entries:
     version: 6.0.4
   navigationservice:
   - apiVersion: v2
+    appVersion: 1.261104.0948
+    created: "2026-11-05T08:57:34.200104816Z"
+    description: Generic Chart
+    digest: 4ec339689eb90889cdd0d377987bd61288f604877fbe01c56b59b0b4b2333022
+    name: navigationservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/navigationservice-1.261104.0948.tgz
+    version: 1.261104.0948
+  - apiVersion: v2
     appVersion: 1.261015.1232
     created: "2026-10-28T10:34:17.154970133Z"
     description: Generic Chart
@@ -49870,4 +49880,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-05T07:32:00.224405888Z"
+generated: "2026-11-05T08:57:34.199359143Z"
