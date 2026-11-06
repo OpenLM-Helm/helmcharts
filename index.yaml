@@ -3838,6 +3838,21 @@ entries:
   openlm-apigateway:
   - apiVersion: v2
     appVersion: 4.1.0
+    created: "2026-11-06T16:23:35.2749704+05:30"
+    dependencies:
+    - name: tyk-oss
+      repository: https://helm.tyk.io/public/helm/charts/
+      version: 4.1.0
+    description: OpenLM API Gateway (Tyk OSS) with the gateway bootstrapper that loads
+      the OpenLM API definitions
+    digest: b3d74e5f0ef9a8f7e670949be2104dd8ecf87d0bb80ccf6ccc3a9796d07f5cc7
+    name: openlm-apigateway
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/openlm-apigateway-1.0.0-rc.2.tgz
+    version: 1.0.0-rc.2
+  - apiVersion: v2
+    appVersion: 4.1.0
     created: "2026-11-05T20:38:09.9806665+05:30"
     dependencies:
     - name: tyk-oss
@@ -50188,4 +50203,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:45:00.770587224Z"
+generated: "2026-11-06T16:23:35.261323+05:30"
