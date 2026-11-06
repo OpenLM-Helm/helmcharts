@@ -1128,13 +1128,13 @@ entries:
     version: 1.261103.0649
   - apiVersion: v2
     appVersion: 1.261028.0658
-    created: "2026-10-29T07:43:57.205447144Z"
+    created: "2026-11-06T10:12:08.090379188Z"
     description: Generic Chart
-    digest: 270f245b80f53d825b9ce1e4b92f0f3a101a227caada28094f1cf414e1993ae1
+    digest: 55836b8b5497fc9e7afeb439f872348ecc7a75d99f020a4ac3f2d23959785345
     name: brokerhubui
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/brokerhubui.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/brokerhubui-1.261028.0658.tgz
     version: 1.261028.0658
   - apiVersion: v2
     appVersion: 1.261012.0824
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:10:11.644516049Z"
+generated: "2026-11-06T10:12:08.089226861Z"
