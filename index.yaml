@@ -136,13 +136,13 @@ entries:
   agentshub:
   - apiVersion: v2
     appVersion: 1.261016.1025
-    created: "2026-10-28T13:27:25.682427793Z"
+    created: "2026-11-06T09:32:56.66118824Z"
     description: Generic Chart
-    digest: 344fb62dfe210c834832903fa5d22bfa2fae75ed223f751900cd0a5c7248401f
+    digest: 91b889018b66d129c8b4a125690d902ca6ae94cd927e98aa62352990ca886676
     name: agentshub
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/agentshub.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/agentshub-1.261016.1025.tgz
     version: 1.261016.1025
   - apiVersion: v2
     appVersion: 1.260917.0911
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-05T20:38:09.9700462+05:30"
+generated: "2026-11-06T09:32:56.660188683Z"
