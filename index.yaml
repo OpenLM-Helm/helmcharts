@@ -1913,6 +1913,16 @@ entries:
     version: 1.250720.0738
   dss:
   - apiVersion: v2
+    appVersion: 1.261106.1151
+    created: "2026-11-06T12:42:56.974667118Z"
+    description: Generic Chart
+    digest: 860ba92db85ceb5a2c2ed1f24552a92a035df6c6d357c83114cedd3ecbc1b36c
+    name: dss
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/dss-1.261106.1151.tgz
+    version: 1.261106.1151
+  - apiVersion: v2
     appVersion: 1.261009.1114
     created: "2026-10-13T07:23:20.647658857Z"
     description: Generic Chart
@@ -50203,4 +50213,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T11:42:27.149783138Z"
+generated: "2026-11-06T12:42:56.973779339Z"
