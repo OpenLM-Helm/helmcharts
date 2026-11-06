@@ -2637,13 +2637,13 @@ entries:
     version: 1.261104.1208
   - apiVersion: v2
     appVersion: 1.261027.1448
-    created: "2026-10-27T15:13:11.467701806Z"
+    created: "2026-11-06T10:16:59.35227857Z"
     description: Generic Chart
-    digest: 52320bfdda7972bf2420f5ddd8f83ea428264510da414addab3fc798c1e54e12
+    digest: fe26a4bf4956938baf62c8345c297bc6f990fd688413498658ccc398949d48ff
     name: kafkainitpod
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/kafkainitpod.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/kafkainitpod-1.261027.1448.tgz
     version: 1.261027.1448
   - apiVersion: v2
     appVersion: 1.261006.0619
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:15:32.034212076Z"
+generated: "2026-11-06T10:16:59.35150231Z"
