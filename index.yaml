@@ -49199,13 +49199,13 @@ entries:
     version: 1.261007.1213
   - apiVersion: v2
     appVersion: 1.260925.0804
-    created: "2026-10-28T13:14:20.48379982Z"
+    created: "2026-11-06T10:32:25.325475222Z"
     description: Generic Chart
-    digest: 4a2b06f5a26883f455a394c0bd5ca02b9d35cc78f8b0aa3717916160e83ee76f
+    digest: 6ff543f0d2d59909d001753eb07a6ee2d8770a463268213f4fe4788f2754753d
     name: usageui
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/usageui.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/usageui-1.260925.0804.tgz
     version: 1.260925.0804
   - apiVersion: v2
     appVersion: 1.260907.0908
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:30:27.421620545Z"
+generated: "2026-11-06T10:32:25.324681363Z"
