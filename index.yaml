@@ -47845,13 +47845,13 @@ entries:
     version: 1.261102.1117
   - apiVersion: v2
     appVersion: 1.260909.1312
-    created: "2026-10-13T12:43:34.859336924Z"
+    created: "2026-11-06T10:28:32.676140863Z"
     description: Generic Chart
-    digest: dca17fc7d94c2bdbd80dad32c196b2753f6dbcd18b8df1ca741f8d5121fb8d3c
+    digest: 8b1084cdaaad600252fa0261f110fa473e513f040cb8a32c06915f8e97dd796d
     name: reportingdatarecovery
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/reportingdatarecovery.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/reportingdatarecovery-1.260909.1312.tgz
     version: 1.260909.1312
   - apiVersion: v2
     appVersion: 1.260806.0720
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:26:28.668204076Z"
+generated: "2026-11-06T10:28:32.674828734Z"
