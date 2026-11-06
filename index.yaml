@@ -2841,13 +2841,13 @@ entries:
     version: 1.261022.0812
   - apiVersion: v2
     appVersion: 1.260925.0804
-    created: "2026-10-28T13:11:53.761027334Z"
+    created: "2026-11-06T10:18:45.88684869Z"
     description: Generic Chart
-    digest: 0e8c0423f3909263464487b8a476135693493145b0033af806b9627ca49ca771
+    digest: a0fc93b3f9270f978071bc340d361f793124533897e7f73f88671a3630cca5af
     name: licenseallocationsui
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/licenseallocationsui.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/licenseallocationsui-1.260925.0804.tgz
     version: 1.260925.0804
   - apiVersion: v2
     appVersion: 1.260831.0815
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:16:59.35150231Z"
+generated: "2026-11-06T10:18:45.885953101Z"
