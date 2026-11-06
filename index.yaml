@@ -48741,13 +48741,13 @@ entries:
     version: 1.261102.1150
   - apiVersion: v2
     appVersion: 1.260909.1127
-    created: "2026-10-27T07:55:44.904299466Z"
+    created: "2026-11-06T10:30:27.422654083Z"
     description: Generic Chart
-    digest: e6a1b3d3c46e016957c890214059a5043ccae89787090402c7a5337055792054
+    digest: bc047a23d71dfc1d771a939d73df555aab87005ed6b4e6be9bc2e5c36196416f
     name: sparkmongo
     type: application
     urls:
-    - https://openlm-helm.github.io/helmcharts/sparkmongo.tgz
+    - https://openlm-helm.github.io/helmcharts/versions/sparkmongo-1.260909.1127.tgz
     version: 1.260909.1127
   - apiVersion: v2
     appVersion: 1.260619.1054
@@ -49733,4 +49733,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-06T10:28:32.674828734Z"
+generated: "2026-11-06T10:30:27.421620545Z"
