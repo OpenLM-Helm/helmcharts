@@ -1556,6 +1556,16 @@ entries:
     version: 1.250225.0735
   denialsaggregation:
   - apiVersion: v2
+    appVersion: 1.261110.1127
+    created: "2026-11-10T11:46:50.165482887Z"
+    description: Generic Chart
+    digest: e325343cf5d9efc26174d7ea734b558167088c8e8edfcefc29e251953e56352f
+    name: denialsaggregation
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/denialsaggregation-1.261110.1127.tgz
+    version: 1.261110.1127
+  - apiVersion: v2
     appVersion: 1.261104.1107
     created: "2026-11-05T14:46:49.940392382Z"
     description: Generic Chart
@@ -50679,4 +50689,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-10T07:37:41.616999099Z"
+generated: "2026-11-10T11:46:50.164679118Z"
