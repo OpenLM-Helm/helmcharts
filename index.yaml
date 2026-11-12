@@ -48271,6 +48271,16 @@ entries:
     version: 1.260312.0721
   processmanagerui:
   - apiVersion: v2
+    appVersion: 1.261111.1037
+    created: "2026-11-12T10:37:25.452011833Z"
+    description: Generic Chart
+    digest: 1198a044cb60f4d9dae0f188d2ffde4970dd6cf611469569fbe63781dd18972e
+    name: processmanagerui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/processmanagerui-1.261111.1037.tgz
+    version: 1.261111.1037
+  - apiVersion: v2
     appVersion: 1.261016.1116
     created: "2026-10-28T14:08:55.359470325Z"
     description: Generic Chart
@@ -50709,4 +50719,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-12T10:37:13.46095928Z"
+generated: "2026-11-12T10:37:25.45047347Z"
