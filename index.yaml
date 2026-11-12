@@ -49472,6 +49472,16 @@ entries:
     version: 1.260904.0909
   sessioncreator:
   - apiVersion: v2
+    appVersion: 1.261111.1031
+    created: "2026-11-12T10:37:13.461798532Z"
+    description: Generic Chart
+    digest: 6f5d725829f763f1d6d0c66fb26a4877cd76d11a09497b8107645ca52938e6f1
+    name: sessioncreator
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/sessioncreator-1.261111.1031.tgz
+    version: 1.261111.1031
+  - apiVersion: v2
     appVersion: 1.261016.0841
     created: "2026-10-28T14:20:41.117626814Z"
     description: Generic Chart
@@ -50699,4 +50709,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-11T08:11:33.329390216Z"
+generated: "2026-11-12T10:37:13.46095928Z"
