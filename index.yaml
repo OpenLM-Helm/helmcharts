@@ -3136,6 +3136,16 @@ entries:
     version: 1.260302.1335
   licenseharvester:
   - apiVersion: v2
+    appVersion: 1.261102.1137
+    created: "2026-11-12T12:25:47.248260188Z"
+    description: Generic Chart
+    digest: a48191534cd219b7b04594109ccd97740afc690d66ce4ead676d6d4a3707d8f4
+    name: licenseharvester
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/licenseharvester-1.261102.1137.tgz
+    version: 1.261102.1137
+  - apiVersion: v2
     appVersion: 1.260917.0916
     created: "2026-10-13T09:04:50.021095174Z"
     description: Generic Chart
@@ -50719,4 +50729,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-12T10:37:25.45047347Z"
+generated: "2026-11-12T12:25:47.246228741Z"
