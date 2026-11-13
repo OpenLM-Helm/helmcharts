@@ -3914,6 +3914,16 @@ entries:
     version: 1.260310.1137
   notificationgateway:
   - apiVersion: v2
+    appVersion: 1.261025.1012
+    created: "2026-11-13T20:50:19.784363943Z"
+    description: Generic Chart
+    digest: 72888da83bec72a1bf92a263961bdf6966c3b7b2f02ff5974d06501e8edce428
+    name: notificationgateway
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/notificationgateway-1.261025.1012.tgz
+    version: 1.261025.1012
+  - apiVersion: v2
     appVersion: 1.260630.0930
     created: "2026-10-13T10:57:15.937386736Z"
     description: Generic Chart
@@ -50929,4 +50939,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T20:48:22.170241843Z"
+generated: "2026-11-13T20:50:19.78346522Z"
