@@ -48959,6 +48959,16 @@ entries:
     version: 1.260128.0916
   reportingdataapi:
   - apiVersion: v2
+    appVersion: 1.261113.0637
+    created: "2026-11-13T21:04:15.412322341Z"
+    description: Generic Chart
+    digest: 0c04bec2c4d2450f88013dabdc11ccef0e0a2ec8c20ff0cc94c9fc15846ce330
+    name: reportingdataapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/reportingdataapi-1.261113.0637.tgz
+    version: 1.261113.0637
+  - apiVersion: v2
     appVersion: 1.261028.0556
     created: "2026-10-28T06:33:52.2923169Z"
     description: Generic Chart
@@ -50989,4 +50999,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:02:34.686702037Z"
+generated: "2026-11-13T21:04:15.411041539Z"
