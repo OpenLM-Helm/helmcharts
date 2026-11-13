@@ -48297,6 +48297,16 @@ entries:
     version: 1.260327.0847
   operationalapi:
   - apiVersion: v2
+    appVersion: 1.261110.1450
+    created: "2026-11-13T20:52:18.779760312Z"
+    description: Generic Chart
+    digest: 67e6b098a41c07e25b7443ba22484d112592f15e297676c111c3f5dd8b649e5f
+    name: operationalapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/operationalapi-1.261110.1450.tgz
+    version: 1.261110.1450
+  - apiVersion: v2
     appVersion: 1.261011.0708
     created: "2026-10-28T14:00:40.624324898Z"
     description: Generic Chart
@@ -50939,4 +50949,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T20:50:19.78346522Z"
+generated: "2026-11-13T20:52:18.778921953Z"
