@@ -49680,6 +49680,16 @@ entries:
     - https://openlm-helm.github.io/helmcharts/versions/servicenowcreds-1.261111.0738.tgz
     version: 1.261111.0738
   - apiVersion: v2
+    appVersion: 1.261111.0712
+    created: "2026-11-13T21:12:08.826566667Z"
+    description: Generic Chart
+    digest: badfce80c0a421fa432c5d1b58a83c5121dc772b1d5cbf9cd0dd31c269b67220
+    name: servicenowcreds
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/servicenowcreds-1.261111.0712.tgz
+    version: 1.261111.0712
+  - apiVersion: v2
     appVersion: 1.261023.1259
     created: "2026-10-26T06:51:29.902889197Z"
     description: Generic Chart
@@ -51029,4 +51039,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:10:23.165499303Z"
+generated: "2026-11-13T21:12:08.825581954Z"
