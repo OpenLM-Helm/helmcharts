@@ -1991,6 +1991,16 @@ entries:
     version: 1.250818.1034
   donglemonitoringui:
   - apiVersion: v2
+    appVersion: 1.261102.1137
+    created: "2026-11-13T17:04:25.995350912Z"
+    description: Generic Chart
+    digest: 982a29dfef3fdebdc437db52a6e42df9a5254a34b31ab91be1f5effa4d12c3d2
+    name: donglemonitoringui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/donglemonitoringui-1.261102.1137.tgz
+    version: 1.261102.1137
+  - apiVersion: v2
     appVersion: 1.260917.0915
     created: "2026-10-23T12:41:36.76214446Z"
     description: Generic Chart
@@ -50899,4 +50909,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T17:01:42.716044888Z"
+generated: "2026-11-13T17:04:25.994425686Z"
