@@ -48764,6 +48764,16 @@ entries:
     version: 1.260312.0733
   projectsserviceapi:
   - apiVersion: v2
+    appVersion: 1.261022.1334
+    created: "2026-11-13T21:01:07.81941668Z"
+    description: Generic Chart
+    digest: a571c4d3b9476e45c1ee94006a47db089c958679dbe508667e7f030c01133cdf
+    name: projectsserviceapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/projectsserviceapi-1.261022.1334.tgz
+    version: 1.261022.1334
+  - apiVersion: v2
     appVersion: 1.260707.1154
     created: "2026-10-13T11:56:17.265372209Z"
     description: Generic Chart
@@ -50969,4 +50979,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T20:59:10.175935448Z"
+generated: "2026-11-13T21:01:07.81839727Z"
