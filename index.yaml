@@ -49497,6 +49497,16 @@ entries:
     version: 1.260416.1453
   server:
   - apiVersion: v2
+    appVersion: 1.261108.1309
+    created: "2026-11-13T21:09:01.805779117Z"
+    description: Generic Chart
+    digest: 981c7a45c5e5d54a1a616e6633106bec04afa6924ffc4ed0e8a75d49163cad6a
+    name: server
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/server-1.261108.1309.tgz
+    version: 1.261108.1309
+  - apiVersion: v2
     appVersion: 1.261018.1359
     created: "2026-10-28T14:19:06.996702091Z"
     description: Generic Chart
@@ -51009,4 +51019,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:06:25.855630075Z"
+generated: "2026-11-13T21:09:01.804756417Z"
