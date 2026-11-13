@@ -3833,6 +3833,16 @@ entries:
     version: 1.260304.1251
   navigationui:
   - apiVersion: v2
+    appVersion: 1.261105.1345
+    created: "2026-11-13T20:48:22.1710926Z"
+    description: Generic Chart
+    digest: 9af67ef6c0d6c2ff54611cb8f3d36caad50b440062552746017b7415a3187455
+    name: navigationui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/navigationui-1.261105.1345.tgz
+    version: 1.261105.1345
+  - apiVersion: v2
     appVersion: 1.261015.1026
     created: "2026-10-28T10:46:19.295760797Z"
     description: Generic Chart
@@ -50919,4 +50929,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T20:46:40.394583471Z"
+generated: "2026-11-13T20:48:22.170241843Z"
