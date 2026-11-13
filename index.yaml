@@ -479,6 +479,16 @@ entries:
     version: 1.260217.1545
   alldbupgradeapi:
   - apiVersion: v2
+    appVersion: 1.261022.1313
+    created: "2026-11-13T16:46:26.965377096Z"
+    description: Generic Chart
+    digest: 036a1533d07d2d9dfdff3c19e75421201d056c61a471bbce22949ef73d138a20
+    name: alldbupgradeapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/alldbupgradeapi-1.261022.1313.tgz
+    version: 1.261022.1313
+  - apiVersion: v2
     appVersion: 1.260923.1352
     created: "2026-10-28T13:30:26.363118657Z"
     description: Generic Chart
@@ -50799,4 +50809,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:43:52.815238253Z"
+generated: "2026-11-13T16:46:26.964602059Z"
