@@ -753,6 +753,16 @@ entries:
     version: 1.260213.0750
   auditservice:
   - apiVersion: v2
+    appVersion: 1.261105.0952
+    created: "2026-11-13T16:51:52.467195933Z"
+    description: Generic Chart
+    digest: 507b3398b7e4f3db4baa1726334312bc2a50b1a6c0d971c0f301234c8f732db2
+    name: auditservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/auditservice-1.261105.0952.tgz
+    version: 1.261105.0952
+  - apiVersion: v2
     appVersion: 1.261007.1239
     created: "2026-10-12T12:12:24.759600778Z"
     description: Generic Chart
@@ -50829,4 +50839,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:49:15.436037195Z"
+generated: "2026-11-13T16:51:52.466377473Z"
