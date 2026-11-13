@@ -236,6 +236,16 @@ entries:
     version: 1.260311.1008
   agentshubui:
   - apiVersion: v2
+    appVersion: 1.261102.1139
+    created: "2026-11-13T16:39:12.793580171Z"
+    description: Generic Chart
+    digest: fc7dbe7fbf2b3665af732e6e481e8508f44996912c1d2b80fac15c3c888cb544
+    name: agentshubui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/agentshubui-1.261102.1139.tgz
+    version: 1.261102.1139
+  - apiVersion: v2
     appVersion: 1.261016.1025
     created: "2026-10-28T13:28:28.29983497Z"
     description: Generic Chart
@@ -50769,4 +50779,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:38:02.942813505Z"
+generated: "2026-11-13T16:39:12.792776244Z"
