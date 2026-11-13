@@ -1511,6 +1511,16 @@ entries:
     version: 1.260311.0647
   complianceservice:
   - apiVersion: v2
+    appVersion: 1.261104.1233
+    created: "2026-11-13T16:56:59.137883193Z"
+    description: Generic Chart
+    digest: 0784ea8c3050a4d2f8a8305ae37b180a70852ed3ef72cfb71ebe3199babd8ba3
+    name: complianceservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/complianceservice-1.261104.1233.tgz
+    version: 1.261104.1233
+  - apiVersion: v2
     appVersion: 1.261008.0825
     created: "2026-10-28T13:34:26.09038756Z"
     description: Generic Chart
@@ -50859,4 +50869,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:55:18.066787787Z"
+generated: "2026-11-13T16:56:59.136984107Z"
