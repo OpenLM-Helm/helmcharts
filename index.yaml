@@ -50432,6 +50432,16 @@ entries:
     version: 1.250915.1403
   uiconfigurationserviceui:
   - apiVersion: v2
+    appVersion: 1.261110.0950
+    created: "2026-11-13T23:57:45.911353223Z"
+    description: Generic Chart
+    digest: 41bbd6b03022b570de17979696aecec9363d2e1ff92ee7e9f4f608e829fc2f08
+    name: uiconfigurationserviceui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/uiconfigurationserviceui-1.261110.0950.tgz
+    version: 1.261110.0950
+  - apiVersion: v2
     appVersion: 1.261028.1452
     created: "2026-10-28T15:16:50.461607204Z"
     description: Generic Chart
@@ -51079,4 +51089,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:20:57.226715411Z"
+generated: "2026-11-13T23:57:45.910362607Z"
