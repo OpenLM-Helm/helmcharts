@@ -327,6 +327,16 @@ entries:
     version: 1.260225.1224
   alertsservice:
   - apiVersion: v2
+    appVersion: 1.261102.1138
+    created: "2026-11-13T16:42:06.342367016Z"
+    description: Generic Chart
+    digest: 101040243fbcfc7969d34321fa24c46f33d76e609fee87b8c0feba310a96ab1c
+    name: alertsservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/alertsservice-1.261102.1138.tgz
+    version: 1.261102.1138
+  - apiVersion: v2
     appVersion: 1.260917.0914
     created: "2026-10-12T08:59:41.833058737Z"
     description: Generic Chart
@@ -50779,4 +50789,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:39:12.792776244Z"
+generated: "2026-11-13T16:42:06.341611115Z"
