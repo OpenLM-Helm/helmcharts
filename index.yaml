@@ -1747,6 +1747,16 @@ entries:
     version: 1.260317.0642
   denialservice:
   - apiVersion: v2
+    appVersion: 1.261025.1438
+    created: "2026-11-13T16:58:09.587559815Z"
+    description: Generic Chart
+    digest: 3893e68ef82145b3cdfa53757615e3dc3afff9479f99e73ce81286fc7c6159a9
+    name: denialservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/denialservice-1.261025.1438.tgz
+    version: 1.261025.1438
+  - apiVersion: v2
     appVersion: 1.260926.0002
     created: "2026-10-28T13:44:51.124210375Z"
     description: Generic Chart
@@ -50869,4 +50879,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:56:59.136984107Z"
+generated: "2026-11-13T16:58:09.586705852Z"
