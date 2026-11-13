@@ -50289,6 +50289,16 @@ entries:
     version: 1.260306.1004
   subscriptionoptimizer:
   - apiVersion: v2
+    appVersion: 1.261102.1137
+    created: "2026-11-13T21:18:46.287690246Z"
+    description: Generic Chart
+    digest: 1c239a47e2172cf46ab4a3c26e3818196d799536179ce9e3eccf4e917cdd5c7b
+    name: subscriptionoptimizer
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/subscriptionoptimizer-1.261102.1137.tgz
+    version: 1.261102.1137
+  - apiVersion: v2
     appVersion: 1.260917.0915
     created: "2026-10-13T13:11:59.030294636Z"
     description: Generic Chart
@@ -51059,4 +51069,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:17:08.342291491Z"
+generated: "2026-11-13T21:18:46.286900134Z"
