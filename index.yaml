@@ -560,6 +560,16 @@ entries:
     version: 1.260309.1228
   allocationservice:
   - apiVersion: v2
+    appVersion: 1.261026.0810
+    created: "2026-11-13T16:47:47.084766868Z"
+    description: Generic Chart
+    digest: e9b84bc1cb938b1c4f034dc178491b1db5e0c155ae84e1551ff55a0f81d37d39
+    name: allocationservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/allocationservice-1.261026.0810.tgz
+    version: 1.261026.0810
+  - apiVersion: v2
     appVersion: 1.260914.1052
     created: "2026-10-12T09:07:13.336597412Z"
     description: Generic Chart
@@ -50809,4 +50819,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:46:26.964602059Z"
+generated: "2026-11-13T16:47:47.083798521Z"
