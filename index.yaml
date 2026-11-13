@@ -49568,6 +49568,16 @@ entries:
     version: 1.260312.0909
   servicenowalertintegration:
   - apiVersion: v2
+    appVersion: 1.261102.0551
+    created: "2026-11-13T21:10:23.167636614Z"
+    description: Generic Chart
+    digest: a7e850c54ec05f3f27bda06313d2eae6de33e52458ed029d7e87db1540c6e06c
+    name: servicenowalertintegration
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/servicenowalertintegration-1.261102.0551.tgz
+    version: 1.261102.0551
+  - apiVersion: v2
     appVersion: 1.261026.0906
     created: "2026-10-29T11:52:22.636621873Z"
     description: Generic Chart
@@ -51019,4 +51029,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:09:01.804756417Z"
+generated: "2026-11-13T21:10:23.165499303Z"
