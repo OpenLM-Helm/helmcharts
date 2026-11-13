@@ -408,6 +408,16 @@ entries:
     version: 1.260304.0855
   alertsserviceui:
   - apiVersion: v2
+    appVersion: 1.261102.1138
+    created: "2026-11-13T16:43:52.816063693Z"
+    description: Generic Chart
+    digest: 5056814a6197b842eef51874f80a99998e942821356a19185c497f52414b61d1
+    name: alertsserviceui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/alertsserviceui-1.261102.1138.tgz
+    version: 1.261102.1138
+  - apiVersion: v2
     appVersion: 1.260917.0914
     created: "2026-10-23T12:09:17.549863584Z"
     description: Generic Chart
@@ -50789,4 +50799,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T16:42:06.341611115Z"
+generated: "2026-11-13T16:43:52.815238253Z"
