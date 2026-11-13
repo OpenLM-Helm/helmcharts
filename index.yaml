@@ -48897,6 +48897,16 @@ entries:
     version: 1.260311.0853
   pushnotification:
   - apiVersion: v2
+    appVersion: 1.261025.1012
+    created: "2026-11-13T21:02:34.687474367Z"
+    description: Generic Chart
+    digest: be3040a676cad6fb63cc9a49632691a8446026f8776919f6b65072ef147b0853
+    name: pushnotification
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/pushnotification-1.261025.1012.tgz
+    version: 1.261025.1012
+  - apiVersion: v2
     appVersion: 1.260630.0930
     created: "2026-10-13T12:31:45.061775277Z"
     description: Generic Chart
@@ -50979,4 +50989,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T21:01:07.81839727Z"
+generated: "2026-11-13T21:02:34.686702037Z"
