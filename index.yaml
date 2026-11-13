@@ -13,6 +13,16 @@ entries:
     version: 1.260819.1521
   agentactivitymanager:
   - apiVersion: v2
+    appVersion: 1.261113.0938
+    created: "2026-11-13T10:21:18.493869825Z"
+    description: Generic Chart
+    digest: 587f24e94a0a85948677287d9777222f94f67701ffa3e4a7fb08e61baa5c9808
+    name: agentactivitymanager
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/agentactivitymanager-1.261113.0938.tgz
+    version: 1.261113.0938
+  - apiVersion: v2
     appVersion: 1.261016.1026
     created: "2026-10-28T13:22:29.570237116Z"
     description: Generic Chart
@@ -50739,4 +50749,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T10:21:03.584166395Z"
+generated: "2026-11-13T10:21:18.49307139Z"
