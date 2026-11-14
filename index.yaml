@@ -50747,6 +50747,16 @@ entries:
     version: 1.260514.0949
   usersandgroupsservice:
   - apiVersion: v2
+    appVersion: 1.261027.0857
+    created: "2026-11-14T00:21:53.220253031Z"
+    description: Generic Chart
+    digest: 5cede74dbbeea4b1304d129a7601ed860fcc7151318e339d9218970a2036b3dd
+    name: usersandgroupsservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/usersandgroupsservice-1.261027.0857.tgz
+    version: 1.261027.0857
+  - apiVersion: v2
     appVersion: 1.260812.1259
     created: "2026-10-13T14:12:22.627667877Z"
     description: Generic Chart
@@ -51099,4 +51109,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:13:03.897025361Z"
+generated: "2026-11-14T00:21:53.219259215Z"
