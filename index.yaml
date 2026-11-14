@@ -50493,6 +50493,16 @@ entries:
     version: 1.250521.0008
   usageservice:
   - apiVersion: v2
+    appVersion: 1.261025.1438
+    created: "2026-11-14T00:13:03.897983237Z"
+    description: Generic Chart
+    digest: d512cdeb683f3bfb16b2f8bb0af5e8e9a3478ab7bc712f3de474c7f71edb9c4e
+    name: usageservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/usageservice-1.261025.1438.tgz
+    version: 1.261025.1438
+  - apiVersion: v2
     appVersion: 1.260731.0001
     created: "2026-10-13T13:18:11.74184024Z"
     description: Generic Chart
@@ -51089,4 +51099,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-13T23:57:45.910362607Z"
+generated: "2026-11-14T00:13:03.897025361Z"
