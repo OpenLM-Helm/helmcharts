@@ -3181,6 +3181,16 @@ entries:
     version: 1.260302.1319
   licenseautomationtool:
   - apiVersion: v2
+    appVersion: 1.261104.0904
+    created: "2026-11-14T00:45:18.056868822Z"
+    description: Generic Chart
+    digest: 3ecabb34ceb8b30718a1df1d15427eeeae00247b9320a8b8b406cf5ff32cefd0
+    name: licenseautomationtool
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/licenseautomationtool-1.261104.0904.tgz
+    version: 1.261104.0904
+  - apiVersion: v2
     appVersion: 1.261026.0905
     created: "2026-10-28T13:59:29.485674396Z"
     description: Generic Chart
@@ -51229,4 +51239,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:43:32.136798443Z"
+generated: "2026-11-14T00:45:18.055985183Z"
