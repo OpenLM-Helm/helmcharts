@@ -50775,6 +50775,16 @@ entries:
     version: 1.260309.1605
   useravailibility:
   - apiVersion: v2
+    appVersion: 1.261106.1423
+    created: "2026-11-14T07:42:57.643160251Z"
+    description: Generic Chart
+    digest: bddd9e158eff5e7d682fe0a511f1ed0202df30fb34408abbfcd38f7b66478ee6
+    name: useravailibility
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/useravailibility-1.261106.1423.tgz
+    version: 1.261106.1423
+  - apiVersion: v2
     appVersion: 1.260609.0738
     created: "2026-10-13T14:02:43.095037302Z"
     description: Generic Chart
@@ -51259,4 +51269,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:48:27.544248148Z"
+generated: "2026-11-14T07:42:57.642373079Z"
