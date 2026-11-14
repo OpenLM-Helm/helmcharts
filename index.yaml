@@ -3324,6 +3324,16 @@ entries:
     version: 1.251105.0618
   licensefilesmanagement:
   - apiVersion: v2
+    appVersion: 1.261022.1438
+    created: "2026-11-14T00:47:51.280177207Z"
+    description: Generic Chart
+    digest: b44977291d9029383866f8340f725afd023c7d68ab8604c1308f732169fc14ba
+    name: licensefilesmanagement
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/licensefilesmanagement-1.261022.1438.tgz
+    version: 1.261022.1438
+  - apiVersion: v2
     appVersion: 1.260723.1100
     created: "2026-09-21T12:16:06.021366766Z"
     description: Generic Chart
@@ -51239,4 +51249,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:45:18.055985183Z"
+generated: "2026-11-14T00:47:51.279353224Z"
