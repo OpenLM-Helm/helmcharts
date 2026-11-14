@@ -2245,6 +2245,16 @@ entries:
     version: 1.260311.0853
   emailnotification:
   - apiVersion: v2
+    appVersion: 1.261025.1012
+    created: "2026-11-14T00:29:54.579807931Z"
+    description: Generic Chart
+    digest: 68ccdbe38d33d92849320fb861f3f1f1d8b19b1988e9c53a77a3398b49a04980
+    name: emailnotification
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/emailnotification-1.261025.1012.tgz
+    version: 1.261025.1012
+  - apiVersion: v2
     appVersion: 1.260630.0930
     created: "2026-10-13T07:34:16.536314211Z"
     description: Generic Chart
@@ -51139,4 +51149,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:27:34.5122554Z"
+generated: "2026-11-14T00:29:54.578715307Z"
