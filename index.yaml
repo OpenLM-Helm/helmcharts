@@ -2388,6 +2388,16 @@ entries:
     version: 1.250806.1045
   flexlmcompare:
   - apiVersion: v2
+    appVersion: 1.261022.1218
+    created: "2026-11-14T00:34:36.027257943Z"
+    description: Generic Chart
+    digest: 959def275cb8378ec03ed9eb53894651d89ceb6b2f27ad75293abe9f344d14f7
+    name: flexlmcompare
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/flexlmcompare-1.261022.1218.tgz
+    version: 1.261022.1218
+  - apiVersion: v2
     appVersion: 1.260903.0837
     created: "2026-10-13T07:48:46.298862661Z"
     description: Generic Chart
@@ -51169,4 +51179,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:33:28.522827255Z"
+generated: "2026-11-14T00:34:36.026387133Z"
