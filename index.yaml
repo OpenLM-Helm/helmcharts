@@ -2052,6 +2052,16 @@ entries:
     version: 1.260129.1537
   dsconnector:
   - apiVersion: v2
+    appVersion: 1.261106.1151
+    created: "2026-11-14T00:27:34.513295247Z"
+    description: Generic Chart
+    digest: 804171c23cea0b951e296a9c4c88a5d09f0ecfe2945bfbee69ce38e8b243357c
+    name: dsconnector
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/dsconnector-1.261106.1151.tgz
+    version: 1.261106.1151
+  - apiVersion: v2
     appVersion: 1.260819.0952
     created: "2026-10-13T07:22:14.293513598Z"
     description: Generic Chart
@@ -51129,4 +51139,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:25:01.554104216Z"
+generated: "2026-11-14T00:27:34.5122554Z"
