@@ -2286,6 +2286,16 @@ entries:
     version: 1.250930.0805
   enduserservices:
   - apiVersion: v2
+    appVersion: 1.261102.1138
+    created: "2026-11-14T00:31:10.274151349Z"
+    description: Generic Chart
+    digest: 5c740fd331828e1f57f44e20e5a6264583ca03bd6d528217612ea8eeaf4c7221
+    name: enduserservices
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/enduserservices-1.261102.1138.tgz
+    version: 1.261102.1138
+  - apiVersion: v2
     appVersion: 1.260917.0917
     created: "2026-10-13T07:48:06.04581493Z"
     description: Generic Chart
@@ -51149,4 +51159,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:29:54.578715307Z"
+generated: "2026-11-14T00:31:10.273171571Z"
