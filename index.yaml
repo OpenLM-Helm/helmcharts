@@ -2337,6 +2337,16 @@ entries:
     version: 1.260312.0732
   featureservice:
   - apiVersion: v2
+    appVersion: 1.261022.1313
+    created: "2026-11-14T00:33:28.52370561Z"
+    description: Generic Chart
+    digest: da083d580c78fb293ba9ad78d0a0b6828e56151a7e45c5c5a39da74a2238778c
+    name: featureservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/featureservice-1.261022.1313.tgz
+    version: 1.261022.1313
+  - apiVersion: v2
     appVersion: 1.260923.1350
     created: "2026-10-28T13:53:08.953859761Z"
     description: Generic Chart
@@ -51159,4 +51169,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:31:10.273171571Z"
+generated: "2026-11-14T00:33:28.522827255Z"
