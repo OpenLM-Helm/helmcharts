@@ -2662,6 +2662,16 @@ entries:
     version: 1.260212.1306
   identityapi:
   - apiVersion: v2
+    appVersion: 1.261022.1315
+    created: "2026-11-14T00:38:33.08427903Z"
+    description: Generic Chart
+    digest: 3c203018c5fdfd3d4a847606d05640cbed719724140ac00be06920bf116c31eb
+    name: identityapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/identityapi-1.261022.1315.tgz
+    version: 1.261022.1315
+  - apiVersion: v2
     appVersion: 1.260922.0819
     created: "2026-10-13T08:38:50.438703352Z"
     description: Generic Chart
@@ -51189,4 +51199,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:36:57.107184527Z"
+generated: "2026-11-14T00:38:33.083417737Z"
