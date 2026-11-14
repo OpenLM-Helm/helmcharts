@@ -51020,6 +51020,16 @@ entries:
     version: 1.260112.1349
   vlmui:
   - apiVersion: v2
+    appVersion: 1.261030.1116
+    created: "2026-11-14T00:25:01.555399106Z"
+    description: Generic Chart
+    digest: b00f262721954a6a808b64beba2c59e368542b50c91f2f04ba87a20fa831df1b
+    name: vlmui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/vlmui-1.261030.1116.tgz
+    version: 1.261030.1116
+  - apiVersion: v2
     appVersion: 1.261007.1442
     created: "2026-10-29T12:29:18.044272703Z"
     description: Generic Chart
@@ -51119,4 +51129,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:23:38.06887764Z"
+generated: "2026-11-14T00:25:01.554104216Z"
