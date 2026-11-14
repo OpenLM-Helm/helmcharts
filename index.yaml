@@ -2723,6 +2723,16 @@ entries:
     version: 1.260312.0719
   identitydiscovery:
   - apiVersion: v2
+    appVersion: 1.261022.1315
+    created: "2026-11-14T00:40:25.691191343Z"
+    description: Generic Chart
+    digest: 36b9c5306143eb076836bcc4b7ab0b15373c71237cf0d02817996c897e555d9b
+    name: identitydiscovery
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/identitydiscovery-1.261022.1315.tgz
+    version: 1.261022.1315
+  - apiVersion: v2
     appVersion: 1.261020.0718
     created: "2026-10-28T13:57:44.750422298Z"
     description: Generic Chart
@@ -51199,4 +51209,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T00:38:33.083417737Z"
+generated: "2026-11-14T00:40:25.690232623Z"
