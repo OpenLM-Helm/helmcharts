@@ -49414,6 +49414,16 @@ entries:
     version: 1.260325.1141
   samcatalogui:
   - apiVersion: v2
+    appVersion: 1.261116.1232
+    created: "2026-11-16T14:20:21.053602114Z"
+    description: Generic Chart
+    digest: 21faa0963beb3f4479083c0090112a4022f977c406f4441b1bc0d66fcabc2131
+    name: samcatalogui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/samcatalogui-1.261116.1232.tgz
+    version: 1.261116.1232
+  - apiVersion: v2
     appVersion: 1.261103.0852
     created: "2026-11-13T21:06:25.856457379Z"
     description: Generic Chart
@@ -51207,4 +51217,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-16T13:49:26.745148606Z"
+generated: "2026-11-16T14:20:21.052451708Z"
