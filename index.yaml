@@ -2896,6 +2896,16 @@ entries:
     version: 1.260514.1225
   licenseaccesscontrol:
   - apiVersion: v2
+    appVersion: 1.261110.1247
+    created: "2026-11-16T13:45:49.927125607Z"
+    description: Generic Chart
+    digest: 14f8b76a85aeee10cf7f9769ed677c76f9f39550d56cbacd358822441fb0d9b7
+    name: licenseaccesscontrol
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/licenseaccesscontrol-1.261110.1247.tgz
+    version: 1.261110.1247
+  - apiVersion: v2
     appVersion: 1.260928.0802
     created: "2026-10-13T08:44:00.512398757Z"
     description: Generic Chart
@@ -51187,4 +51197,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-16T13:24:27.396030797Z"
+generated: "2026-11-16T13:45:49.926150828Z"
