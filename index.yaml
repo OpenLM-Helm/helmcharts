@@ -49861,6 +49861,16 @@ entries:
     version: 1.260129.1535
   softwareassetmanagement:
   - apiVersion: v2
+    appVersion: 1.261116.0524
+    created: "2026-11-16T08:13:05.717376721Z"
+    description: Generic Chart
+    digest: b544f7b845917e71d7d9b0b6c469c0eefea6f586d269512154082e3eb8d66606
+    name: softwareassetmanagement
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/softwareassetmanagement-1.261116.0524.tgz
+    version: 1.261116.0524
+  - apiVersion: v2
     appVersion: 1.261110.0901
     created: "2026-11-13T21:15:27.284221588Z"
     description: Generic Chart
@@ -51147,4 +51157,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-14T07:42:57.642373079Z"
+generated: "2026-11-16T08:13:05.716377283Z"
