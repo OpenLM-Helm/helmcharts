@@ -49263,6 +49263,16 @@ entries:
     version: 1.260727.0801
   samcatalog:
   - apiVersion: v2
+    appVersion: 1.261116.0602
+    created: "2026-11-16T08:14:12.800134739Z"
+    description: Generic Chart
+    digest: dc17a06558ae834fafc8e2f9015e7c7d6d7e2b8d287283222ecd634818300f42
+    name: samcatalog
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/samcatalog-1.261116.0602.tgz
+    version: 1.261116.0602
+  - apiVersion: v2
     appVersion: 1.261014.1512
     created: "2026-10-28T14:15:43.513709312Z"
     description: Generic Chart
@@ -51157,4 +51167,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-16T08:13:05.716377283Z"
+generated: "2026-11-16T08:14:12.799170483Z"
