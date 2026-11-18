@@ -3150,6 +3150,16 @@ entries:
     version: 1.260708.0606
   licenseconcurency:
   - apiVersion: v2
+    appVersion: 1.261118.0911
+    created: "2026-11-18T11:14:24.6982578Z"
+    description: Generic Chart
+    digest: 860a4777cd4d22b19dbee7ca422e857c791b01ed434bd667dc3fb75a86670830
+    name: licenseconcurency
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/licenseconcurency-1.261118.0911.tgz
+    version: 1.261118.0911
+  - apiVersion: v2
     appVersion: 1.261028.1143
     created: "2026-10-28T12:08:11.938010912Z"
     description: Generic Chart
@@ -51688,4 +51698,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-18T09:59:06.44809254Z"
+generated: "2026-11-18T11:14:24.697294903Z"
