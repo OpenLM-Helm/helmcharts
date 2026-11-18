@@ -4136,6 +4136,16 @@ entries:
     version: 1.0.0-rc.1
   openlm-config-generic:
   - apiVersion: v2
+    appVersion: 26.1118.958
+    created: "2026-11-18T09:59:06.449172677Z"
+    description: Generic Chart
+    digest: 1e9bb0fddd8bd01d851bc1c919aa8ccff695d9a8401e7e94fd92411c5226ed0e
+    name: openlm-config-generic
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/openlm_config_generic-26.1118.958.tgz
+    version: 26.1118.958
+  - apiVersion: v2
     appVersion: 26.1117.723
     created: "2026-11-17T07:24:27.267611463Z"
     description: Generic Chart
@@ -51678,4 +51688,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-17T14:22:08.185332165Z"
+generated: "2026-11-18T09:59:06.44809254Z"
