@@ -49658,6 +49658,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/reportingdatarecovery.tgz
     version: 1.260309.1659
+  reportingmcpserver:
+  - apiVersion: v2
+    appVersion: 1.261119.1033
+    created: "2026-11-20T07:21:11.280555689Z"
+    description: Generic Chart
+    digest: 021bc704cbfc880a92039c7a3293d58bcb17a940a8e2290543ae235344a49ae5
+    name: reportingmcpserver
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/reportingmcpserver-1.261119.1033.tgz
+    version: 1.261119.1033
   routerapi:
   - apiVersion: v2
     appVersion: 1.261006.0752
@@ -51698,4 +51709,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-18T11:14:24.697294903Z"
+generated: "2026-11-20T07:21:11.279717143Z"
