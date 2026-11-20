@@ -50056,6 +50056,17 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/samcatalogui.tgz
     version: 1.260416.1453
+  schemamigrationservice:
+  - apiVersion: v2
+    appVersion: 1.261120.1028
+    created: "2026-11-20T11:38:14.595961922Z"
+    description: Generic Chart
+    digest: 7004d4fe3e029bde8dfadc0c2d429a2567e85f459e952b258ff5203695fd2a0f
+    name: schemamigrationservice
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/schemamigrationservice-1.261120.1028.tgz
+    version: 1.261120.1028
   server:
   - apiVersion: v2
     appVersion: 1.261108.1309
@@ -51720,4 +51731,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-20T08:51:05.04559675Z"
+generated: "2026-11-20T11:38:14.595192935Z"
