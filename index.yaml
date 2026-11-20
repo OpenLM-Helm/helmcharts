@@ -50059,9 +50059,9 @@ entries:
   schemamigrationservice:
   - apiVersion: v2
     appVersion: 1.261120.1028
-    created: "2026-11-20T11:38:14.595961922Z"
+    created: "2026-11-20T12:13:56.416624775Z"
     description: Generic Chart
-    digest: 7004d4fe3e029bde8dfadc0c2d429a2567e85f459e952b258ff5203695fd2a0f
+    digest: 20d2c99aaf4788fffdb2aad38a5fab7803a1ecdf31c750fc36804dc63acc4a63
     name: schemamigrationservice
     type: application
     urls:
@@ -51731,4 +51731,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-20T11:38:14.595192935Z"
+generated: "2026-11-20T12:13:56.415985494Z"
