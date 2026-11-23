@@ -621,6 +621,16 @@ entries:
     version: 1.260213.0812
   anonymizationui:
   - apiVersion: v2
+    appVersion: 1.261121.0230
+    created: "2026-11-23T10:30:40.746924424Z"
+    description: Generic Chart
+    digest: 0fff1aa860ea2578e99414767b4095de77d4223208d97ec295b9edbb9a1c1a2d
+    name: anonymizationui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/anonymizationui-1.261121.0230.tgz
+    version: 1.261121.0230
+  - apiVersion: v2
     appVersion: 1.261028.1336
     created: "2026-10-28T15:07:27.419738218Z"
     description: Generic Chart
@@ -51773,4 +51783,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-23T10:15:22.344980884Z"
+generated: "2026-11-23T10:30:40.745793769Z"
