@@ -3731,9 +3731,9 @@ entries:
   licopsconfigurationui:
   - apiVersion: v2
     appVersion: 1.261123.0724
-    created: "2026-11-23T10:03:41.916356293Z"
+    created: "2026-11-23T10:15:22.345913666Z"
     description: Generic Chart
-    digest: 0c3246de75181503fa904d665df42e462519e00f4a34628b872e40d12cbc17ad
+    digest: 0afff99b7b1e52cfdffd4254c3896862c8a76033c36830aee6a0897b1b632de8
     name: licopsconfigurationui
     type: application
     urls:
@@ -51773,4 +51773,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-23T10:03:41.915473003Z"
+generated: "2026-11-23T10:15:22.344980884Z"
