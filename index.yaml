@@ -49682,6 +49682,16 @@ entries:
     version: 1.261119.1033
   routerapi:
   - apiVersion: v2
+    appVersion: 1.261123.0724
+    created: "2026-11-23T08:48:56.478222283Z"
+    description: Generic Chart
+    digest: eb86b7560114d069714a294378ec9d5f3e88f54a3d2cb09231fd9f7e4e805ecc
+    name: routerapi
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/routerapi-1.261123.0724.tgz
+    version: 1.261123.0724
+  - apiVersion: v2
     appVersion: 1.261006.0752
     created: "2026-10-13T12:31:58.39607418Z"
     description: Generic Chart
@@ -51741,4 +51751,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-23T08:47:47.581402149Z"
+generated: "2026-11-23T08:48:56.477388848Z"
