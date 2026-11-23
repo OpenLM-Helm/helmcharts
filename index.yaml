@@ -49755,6 +49755,16 @@ entries:
     version: 1.260803.0810
   routerui:
   - apiVersion: v2
+    appVersion: 1.261123.0724
+    created: "2026-11-23T08:47:47.582365493Z"
+    description: Generic Chart
+    digest: 1438a239947c526b2528661cc7dfbf5ff447bd8be64b84b2dc90a7eee2a00c86
+    name: routerui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/routerui-1.261123.0724.tgz
+    version: 1.261123.0724
+  - apiVersion: v2
     appVersion: 1.261008.0932
     created: "2026-10-13T12:45:28.604221673Z"
     description: Generic Chart
@@ -51731,4 +51741,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-20T12:13:56.415985494Z"
+generated: "2026-11-23T08:47:47.581402149Z"
