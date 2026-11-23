@@ -1614,6 +1614,16 @@ entries:
     version: 1.260827.1118
   dbconfigurationtoolui:
   - apiVersion: v2
+    appVersion: 1.261103.0230
+    created: "2026-11-23T10:52:28.790616739Z"
+    description: Generic Chart
+    digest: a0061c842c62b1718a1802f9681a88a83a9dfaf5e49a41fb0025bf265910f909
+    name: dbconfigurationtoolui
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/dbconfigurationtoolui-1.261103.0230.tgz
+    version: 1.261103.0230
+  - apiVersion: v2
     appVersion: 1.261015.1451
     created: "2026-11-05T07:32:00.225333001Z"
     description: Generic Chart
@@ -51813,4 +51823,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-23T10:45:27.327068227Z"
+generated: "2026-11-23T10:52:28.789877545Z"
