@@ -1,0 +1,66 @@
+- name: Containerd storage on a data disk
+  become: true
+  vars:
+    dd_mount: "{{ hostvars[target_node].node_data_disk_mount | default(node_data_disk_mount) }}"
+    dd_dir: "{{ dd_mount }}/k8s/containerd"
+  when: dd_mount | length > 0
+  block:
+    - name: Check {{ dd_mount }} is a separate disk
+      shell: |
+        mountpoint -q "{{ dd_mount }}" || { echo "{{ dd_mount }} is not a mount point"; exit 1; }
+        [ "$(findmnt -n -o SOURCE --target "{{ dd_mount }}")" != "$(findmnt -n -o SOURCE /)" ] || { echo "{{ dd_mount }} is on the root disk"; exit 1; }
+      changed_when: false
+      check_mode: false
+
+    - name: Check whether /var/lib/containerd is already on the data disk
+      command: findmnt -n -o SOURCE /var/lib/containerd
+      register: dd_current
+      changed_when: false
+      failed_when: false
+      check_mode: false
+
+    - name: Move to the data disk on a fresh node
+      when: dd_current.rc != 0
+      block:
+        - name: Check containerd holds no images yet
+          shell: find /var/lib/containerd/io.containerd.content.v1.content/blobs -type f -print -quit 2>/dev/null
+          register: dd_blobs
+          changed_when: false
+          check_mode: false
+
+        - name: Refuse to hide existing images
+          fail:
+            msg: >-
+              {{ target_node }} already has images in /var/lib/containerd. Moving them needs the node
+              drained and containerd stopped: run scripts/move-containerd-to-data-disk.sh {{ dd_mount }} on it.
+          when: dd_blobs.stdout | length > 0
+
+        - name: Create {{ dd_dir }}
+          file:
+            path: "{{ dd_dir }}"
+            state: directory
+            mode: "0711"
+
+        - name: Stop containerd
+          systemd:
+            name: containerd
+            state: stopped
+
+        - name: Add the bind mount to fstab
+          lineinfile:
+            path: /etc/fstab
+            regexp: '^\S+\s+/var/lib/containerd\s'
+            line: "{{ dd_dir }} /var/lib/containerd none bind 0 0"
+
+        - name: Reload systemd mount units
+          systemd:
+            daemon_reload: true
+
+        - name: Mount {{ dd_dir }} on /var/lib/containerd
+          command: mount /var/lib/containerd
+
+        - name: Start containerd
+          systemd:
+            name: containerd
+            state: started
+            enabled: true

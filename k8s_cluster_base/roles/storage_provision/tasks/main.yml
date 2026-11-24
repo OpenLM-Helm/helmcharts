@@ -1,0 +1,32 @@
+---
+- name: Storage installation block
+  tags: storage_install
+  become: true
+  block:
+    - name: Prepare nodes for Longhorn
+      include_tasks: longhorn_prereqs.yml
+      loop: "{{ (groups['masters'] + groups['workers']) | unique | intersect(only_nodes | default(groups['masters'] + groups['workers'])) }}"
+      loop_control:
+        loop_var: target_node
+      run_once: true
+      tags: longhorn, longhorn_prereqs
+      when:
+        - storage_type == "longhorn"
+
+    - name: Install Longhorn storage
+      import_tasks: longhorn.yml
+      tags: longhorn
+      when:
+        - storage_type == "longhorn"
+
+    - name: Install HostPath storage (local path provisioner)
+      import_tasks: hostpath.yml
+      tags: hostpath
+      when:
+        - storage_type == "hostpath"
+
+    - name: Install the NFS StorageClass (csi-driver-nfs)
+      import_tasks: nfs_storageclass.yml
+      tags: nfs_storageclass
+      when:
+        - nfs_storageclass_enabled | bool

@@ -1,0 +1,61 @@
+---
+- tags: node_taint
+  block:
+    - name: Determine taint for node
+      set_fact:
+        effective_taint: "{{ hostvars[target_node].node_taint | default(default_taints) }}"
+        # a master only runs workloads when it is also listed in [workers]
+        node_runs_workloads: "{{ target_node not in groups['masters'] or target_node in groups['workers'] }}"
+
+    # Master leaving [workers]: put the control-plane taint back first, then drop the role taint,
+    # so the node is never left without a NoSchedule taint in between.
+    # kubectl taint --overwrite answers "modified" even when it adds a new taint, so check first
+    - name: Read the master's current taint keys
+      when: not node_runs_workloads | bool
+      delegate_to: "{{ groups['masters'][0] }}"
+      become: true
+      command: >
+        kubectl get node {{ target_node }} -o jsonpath={.spec.taints[*].key}
+        --kubeconfig /etc/kubernetes/admin.conf
+      register: master_taint_keys
+      changed_when: false
+
+    - name: Keep kubeadm's control-plane taint on a master that is not in [workers]
+      when:
+        - not node_runs_workloads | bool
+        - "'node-role.kubernetes.io/control-plane' not in master_taint_keys.stdout.split()"
+      delegate_to: "{{ groups['masters'][0] }}"
+      become: true
+      command: >
+        kubectl taint nodes {{ target_node }} node-role.kubernetes.io/control-plane:NoSchedule
+        --kubeconfig /etc/kubernetes/admin.conf
+
+    - name: Remove worker role taint from a master that is not in [workers]
+      when: not node_runs_workloads | bool
+      delegate_to: "{{ groups['masters'][0] }}"
+      become: true
+      command: >
+        kubectl taint nodes {{ target_node }} role-
+        --kubeconfig /etc/kubernetes/admin.conf
+      register: role_taint_removed
+      changed_when: role_taint_removed.rc == 0
+      failed_when: role_taint_removed.rc != 0 and 'not found' not in role_taint_removed.stderr
+
+    # Worker (or master in [workers]): role taint first, then drop the control-plane taint.
+    - name: Apply node taint via kubectl
+      when: node_runs_workloads | bool
+      delegate_to: "{{ groups['masters'][0] }}"
+      become: true
+      command: >
+        kubectl taint nodes {{ target_node }} role={{ effective_taint }}:NoSchedule --overwrite --kubeconfig /etc/kubernetes/admin.conf
+
+    - name: Let a master that is in [workers] run workloads
+      when: node_runs_workloads | bool and target_node in groups['masters']
+      delegate_to: "{{ groups['masters'][0] }}"
+      become: true
+      command: >
+        kubectl taint nodes {{ target_node }} node-role.kubernetes.io/control-plane:NoSchedule-
+        --kubeconfig /etc/kubernetes/admin.conf
+      register: cp_taint_removed
+      changed_when: cp_taint_removed.rc == 0
+      failed_when: cp_taint_removed.rc != 0 and 'not found' not in cp_taint_removed.stderr

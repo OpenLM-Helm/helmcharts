@@ -1,0 +1,92 @@
+---
+# Cluster settings. Copy to inventory/group_vars/all.yml and fill in the REQUIRED values.
+# Every other value shows its default; delete what you don't change.
+# Full lists: roles/<role>/defaults/main.yml
+
+#######################################################################
+# Load balancer (role haproxy)
+#######################################################################
+
+# REQUIRED: public hostnames of your applications (DNS A records -> load balancer IP)
+haproxy_hosts:
+  - apps.example.com
+  # - kafkaui.example.com
+
+# REQUIRED: TLS terminates on the load balancer. One PEM file on the LB with the certificate chain
+# and the private key, valid for every hostname above (a wildcard certificate is simplest).
+haproxy_cert_path: /etc/haproxy/certs/cluster.pem
+# Optional: copy the PEM from this machine to haproxy_cert_path. Leave empty if it is already on the LB.
+haproxy_cert_src: ""
+
+# REQUIRED while the stats page (http://<lb>:8081/stats) is enabled. Keep it out of plain text,
+# e.g. ansible-vault encrypt_string, or pass it with -e.
+haproxy_stats_user: "admin"
+haproxy_stats_pass: ""
+# haproxy_stats_enabled: false
+
+# Nodes running the ingress controller on hostNetwork (ports 80/443); empty = all [workers]
+haproxy_ingress_nodes: []
+
+# Optional TCP passthrough through the ingress controller (needs matching TCP entrypoints)
+haproxy_enable_mongo: false      # port 27017
+haproxy_enable_kafka: false      # port 30000
+
+#######################################################################
+# Control plane (role cluster_init)
+#######################################################################
+
+# REQUIRED: DNS name of the load balancer. kubectl, nodes and joins reach the API at <name>:6443.
+load_balancer_dns: k8s-lb.example.com
+
+# IP the first master's API server listens on; default = its ansible_host
+# apiserver_advertise_address: 192.0.2.10
+
+# Pod network. Must not overlap node, service (10.96.0.0/12) or other routed networks.
+pod_network_cidr: "172.16.0.0/12"
+
+# Extra names/IPs in the API server certificate (masters and load_balancer_dns are always included)
+extra_sans:
+  - localhost
+
+#######################################################################
+# Namespaces (role namespaces)
+#######################################################################
+# The OpenLM namespaces (openlm, openlm-infrastructure, openlm-telemetry, redis, traefik, headlamp)
+# are always created: the services and the API gateway address each other by these names.
+# Add your own here:
+k8s_namespaces_extra: []
+
+#######################################################################
+# Storage (role storage_provision)
+#######################################################################
+
+# hostpath = local disk of the node (single node / small setups)
+# longhorn = replicated block storage across nodes
+storage_type: hostpath
+
+# hostpath: folder for volumes, plus per-node exceptions
+# hostpath_default_path: /opt/local-path-provisioner
+# hostpath_node_paths:
+#   k8s-m-1: /data/local-path-provisioner
+
+# longhorn
+# longhorn_replica_count: 3          # <= number of nodes storing data
+# longhorn_storage_nodes: []         # empty = every node stores data; e.g. ["k8s-i-1"]
+# longhorn_data_path: /var/lib/longhorn
+# longhorn_backup_target: ""         # e.g. nfs://nfs.example.com:/export/longhorn-backup
+
+# Additional "nfs" StorageClass on an existing NFS export (file data, not databases)
+nfs_storageclass_enabled: false
+# nfs_storageclass_server: nfs.example.com
+# nfs_storageclass_share: /export/k8s
+
+#######################################################################
+# Nodes (roles node_prep, node_affinity_taint)
+#######################################################################
+
+# Label/taint "role=<value>" for nodes without node_label / node_taint in the inventory
+default_label: main
+default_taints: main
+
+# Kubernetes package repository (minor version)
+# kubernetes_repo_url: https://pkgs.k8s.io/core:/stable:/v1.32/deb

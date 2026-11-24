@@ -1,0 +1,48 @@
+---
+- name: Check required NFS StorageClass settings
+  assert:
+    that:
+      - nfs_storageclass_server | length > 0
+      - nfs_storageclass_share | length > 0
+    fail_msg: "Set nfs_storageclass_server and nfs_storageclass_share (an existing NFS export) when nfs_storageclass_enabled is true."
+  run_once: true
+
+- name: Install the NFS client on every node
+  package:
+    name: nfs-common
+    state: present
+  delegate_to: "{{ item }}"
+  loop: "{{ (groups['masters'] + groups['workers']) | unique }}"
+  run_once: true
+
+- name: csi-driver-nfs Helm installation block
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  block:
+    - name: Add csi-driver-nfs Helm repo
+      command: helm repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts --force-update
+      changed_when: false
+
+    - name: Update Helm repos
+      command: helm repo update csi-driver-nfs
+      changed_when: false
+
+    - name: Render csi-driver-nfs values
+      template:
+        src: csi-driver-nfs-values.yaml.j2
+        dest: "{{ nfs_csi_values_file }}"
+        mode: "0600"
+
+    - name: Install csi-driver-nfs using Helm
+      command: >
+        helm upgrade --install csi-driver-nfs csi-driver-nfs/csi-driver-nfs
+        --version {{ nfs_csi_chart_version }}
+        --namespace {{ nfs_csi_namespace }}
+        --kubeconfig /etc/kubernetes/admin.conf
+        --values {{ nfs_csi_values_file }}
+        --wait
+        --timeout 5m
+
+    - name: Check the NFS StorageClass exists
+      command: kubectl --kubeconfig /etc/kubernetes/admin.conf get storageclass {{ nfs_storageclass_name }}
+      changed_when: false

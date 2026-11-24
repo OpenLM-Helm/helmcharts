@@ -1,0 +1,10 @@
+- name: Restart containerd
+  become: true
+  systemd:
+    name: containerd
+    state: restarted
+    enabled: true
+
+- name: Update grub
+  become: true
+  command: update-grub

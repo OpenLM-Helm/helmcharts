@@ -1,0 +1,33 @@
+# IP the API server of the first master listens on (default: its inventory ansible_host)
+apiserver_advertise_address: "{{ hostvars[groups['masters'][0]].ansible_host | default(groups['masters'][0]) }}"
+
+# Required: DNS name of the load balancer; kubectl, nodes and joins reach the API through <name>:6443
+load_balancer_dns: ""
+load_balancer_port: 6443
+
+# Pod network (Calico). Must not overlap the node, service (10.96.0.0/12) or office networks.
+pod_network_cidr: "172.16.0.0/12"
+calico_chart_repo: "https://docs.tigera.io/calico/charts"
+calico_version: "v3.31.3"
+
+addon_tolerations:
+  - key: "role"
+    operator: "Exists"
+    effect: "NoSchedule"
+
+coredns_default_tolerations:
+  - key: "CriticalAddonsOnly"
+    operator: "Exists"
+  - key: "node-role.kubernetes.io/control-plane"
+    effect: "NoSchedule"
+
+# extra names/IPs in the API server certificate (the masters and load_balancer_dns are always included)
+extra_sans:
+  - "localhost"
+
+# metrics-server (kubectl top, HPA); kubelet serving certs are self-signed on kubeadm, hence insecure-tls
+metrics_server_enabled: true
+metrics_server_chart_version: "3.14.0"
+metrics_server_args:
+  - --kubelet-insecure-tls
+  - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname

@@ -1,0 +1,18 @@
+- name: Join additional control-plane nodes to cluster
+  tags: join_master
+  delegate_to: "{{ target_master }}"
+  block:
+
+    - name: Check if control-plane already joined    
+      stat:
+        path: /etc/kubernetes/kubelet.conf
+      register: kube_joined
+
+    - name: Join control-plane node to cluster"
+      when: not kube_joined.stat.exists
+      command: >
+        kubeadm join {{ load_balancer_dns }}:{{ load_balancer_port }}
+        --token {{ hostvars[groups['masters'][0]].kube_token }}
+        --discovery-token-ca-cert-hash {{ hostvars[groups['masters'][0]].kube_ca_hash }}
+        --control-plane
+        --certificate-key {{ hostvars[groups['masters'][0]].kube_cert_key }}

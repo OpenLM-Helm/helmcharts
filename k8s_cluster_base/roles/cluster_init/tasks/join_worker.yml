@@ -1,0 +1,16 @@
+- name: Join worker nodes to Kubernetes cluster
+  tags: join_worker
+  delegate_to: "{{ target_worker }}"
+  block:
+
+    - name: Check if worker already joined
+      stat:
+        path: /etc/kubernetes/kubelet.conf
+      register: kube_joined
+
+    - name: Join worker node to cluster
+      when: not kube_joined.stat.exists
+      command: >
+        kubeadm join {{ load_balancer_dns }}:{{ load_balancer_port }}
+        --token {{ hostvars[groups['masters'][0]].kube_token }}
+        --discovery-token-ca-cert-hash {{ hostvars[groups['masters'][0]].kube_ca_hash }}

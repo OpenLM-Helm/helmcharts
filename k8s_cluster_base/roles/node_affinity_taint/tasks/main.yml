@@ -1,0 +1,17 @@
+---
+- name: Set node label and taint
+  tags: node_affinity_taint
+  block:
+    - name: Apply node affinity label
+      include_tasks: labels.yml
+      run_once: true
+      loop: "{{ (groups['masters'] + groups['workers']) | unique | intersect(only_nodes | default(groups['masters'] + groups['workers'])) }}"
+      loop_control:
+        loop_var: target_node
+
+    - name: Apply node taint
+      include_tasks: taints.yml
+      run_once: true
+      loop: "{{ (groups['masters'] + groups['workers']) | unique | intersect(only_nodes | default(groups['masters'] + groups['workers'])) }}"
+      loop_control:
+        loop_var: target_node

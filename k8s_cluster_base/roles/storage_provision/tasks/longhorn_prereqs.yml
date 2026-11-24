@@ -1,0 +1,77 @@
+---
+- name: Prepare node {{ target_node }} for Longhorn
+  tags: storage_install, longhorn, longhorn_prereqs
+  delegate_to: "{{ target_node }}"
+  become: true
+  block:
+    - name: Check what is mounted at the Longhorn data path
+      command: findmnt -n -o FSTYPE --target {{ longhorn_data_path }}
+      register: longhorn_data_fstype
+      changed_when: false
+      failed_when: false
+
+    - name: Refuse a network filesystem as the Longhorn data path
+      assert:
+        that: longhorn_data_fstype.stdout | trim not in ['nfs', 'nfs4', 'cifs', 'smb3', 'fuse.sshfs']
+        fail_msg: >-
+          {{ longhorn_data_path }} on {{ target_node }} is a {{ longhorn_data_fstype.stdout | trim }} mount.
+          Longhorn needs a local ext4/xfs disk there; use the NFS share as longhorn_backup_target instead.
+
+    - name: Install Longhorn node dependencies
+      apt:
+        name:
+          - open-iscsi
+          - nfs-common
+          - cryptsetup
+          - dmsetup
+        state: present
+        update_cache: yes
+
+    - name: Enable and start iscsid
+      systemd:
+        name: iscsid
+        state: started
+        enabled: true
+
+    - name: Load iscsi_tcp kernel module
+      modprobe:
+        name: iscsi_tcp
+        state: present
+
+    - name: Load iscsi_tcp on boot
+      copy:
+        dest: /etc/modules-load.d/longhorn.conf
+        content: "iscsi_tcp\n"
+        mode: "0644"
+
+    - name: Create Longhorn data directory
+      file:
+        path: "{{ longhorn_data_path }}"
+        state: directory
+        mode: "0755"
+
+    - name: Check whether multipathd is installed
+      stat:
+        path: /etc/multipath.conf
+      register: multipath_conf
+
+    - name: Blacklist sd devices in multipath
+      when:
+        - longhorn_multipath_blacklist | bool
+        - multipath_conf.stat.exists
+      block:
+        - name: Add Longhorn blacklist to multipath.conf
+          blockinfile:
+            path: /etc/multipath.conf
+            marker: "# {mark} ANSIBLE MANAGED - longhorn"
+            block: |
+              blacklist {
+                  devnode "^sd[a-z0-9]+"
+              }
+          register: multipath_blacklist
+
+        - name: Restart multipathd
+          systemd:
+            name: multipathd
+            state: restarted
+          when: multipath_blacklist.changed

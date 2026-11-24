@@ -1,0 +1,46 @@
+- name: Configure cgroups and network bridge for Kubernetes
+  become: true
+  block:
+
+    - name: Read the current kernel command line settings
+      slurp:
+        src: /etc/default/grub
+      register: grub_defaults
+
+    # add node_kernel_args to GRUB_CMDLINE_LINUX, keeping the arguments already there
+    - name: Ensure cgroup memory parameters are set
+      vars:
+        grub_current: "{{ (grub_defaults.content | b64decode | regex_search('(?m)^GRUB_CMDLINE_LINUX=\"([^\"]*)\"', '\\1') | default([''], true)) | first }}"
+        grub_args: "{{ grub_current.split() + (node_kernel_args | reject('in', grub_current.split()) | list) }}"
+      lineinfile:
+        path: /etc/default/grub
+        regexp: '^GRUB_CMDLINE_LINUX='
+        line: "GRUB_CMDLINE_LINUX=\"{{ grub_args | join(' ') }}\""
+      register: grub_cmdline
+
+    - name: Update grub
+      command: update-grub
+      when: grub_cmdline.changed
+
+    - name: Load required kernel modules
+      copy:
+        dest: /etc/modules-load.d/k8s.conf
+        content: |
+          overlay
+          br_netfilter
+
+    - name: Load the kernel modules now
+      command: "modprobe {{ item }}"
+      loop: [overlay, br_netfilter]
+      changed_when: false
+
+    - name: Apply sysctl params
+      copy:
+        dest: /etc/sysctl.d/k8s.conf
+        content: |
+          net.bridge.bridge-nf-call-iptables  = 1
+          net.ipv4.ip_forward                 = 1
+          net.bridge.bridge-nf-call-ip6tables = 1
+
+    - name: Reload sysctl
+      command: sysctl --system

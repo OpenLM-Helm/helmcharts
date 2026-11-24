@@ -1,0 +1,43 @@
+---
+haproxy_cfg_path: /etc/haproxy/haproxy.cfg
+haproxy_service_name: haproxy
+haproxy_cfg_template: haproxy.cfg.j2
+# keep a timestamped copy of the previous haproxy.cfg on every change
+haproxy_cfg_backup: true
+
+# TLS terminates on the LB. One PEM file: certificate chain + private key, valid for every name in haproxy_hosts.
+# Required: the role stops if it is not set or the file is missing on the LB.
+haproxy_cert_path: ""
+# Optional: a PEM on the machine running Ansible, copied to haproxy_cert_path (mode 0600).
+# Leave empty when the certificate is already managed on the LB (e.g. certbot with a deploy hook).
+haproxy_cert_src: ""
+
+# Public hostnames served over HTTPS. HTTP redirects to HTTPS; HTTPS goes to the ingress nodes.
+haproxy_hosts: []
+
+# Inventory names of the nodes running the ingress controller on hostNetwork (ports 80/443).
+# Empty = every host in [workers]. Health check: the ingress answers 404 on "/" for an unknown host.
+haproxy_ingress_nodes: []
+haproxy_backend_ingress_port: 80
+haproxy_ingress_check_status: 404
+
+# Kubernetes API: TCP passthrough to every host in [masters]
+haproxy_frontend_api_port: 6443
+haproxy_backend_api_port: 6443
+
+# Optional TCP passthrough to the ingress nodes (ingress TCP entrypoints, e.g. MongoDB / Kafka)
+haproxy_enable_mongo: false
+haproxy_mongo_bind_port: 27017
+haproxy_enable_kafka: false
+haproxy_kafka_bind_port: 30000
+
+# Stats page http://<lb>:8081/stats. haproxy_stats_pass is required while it is enabled.
+haproxy_stats_enabled: true
+haproxy_stats_bind: "*:8081"
+haproxy_stats_uri: "/stats"
+haproxy_stats_user: "admin"
+haproxy_stats_pass: ""
+
+# RHEL / AlmaLinux / Rocky: follow the system-wide crypto policy (PROFILE=SYSTEM).
+# Other distributions (Ubuntu, Debian): explicit TLS 1.2+ cipher list.
+haproxy_system_crypto_policy: "{{ hostvars[groups['lb'][0]].ansible_facts.os_family | default('') == 'RedHat' }}"

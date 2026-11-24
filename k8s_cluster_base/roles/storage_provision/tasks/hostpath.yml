@@ -1,0 +1,22 @@
+---
+- name: Hostpath Helm installation block
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  block:
+    - name: Install HostPath provisioner using Helm
+      command: >
+        helm upgrade --install local-path-provisioner
+        oci://ghcr.io/rancher/local-path-provisioner/charts/local-path-provisioner
+        --version {{ hostpath_chart_version }}
+        --namespace kube-system
+        --create-namespace
+        --kubeconfig /etc/kubernetes/admin.conf
+        --set storageClass.name=hostpath
+        --set storageClass.defaultClass=true
+        --set storageClass.reclaimPolicy=Delete
+        --set-string 'nodePathMap[0].node=DEFAULT_PATH_FOR_NON_LISTED_NODES'
+        --set-string 'nodePathMap[0].paths[0]={{ hostpath_default_path }}'
+        {% for node, path in hostpath_node_paths.items() %}
+        --set-string 'nodePathMap[{{ loop.index }}].node={{ node }}'
+        --set-string 'nodePathMap[{{ loop.index }}].paths[0]={{ path }}'
+        {% endfor %}

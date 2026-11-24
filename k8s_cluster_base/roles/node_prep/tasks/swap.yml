@@ -1,0 +1,50 @@
+- name: Disable swap on the node
+  become: true
+  block:
+
+    - name: Disable swap immediately
+      command: swapoff -a
+      when: hostvars[target_node].ansible_swaptotal_mb | int > 0
+
+    - name: Remove swap entries from fstab
+      replace:
+        path: /etc/fstab
+        regexp: '^([^#].*swap.*)$'
+        replace: '# \1'
+
+    - name: Check if dphys-swapfile service exists
+      stat:
+        path: /lib/systemd/system/dphys-swapfile.service
+      register: dphys_swap
+
+    - name: Stop and disable dphys-swapfile if present
+      systemd:
+        name: dphys-swapfile
+        enabled: false
+        state: stopped
+      when: dphys_swap.stat.exists
+
+    # zram-backed swap (systemd-zram-generator, common issue on Ubuntu)
+    - name: Stop zram swap unit if present
+      systemd:
+        name: dev-zram0.swap
+        state: stopped
+      ignore_errors: true
+
+    - name: Mask zram swap unit so it can't reactivate
+      systemd:
+        name: dev-zram0.swap
+        masked: true
+      ignore_errors: true
+
+    - name: Stop zram-setup unit if present
+      systemd:
+        name: systemd-zram-setup@zram0.service
+        state: stopped
+      ignore_errors: true
+
+    - name: Mask zram-setup unit so it can't reactivate
+      systemd:
+        name: systemd-zram-setup@zram0.service
+        masked: true
+      ignore_errors: true

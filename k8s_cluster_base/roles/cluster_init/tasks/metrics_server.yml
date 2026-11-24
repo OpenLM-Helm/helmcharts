@@ -1,0 +1,27 @@
+- name: Install metrics-server
+  tags: metrics_server
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  when: metrics_server_enabled | bool
+  block:
+    - name: Add metrics-server Helm repo
+      command: helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/ --force-update
+      changed_when: false
+
+    - name: Install metrics-server using Helm
+      command: >
+        helm upgrade --install metrics-server metrics-server/metrics-server
+        --version {{ metrics_server_chart_version }}
+        --namespace kube-system
+        --kubeconfig /etc/kubernetes/admin.conf
+        --set-json 'args={{ metrics_server_args | to_json }}'
+        --set-json 'tolerations={{ (addon_tolerations + [{"key": "node-role.kubernetes.io/control-plane", "operator": "Exists", "effect": "NoSchedule"}]) | to_json }}'
+        --wait --timeout 5m
+
+    - name: Check the metrics API answers
+      command: kubectl --kubeconfig /etc/kubernetes/admin.conf top nodes
+      register: metrics_top
+      until: metrics_top.rc == 0
+      retries: 12
+      delay: 10
+      changed_when: false

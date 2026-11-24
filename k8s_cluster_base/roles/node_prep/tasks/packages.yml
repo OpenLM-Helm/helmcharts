@@ -1,0 +1,25 @@
+- name: Install base Kubernetes dependencies
+  become: true
+  block:
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install base Kubernetes dependencies
+      apt:
+        name:
+          - snapd
+          - containerd
+          - containernetworking-plugins
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - nfs-common
+        state: present
+    
+    - name: Install Helm using snap
+      command: snap install helm --classic
+      args:
+        creates: /snap/bin/helm

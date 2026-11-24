@@ -1,0 +1,12 @@
+---
+- name: Provision the Kubernetes cluster
+  hosts: all
+  gather_facts: yes
+
+  roles:
+    - haproxy
+    - node_prep
+    - cluster_init
+    - namespaces
+    - storage_provision
+    - node_affinity_taint

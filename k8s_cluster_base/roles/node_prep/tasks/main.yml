@@ -1,0 +1,8 @@
+---
+- name: Prepare Kubernetes nodes
+  include_tasks: prepare_node.yml
+  loop: "{{ (groups['masters'] + groups['workers']) | unique | intersect(only_nodes | default(groups['masters'] + groups['workers'])) }}"
+  loop_control:
+    loop_var: target_node
+  run_once: true
+  tags: node_prep, packages, prereqs, data_disk, containerd, runtime, cgroup, swap, kubernetes, k8s_install

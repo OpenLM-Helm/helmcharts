@@ -1,0 +1,85 @@
+- name: Configure HAProxy
+  tags: haproxy, prepare
+  become: true
+  delegate_to: "{{ groups['lb'][0] }}"
+  run_once: true
+  block:
+    - name: Check the HAProxy settings
+      assert:
+        that:
+          - groups['lb'] | default([]) | length > 0
+          - haproxy_cert_path | length > 0
+          - haproxy_hosts | length > 0
+          - not (haproxy_stats_enabled | bool) or haproxy_stats_pass | length > 0
+        fail_msg: >-
+          Set haproxy_cert_path (PEM with certificate + key on the LB), haproxy_hosts (public hostnames)
+          and haproxy_stats_pass (or haproxy_stats_enabled: false) in group_vars,
+          and put the load balancer in the [lb] inventory group.
+        quiet: true
+
+    - name: Install HAProxy
+      package:
+        name: haproxy
+        state: present
+
+    - name: Ensure haproxy config directory exists
+      file:
+        path: "{{ haproxy_cfg_path | dirname }}"
+        state: directory
+        mode: "0755"
+
+    - name: Ensure the certificate directory exists
+      when: haproxy_cert_src | length > 0
+      file:
+        path: "{{ haproxy_cert_path | dirname }}"
+        state: directory
+        mode: "0755"
+
+    - name: Copy the TLS certificate (PEM) to the LB
+      when: haproxy_cert_src | length > 0
+      copy:
+        src: "{{ haproxy_cert_src }}"
+        dest: "{{ haproxy_cert_path }}"
+        owner: root
+        group: root
+        mode: "0600"
+      register: haproxy_cert_copy
+
+    - name: Check the TLS certificate exists on the LB
+      stat:
+        path: "{{ haproxy_cert_path }}"
+      register: haproxy_cert
+
+    - name: Stop if the TLS certificate is missing
+      when: not haproxy_cert.stat.exists and not ansible_check_mode
+      fail:
+        msg: >-
+          {{ haproxy_cert_path }} not found on {{ groups['lb'][0] }}. HAProxy terminates TLS and needs one PEM file
+          with the certificate chain and the private key for all hostnames in haproxy_hosts.
+          Put it there, or set haproxy_cert_src to copy it from this machine.
+
+    - name: Render and validate haproxy.cfg
+      template:
+        src: "{{ haproxy_cfg_template }}"
+        dest: "{{ haproxy_cfg_path }}"
+        owner: root
+        group: root
+        mode: "0644"
+        backup: "{{ haproxy_cfg_backup }}"
+        validate: "haproxy -c -f %s"
+      register: haproxy_cfg
+
+    - name: Start HAProxy and enable it at boot
+      service:
+        name: "{{ haproxy_service_name }}"
+        enabled: true
+        state: started
+      when: not ansible_check_mode
+
+    - name: Reload haproxy (only if config or certificate changed and valid)
+      service:
+        name: "{{ haproxy_service_name }}"
+        state: reloaded
+      when:
+        - haproxy_cfg.changed or (haproxy_cert_copy.changed | default(false))
+        - not ansible_check_mode
