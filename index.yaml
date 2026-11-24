@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   admissionwebhook:
   - apiVersion: v2
+    appVersion: 1.261027.0836
+    created: "2026-11-24T07:10:32.274152429Z"
+    description: Generic Chart
+    digest: 52d7f5cec72d7f794eadf833ba08a77abeeeef431b18020582dec710b43bb858
+    name: admissionwebhook
+    type: application
+    urls:
+    - https://openlm-helm.github.io/helmcharts/versions/admissionwebhook-1.261027.0836.tgz
+    version: 1.261027.0836
+  - apiVersion: v2
     appVersion: 1.260819.1521
     created: "2026-09-03T13:04:37.249848741Z"
     description: Generic Chart
@@ -51823,4 +51833,4 @@ entries:
     urls:
     - https://openlm-helm.github.io/helmcharts/vlmui.tgz
     version: 1.250908.0817
-generated: "2026-11-23T10:52:28.789877545Z"
+generated: "2026-11-24T07:10:32.273068889Z"
