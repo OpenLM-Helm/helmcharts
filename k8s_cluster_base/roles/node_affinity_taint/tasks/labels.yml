@@ -1,0 +1,26 @@
+---
+- tags: node_label
+  block:
+    - name: Determine Label for node
+      set_fact:
+        effective_label: "{{ hostvars[target_node].node_label | default(default_label) }}"
+        # a master only gets a worker role when it is also listed in [workers]
+        node_runs_workloads: "{{ target_node not in groups['masters'] or target_node in groups['workers'] }}"
+
+    - name: Label node via kubectl with kubeconfig
+      when: node_runs_workloads | bool
+      become: true
+      delegate_to: "{{ groups['masters'][0] }}"
+      command: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf
+        label nodes {{ target_node }} role={{ effective_label }} --overwrite
+
+    - name: Remove worker role label from a master that is not in [workers]
+      when: not node_runs_workloads | bool
+      become: true
+      delegate_to: "{{ groups['masters'][0] }}"
+      command: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf
+        label nodes {{ target_node }} role-
+      register: role_label_removed
+      changed_when: "'unlabeled' in role_label_removed.stdout"

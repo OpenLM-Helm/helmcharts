@@ -1,0 +1,13 @@
+# Namespaces the OpenLM platform is deployed into (tag ns). Keep these names: OpenLM services and
+# the API gateway call each other through in-cluster service DNS (<service>.<namespace>.svc),
+# so the namespaces are part of the product's configuration. tigera-operator is created by Calico.
+k8s_namespaces:
+  - openlm                  # OpenLM applications
+  - openlm-infrastructure   # shared infrastructure
+  - openlm-telemetry        # monitoring: Grafana, Prometheus, Loki, Tempo, OpenTelemetry
+  - redis
+  - traefik                 # ingress controller
+  - headlamp                # Kubernetes web UI
+
+# your own additional namespaces
+k8s_namespaces_extra: []

@@ -1,0 +1,18 @@
+global:
+  tolerations:
+{{ longhorn_tolerations | to_nice_yaml(indent=2) | indent(4, first=true) }}
+persistence:
+  defaultClass: {{ longhorn_default_class | bool | lower }}
+  defaultClassReplicaCount: {{ longhorn_replica_count }}
+  reclaimPolicy: {{ longhorn_reclaim_policy }}
+
+defaultSettings:
+  defaultDataPath: "{{ longhorn_data_path }}"
+  defaultReplicaCount: '{"v1":"{{ longhorn_replica_count }}","v2":"{{ longhorn_replica_count }}"}'
+  taintToleration: "{{ longhorn_taint_toleration }}"
+{% if longhorn_backup_target %}
+
+defaultBackupStore:
+  backupTarget: "{{ longhorn_backup_target }}"
+  pollInterval: "{{ longhorn_backup_poll_interval }}"
+{% endif %}

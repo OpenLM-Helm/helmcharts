@@ -1,0 +1,50 @@
+storage_type: "hostpath"
+
+# hostpath (Rancher local-path-provisioner): volume folder on each node, plus per-node exceptions
+# (e.g. a node whose data disk is mounted elsewhere): {"<node name>": "/data/local-path-provisioner"}
+hostpath_chart_version: "0.0.37"
+hostpath_default_path: "/opt/local-path-provisioner"
+hostpath_node_paths: {}
+
+longhorn_chart_version: "1.12.1"
+longhorn_namespace: "longhorn-system"
+longhorn_data_path: "/var/lib/longhorn"
+longhorn_replica_count: 3
+longhorn_default_class: true
+longhorn_reclaim_policy: "Delete"
+longhorn_tolerations:
+  - key: "role"
+    operator: "Exists"
+    effect: "NoSchedule"
+longhorn_taint_toleration: "role:NoSchedule"
+longhorn_multipath_blacklist: true
+longhorn_backup_target: ""
+longhorn_backup_poll_interval: 300
+longhorn_values_file: "/etc/kubernetes/longhorn-values.yaml"
+longhorn_install_timeout: "10m"
+
+nfs_storageclass_enabled: false
+nfs_csi_chart_version: "4.13.6"
+nfs_csi_namespace: "kube-system"
+nfs_storageclass_name: "nfs"
+nfs_storageclass_server: ""
+nfs_storageclass_share: ""
+nfs_storageclass_subdir_root: "k8s"
+nfs_storageclass_mount_options:
+  - nfsvers=4.1
+nfs_storageclass_reclaim_policy: "Delete"
+nfs_storageclass_on_delete: "delete"
+nfs_storageclass_mount_permissions: "0777"
+nfs_csi_tolerations:
+  - key: "role"
+    operator: "Exists"
+    effect: "NoSchedule"
+  - key: "node-role.kubernetes.io/control-plane"
+    operator: "Exists"
+    effect: "NoSchedule"
+nfs_csi_values_file: "/etc/kubernetes/csi-driver-nfs-values.yaml"
+
+longhorn_storage_nodes: []
+
+# namespace whose pods (Prometheus) may scrape longhorn-manager metrics on port 9500; empty = no policy
+longhorn_metrics_namespace: "openlm-telemetry"

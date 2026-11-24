@@ -1,0 +1,114 @@
+---
+- name: Longhorn Helm installation block
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  block:
+    - name: Add Longhorn Helm repo
+      command: helm repo add longhorn https://charts.longhorn.io --force-update
+      changed_when: false
+
+    - name: Update Helm repos
+      command: helm repo update longhorn
+      changed_when: false
+
+    - name: Render Longhorn values
+      template:
+        src: longhorn-values.yaml.j2
+        dest: "{{ longhorn_values_file }}"
+        mode: "0600"
+
+    - name: Install Longhorn using Helm
+      command: >
+        helm upgrade --install longhorn longhorn/longhorn
+        --version {{ longhorn_chart_version }}
+        --namespace {{ longhorn_namespace }}
+        --create-namespace
+        --kubeconfig /etc/kubernetes/admin.conf
+        --values {{ longhorn_values_file }}
+        --wait
+        --timeout {{ longhorn_install_timeout }}
+
+    - name: Wait for longhorn-manager on every node
+      command: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf
+        -n {{ longhorn_namespace }} rollout status daemonset/longhorn-manager
+        --timeout={{ longhorn_install_timeout }}
+      changed_when: false
+
+    - name: Check the longhorn StorageClass exists
+      command: kubectl --kubeconfig /etc/kubernetes/admin.conf get storageclass longhorn
+      changed_when: false
+
+    # Longhorn's own NetworkPolicy only lets Longhorn pods reach longhorn-manager;
+    # this lets Prometheus scrape its metrics (port 9500) from the monitoring namespace
+    - name: Allow Prometheus to scrape longhorn-manager metrics
+      tags: longhorn_metrics
+      when: longhorn_metrics_namespace | length > 0
+      command: kubectl --kubeconfig /etc/kubernetes/admin.conf apply -f -
+      args:
+        stdin: |
+          apiVersion: networking.k8s.io/v1
+          kind: NetworkPolicy
+          metadata:
+            name: longhorn-manager-metrics
+            namespace: {{ longhorn_namespace }}
+          spec:
+            podSelector:
+              matchLabels:
+                app: longhorn-manager
+            policyTypes: [Ingress]
+            ingress:
+              - from:
+                  - namespaceSelector:
+                      matchLabels:
+                        kubernetes.io/metadata.name: {{ longhorn_metrics_namespace }}
+                ports:
+                  - port: 9500
+                    protocol: TCP
+      register: longhorn_metrics_np
+      changed_when: "'unchanged' not in longhorn_metrics_np.stdout"
+
+    - name: Wait for the backup target to become available
+      command: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf
+        -n {{ longhorn_namespace }} get backuptargets.longhorn.io default
+        -o jsonpath={.status.available}
+      register: longhorn_backup_target_status
+      until: longhorn_backup_target_status.stdout == "true"
+      retries: 20
+      delay: 15
+      changed_when: false
+      when: longhorn_backup_target | length > 0
+
+    - name: Restrict Longhorn data to longhorn_storage_nodes
+      tags: longhorn_storage_nodes
+      when: longhorn_storage_nodes | length > 0
+      block:
+        - name: Wait until every Kubernetes node has a Longhorn node
+          shell: >
+            [ "$(kubectl --kubeconfig /etc/kubernetes/admin.conf -n {{ longhorn_namespace }} get nodes.longhorn.io --no-headers | wc -l)"
+            -ge "$(kubectl --kubeconfig /etc/kubernetes/admin.conf get nodes -l '!node-role.kubernetes.io/control-plane' --no-headers | wc -l)" ]
+          register: longhorn_nodes_ready
+          until: longhorn_nodes_ready.rc == 0
+          retries: 20
+          delay: 15
+          changed_when: false
+
+        - name: Read Longhorn nodes and their current scheduling
+          command: >
+            kubectl --kubeconfig /etc/kubernetes/admin.conf -n {{ longhorn_namespace }}
+            get nodes.longhorn.io -o jsonpath='{range .items[*]}{.metadata.name}={.spec.allowScheduling}{"\n"}{end}'
+          register: longhorn_node_sched
+          changed_when: false
+
+        - name: Allow data only on longhorn_storage_nodes
+          command: >
+            kubectl --kubeconfig /etc/kubernetes/admin.conf -n {{ longhorn_namespace }}
+            patch nodes.longhorn.io {{ item.split('=')[0] }} --type merge
+            -p '{"spec":{"allowScheduling":{{ (item.split('=')[0] in longhorn_storage_nodes) | lower }}}}'
+          loop: "{{ longhorn_node_sched.stdout_lines }}"
+          when: item.split('=')[1] != ((item.split('=')[0] in longhorn_storage_nodes) | lower)
+          register: longhorn_sched_patch
+          until: longhorn_sched_patch.rc == 0
+          retries: 10
+          delay: 15

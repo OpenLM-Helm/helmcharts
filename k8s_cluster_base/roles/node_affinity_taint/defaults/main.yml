@@ -1,0 +1,4 @@
+---
+# role label/taint for a node without node_label / node_taint in the inventory
+default_label: "main"
+default_taints: "main"

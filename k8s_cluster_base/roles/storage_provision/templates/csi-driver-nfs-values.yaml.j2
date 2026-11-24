@@ -1,0 +1,24 @@
+controller:
+  replicas: 1
+  logLevel: 2
+  tolerations: {{ nfs_csi_tolerations | to_json }}
+  defaultOnDeletePolicy: {{ nfs_storageclass_on_delete }}
+node:
+  logLevel: 2
+  tolerations:
+    - operator: "Exists"
+externalSnapshotter:
+  enabled: false
+storageClass:
+  create: true
+  name: {{ nfs_storageclass_name }}
+  parameters:
+    server: {{ nfs_storageclass_server }}
+    share: {{ nfs_storageclass_share }}
+    subDir: {{ nfs_storageclass_subdir_root }}/${pvc.metadata.namespace}-${pvc.metadata.name}-${pv.metadata.name}
+    mountPermissions: "{{ nfs_storageclass_mount_permissions }}"
+    onDelete: {{ nfs_storageclass_on_delete }}
+  reclaimPolicy: {{ nfs_storageclass_reclaim_policy }}
+  volumeBindingMode: Immediate
+  allowVolumeExpansion: true
+  mountOptions: {{ nfs_storageclass_mount_options | to_json }}

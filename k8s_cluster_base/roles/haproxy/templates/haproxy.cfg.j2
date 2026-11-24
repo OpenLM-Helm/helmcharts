@@ -1,0 +1,152 @@
+{%- set ingress_nodes = haproxy_ingress_nodes if haproxy_ingress_nodes | length > 0 else groups['workers'] -%}
+#---------------------------------------------------------------------
+# Managed by Ansible (role haproxy). Manual changes are overwritten.
+#---------------------------------------------------------------------
+global
+    log         127.0.0.1 local2
+    chroot      /var/lib/haproxy
+    pidfile     /var/run/haproxy.pid
+    maxconn     4000
+    user        haproxy
+    group       haproxy
+    daemon
+
+    # turn on stats unix socket
+    stats socket /var/lib/haproxy/stats
+
+{% if haproxy_system_crypto_policy | bool %}
+    # system-wide crypto policy (RHEL / AlmaLinux / Rocky)
+    ssl-default-bind-ciphers PROFILE=SYSTEM
+    ssl-default-server-ciphers PROFILE=SYSTEM
+{% else %}
+    # TLS 1.2+ with modern ciphers
+    ssl-default-bind-options ssl-min-ver TLSv1.2
+    ssl-default-bind-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+    ssl-default-bind-ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384
+    ssl-default-server-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+    ssl-default-server-ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384
+{% endif %}
+
+#---------------------------------------------------------------------
+# Defaults
+#---------------------------------------------------------------------
+defaults
+    mode                    http
+    log                     global
+    option                  httplog
+    option                  dontlognull
+    option http-server-close
+    option                  redispatch
+    retries                 3
+    timeout http-request    10s
+    timeout queue           1m
+    timeout connect         10s
+    timeout client          1m
+    timeout server          1m
+    timeout http-keep-alive 10s
+    timeout check           10s
+    maxconn                 3000
+
+#---------------------------------------------------------------------
+# 1. KUBERNETES API (control plane), port {{ haproxy_frontend_api_port }}
+#    TCP passthrough (no TLS termination), required for kubectl mTLS.
+#    One server per host in [masters].
+#---------------------------------------------------------------------
+listen k8s_api_{{ haproxy_frontend_api_port }}
+    bind *:{{ haproxy_frontend_api_port }}
+    mode tcp
+    option tcplog
+    balance roundrobin
+    option tcp-check
+{% for m in groups['masters'] %}
+    server {{ m }} {{ hostvars[m].ansible_host | default(m) }}:{{ haproxy_backend_api_port }} check
+{% endfor %}
+
+{% if haproxy_stats_enabled | bool %}
+#---------------------------------------------------------------------
+# 2. HAProxy stats
+#---------------------------------------------------------------------
+listen haproxy-stats
+    bind {{ haproxy_stats_bind }}
+    mode http
+    option forwardfor
+    option httpclose
+    stats enable
+    stats show-legends
+    stats refresh 5s
+    stats uri {{ haproxy_stats_uri }}
+    stats realm Haproxy\ Statistics
+    stats auth {{ haproxy_stats_user }}:{{ haproxy_stats_pass }}
+    stats admin if TRUE
+{% endif %}
+
+#---------------------------------------------------------------------
+# 3. HTTP (port 80) -> redirect to HTTPS
+#---------------------------------------------------------------------
+frontend http_in
+    mode    http
+    bind    *:80
+    option forwardfor
+
+{% for h in haproxy_hosts %}
+    redirect scheme https code 301 if { hdr(Host) -i {{ h }} } !{ ssl_fc }
+{% endfor %}
+
+#---------------------------------------------------------------------
+# 4. HTTPS (port 443) -> TLS termination
+#---------------------------------------------------------------------
+frontend https_in
+    mode    http
+    bind    *:443 ssl crt {{ haproxy_cert_path }}
+    option forwardfor
+
+    # The ingress controller does the per-hostname routing, so every
+    # known hostname goes to the same ingress backend.
+    acl ACL_k8s_hosts hdr(host) -i {{ haproxy_hosts | join(' ') }}
+    use_backend k8s_ingress if ACL_k8s_hosts
+
+{% if haproxy_enable_mongo | bool %}
+#---------------------------------------------------------------------
+# 5. MONGODB (TCP passthrough to the ingress controller's hostNetwork)
+#---------------------------------------------------------------------
+listen mongodb_cluster
+    bind *:{{ haproxy_mongo_bind_port }}
+    mode tcp
+    option tcplog
+    balance roundrobin
+    option tcp-check
+{% for n in ingress_nodes %}
+    server {{ n }} {{ hostvars[n].ansible_host | default(n) }}:{{ haproxy_mongo_bind_port }} check
+{% endfor %}
+{% endif %}
+
+{% if haproxy_enable_kafka | bool %}
+#---------------------------------------------------------------------
+# 6. KAFKA (TCP passthrough to the ingress controller's hostNetwork)
+#---------------------------------------------------------------------
+listen kafka_cluster
+    bind *:{{ haproxy_kafka_bind_port }}
+    mode tcp
+    option tcplog
+    balance roundrobin
+    option tcp-check
+{% for n in ingress_nodes %}
+    server {{ n }} {{ hostvars[n].ansible_host | default(n) }}:{{ haproxy_kafka_bind_port }} check
+{% endfor %}
+{% endif %}
+
+#---------------------------------------------------------------------
+# Ingress backend: LB (decrypted) -> ingress nodes, port {{ haproxy_backend_ingress_port }} (hostNetwork)
+#---------------------------------------------------------------------
+backend k8s_ingress
+    balance roundrobin
+    mode http
+    option forwardfor
+    http-request set-header X-Forwarded-Proto https
+    http-request set-header X-Forwarded-Port 443
+
+    option httpchk GET /
+    http-check expect status {{ haproxy_ingress_check_status }}
+{% for n in ingress_nodes %}
+    server {{ n }} {{ hostvars[n].ansible_host | default(n) }}:{{ haproxy_backend_ingress_port }} check
+{% endfor %}

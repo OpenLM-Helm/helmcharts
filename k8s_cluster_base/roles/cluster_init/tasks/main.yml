@@ -1,0 +1,33 @@
+---
+- name: Cluster initialization workflow
+  tags: cluster_init
+  become: true
+  block:
+
+    - name: Initialize first control-plane node
+      include_tasks: init_master.yml
+      tags: init_master
+
+    - name: Generate join credentials
+      include_tasks: generate_join_token.yml
+      tags: generate_token, join_master, join_worker
+
+    - name: Join additional control-plane nodes
+      include_tasks: join_master.yml
+      run_once: true
+      loop: "{{ groups['masters'][1:] }}"
+      loop_control:
+        loop_var: target_master
+      tags: join_master
+
+    - name: Join worker nodes
+      include_tasks: join_worker.yml
+      run_once: true
+      loop: "{{ groups['workers'] }}"
+      loop_control:
+        loop_var: target_worker
+      tags: join_worker
+
+    - name: Install metrics-server
+      include_tasks: metrics_server.yml
+      tags: metrics_server

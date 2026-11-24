@@ -1,0 +1,87 @@
+- name: Initialize k8s cluster on first master node
+  tags: init_master
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  block:
+    - name: Check the cluster settings
+      assert:
+        that:
+          - load_balancer_dns | length > 0
+          - groups['masters'] | default([]) | length > 0
+        fail_msg: "Set load_balancer_dns (DNS name of the [lb] host) in group_vars and list the control-plane node(s) in [masters]."
+        quiet: true
+
+    - name: Check if Kubernetes cluster is already initialized
+      block:
+
+        - name: Check if cluster already initialized
+          stat:
+            path: /etc/kubernetes/admin.conf
+          register: kube_init_done
+
+
+    - name: Initialize Kubernetes control plane
+      when: not kube_init_done.stat.exists
+      block:
+
+        - name: Build SAN list using master DNS + LB + extra_sans
+          set_fact:
+            san_list: "{{ (groups['masters'] + [load_balancer_dns] + extra_sans) | unique | join(',') }}"
+
+        - name: Run kubeadm init
+          command: >
+            kubeadm init
+            --control-plane-endpoint={{ load_balancer_dns }}:{{ load_balancer_port }}
+            --upload-certs
+            --apiserver-advertise-address={{ apiserver_advertise_address }}
+            --pod-network-cidr={{ pod_network_cidr }}
+            --apiserver-cert-extra-sans={{ san_list }}
+
+
+    - name: Check if Calico release exists
+      command: >
+        helm list -n tigera-operator -q
+        --kubeconfig /etc/kubernetes/admin.conf
+      register: helm_list
+      changed_when: false
+
+    - name: Install Calico CNI using Helm
+      when: "'calico' not in helm_list.stdout_lines"
+      block:
+
+        - name: Add Calico Helm repository
+          command: helm repo add projectcalico {{ calico_chart_repo }} --force-update
+
+        - name: Update Helm repositories
+          command: helm repo update projectcalico
+
+        - name: Render Calico values
+          copy:
+            dest: /etc/kubernetes/calico-values.yaml
+            mode: "0600"
+            content: "{{ {'installation': {'controlPlaneTolerations': addon_tolerations}} | to_nice_yaml(indent=2) }}"
+
+        - name: Install Calico via Helm
+          command: >
+            helm install calico projectcalico/tigera-operator
+            --version {{ calico_version }}
+            --namespace tigera-operator
+            --create-namespace
+            --kubeconfig /etc/kubernetes/admin.conf
+            --values /etc/kubernetes/calico-values.yaml
+
+    - name: Let the Calico control plane tolerate node role taints
+      command: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf
+        patch installation default --type=merge
+        -p '{{ {"spec": {"controlPlaneTolerations": addon_tolerations}} | to_json }}'
+      register: calico_tolerations
+      changed_when: "'(no change)' not in calico_tolerations.stdout"
+
+    - name: Let CoreDNS tolerate node role taints
+      command: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf
+        -n kube-system patch deployment coredns
+        -p '{{ {"spec": {"template": {"spec": {"tolerations": coredns_default_tolerations + addon_tolerations}}}} | to_json }}'
+      register: coredns_tolerations
+      changed_when: "'(no change)' not in coredns_tolerations.stdout"

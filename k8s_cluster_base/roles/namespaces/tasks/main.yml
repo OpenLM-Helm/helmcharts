@@ -1,0 +1,13 @@
+- name: Create k8s namespaces
+  tags: ns
+  become: true
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  block:
+    - name: Create namespace
+      shell: >
+        kubectl --kubeconfig /etc/kubernetes/admin.conf create namespace {{ item }}
+        --dry-run=client -o yaml | kubectl --kubeconfig /etc/kubernetes/admin.conf apply -f -
+      loop: "{{ (k8s_namespaces + k8s_namespaces_extra) | unique }}"
+      register: ns_created
+      changed_when: "'created' in ns_created.stdout"

@@ -1,0 +1,5 @@
+---
+# ansible-galaxy collection install -r requirements.yml
+collections:
+  - name: ansible.posix       # profile_tasks callback (ansible.cfg)
+  - name: community.general   # modprobe (Longhorn prerequisites)

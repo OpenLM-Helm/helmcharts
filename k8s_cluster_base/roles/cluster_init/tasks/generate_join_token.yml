@@ -1,0 +1,26 @@
+- name: Generate kubeadm join details
+  tags: generate_token, join_master, join_worker
+  delegate_to: "{{ groups['masters'][0] }}"
+  run_once: true
+  block:
+
+    - name: Create join command
+      command: kubeadm token create --print-join-command
+      register: join_cmd
+
+    - name: Extract token
+      set_fact:
+        kube_token: "{{ join_cmd.stdout.split('--token ')[1].split()[0] }}"
+
+    - name: Extract CA hash
+      set_fact:
+        kube_ca_hash: "{{ join_cmd.stdout.split('--discovery-token-ca-cert-hash ')[1] }}"
+
+    - name: Upload certs and get certificate key
+      command: kubeadm init phase upload-certs --upload-certs
+      register: cert_key_output
+      become: true
+
+    - name: Save certificate key
+      set_fact:
+        kube_cert_key: "{{ cert_key_output.stdout_lines[-1] }}"

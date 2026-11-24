@@ -1,0 +1,36 @@
+- name: Configure containerd with systemd cgroup driver
+  become: true
+  block:
+    - name: Create containerd config directory
+      file:
+        path: /etc/containerd
+        state: directory
+        mode: '0755'
+
+    - name: Generate default containerd config
+      command: containerd config default
+      register: containerd_config
+      changed_when: false
+
+    - name: Write containerd config with systemd cgroup driver
+      copy:
+        content: "{{ containerd_config.stdout | regex_replace('SystemdCgroup = false', 'SystemdCgroup = true') }}"
+        dest: /etc/containerd/config.toml
+        mode: '0644'
+      register: containerd_config_file
+
+    - name: Point crictl at containerd
+      copy:
+        dest: /etc/crictl.yaml
+        mode: '0644'
+        content: |
+          runtime-endpoint: {{ crictl_runtime_endpoint }}
+          image-endpoint: {{ crictl_runtime_endpoint }}
+          timeout: 10
+
+    - name: Restart containerd
+      systemd:
+        name: containerd
+        state: restarted
+        enabled: true
+      when: containerd_config_file.changed

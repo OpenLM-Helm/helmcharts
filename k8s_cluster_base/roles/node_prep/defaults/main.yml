@@ -1,0 +1,16 @@
+kubernetes_repo_url: https://pkgs.k8s.io/core:/stable:/v1.32/deb
+# Put containerd's storage (images + container layers) on a separate data disk instead of
+# the root disk: <node_data_disk_mount>/k8s/containerd is bind-mounted on /var/lib/containerd
+# (fstab entry included). Set it per host in the inventory when a node has a data disk, e.g.
+#   worker-1 ansible_host=192.0.2.21 node_data_disk_mount=/data
+# Empty = keep everything on the root disk. Only applied to fresh nodes; a node that already
+# has images refuses and points to scripts/move-containerd-to-data-disk.sh.
+node_data_disk_mount: ""
+
+crictl_runtime_endpoint: "unix:///run/containerd/containerd.sock"
+
+# added to GRUB_CMDLINE_LINUX (existing arguments are kept); takes effect at the next reboot
+node_kernel_args:
+  - cgroup_enable=cpuset
+  - cgroup_enable=memory
+  - cgroup_memory=1

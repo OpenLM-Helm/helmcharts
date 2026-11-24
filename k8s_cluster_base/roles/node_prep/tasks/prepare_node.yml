@@ -1,0 +1,29 @@
+---
+- name: Prepare node {{ target_node }} for kubeadm
+  tags: node_prep
+  delegate_to: "{{ target_node }}"
+  block:
+
+    - name: Install base OS and runtime packages
+      import_tasks: packages.yml
+      tags: packages, prereqs
+
+    - name: Put containerd storage on the data disk
+      import_tasks: data_disk.yml
+      tags: data_disk, containerd, runtime
+
+    - name: Configure containerd runtime
+      import_tasks: containerd.yml
+      tags: containerd, runtime
+
+    - name: Configure cgroups and kernel parameters
+      import_tasks: cgroup.yml
+      tags: cgroup, prereqs
+
+    - name: Disable swap
+      import_tasks: swap.yml
+      tags: swap, prereqs
+
+    - name: Install Kubernetes binaries
+      import_tasks: k8s_install.yml
+      tags: kubernetes, k8s_install
