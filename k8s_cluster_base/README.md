@@ -212,7 +212,7 @@ tolerations:
     effect: NoSchedule
 ```
 
-Pods without a `role` toleration stay `Pending`. Calico, CoreDNS, metrics-server and Longhorn already tolerate every `role` taint.
+Pods without a `role` toleration stay `Pending`. Calico, CoreDNS, metrics-server, Longhorn, the NFS driver and the local-path provisioner already tolerate every `role` taint.
 
 The ingress controller (for example Traefik) must run with `hostNetwork` on the nodes in `haproxy_ingress_nodes` and listen on port 80. The load balancer sends all HTTPS traffic for `haproxy_hosts` there, already decrypted, with `X-Forwarded-Proto: https`.
 

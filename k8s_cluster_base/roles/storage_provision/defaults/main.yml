@@ -48,3 +48,13 @@ longhorn_storage_nodes: []
 
 # namespace whose pods (Prometheus) may scrape longhorn-manager metrics on port 9500; empty = no policy
 longhorn_metrics_namespace: "openlm-telemetry"
+
+# local-path-provisioner: run on any role-tainted node and on a control plane node
+# (on a single node the only node carries both taints)
+hostpath_tolerations:
+  - key: "role"
+    operator: "Exists"
+    effect: "NoSchedule"
+  - key: "node-role.kubernetes.io/control-plane"
+    operator: "Exists"
+    effect: "NoSchedule"
